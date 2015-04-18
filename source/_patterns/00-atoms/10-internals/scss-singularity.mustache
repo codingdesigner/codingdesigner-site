@@ -1,0 +1,9 @@
+<ul class="pl-meta scss-reference">
+  {{#scss-singularity}}
+  <li>Singularity Grid Var: <code>{{grid-var}}</code></li>
+  <li>Singularity Layout Mixin: <code>@include layout({{layout}}){}</code></li>
+    {{#spans}}
+      <li>Singularity Grid Span mixin: <code>@include {{.}}</code></li>
+    {{/spans}}
+  {{/scss-singularity}}
+</ul>

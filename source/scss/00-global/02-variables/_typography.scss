@@ -1,0 +1,63 @@
+// ==========================================================================
+// Global Variables - Typography
+// ========================================================================== */
+
+
+// Font names
+// ========================================================================== */
+//
+// Assign font names from 00-global/02-variables/_fonts.scss $fonts map
+// to actual usable font family strings.
+//
+
+$font--helvetica: Helvetica, Arial, sans-serif;
+$font--serif: serif;
+
+$font-map: (
+  font--helvetica: $font--helvetica,
+  font--sans: $font--serif
+);
+
+$font-body: $font--serif;
+$font-headline: $font--helvetica;
+
+// Font size and line-height
+$root-typesize   : 16px;
+$base-font-size  : $root-typesize;
+$base-line-px    : 24px;
+$base-line-em    : em($base-line-px);
+$base-line-height: unitless-convert($base-line-em);
+
+// Sassy Modular-scale
+$ms-base: $root-typesize;
+$ms-ratio: $major-third $fifth;
+
+// Heading sizes
+$heading-sizes:
+  ms(6)
+  ms(5)
+  ms(4)
+  ms(3)
+  ms(2)
+  ms(1);
+$heading-line-heights:
+  1.5
+  1.5
+  1.5
+  1.5
+  1.5
+  1.5;
+
+$ms-map: (
+  ms0: ms(0),
+  ms1: ms(1),
+  ms2: ms(2),
+  ms3: ms(3),
+  ms4: ms(4),
+  ms5: ms(5),
+  ms6: ms(6),
+  ms7: ms(7),
+  ms8: ms(8),
+  ms9: ms(9),
+  ms10: ms(10)
+)

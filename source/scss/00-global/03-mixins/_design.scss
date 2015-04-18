@@ -1,0 +1,33 @@
+%baseline {
+  $base-line-half: $base-line-px / 2;
+  $c--gray--light: lightgray;
+  $c--gray--lighter: lighten(lightgray, 20%);
+  @include background-image(repeating-linear-gradient(0deg, transparent, transparent $base-line-half - 1, $c--gray--light $base-line-half, transparent $base-line-half + 1, transparent $base-line-px - 1, $c--gray--lighter $base-line-px));
+  background-size: 100% $base-line-px;
+}
+
+
+@mixin try-colors() {
+  @each $color-var, $color-val in $color-map {
+    /* color: #{$color-val}; */
+    /* background-color: #{$color-val}; */
+  }
+}
+
+@mixin try-borders() {
+  @each $color-var, $color-val in $color-map {
+    /* border: 1px solid #{$color-val}; */
+  }
+}
+
+@mixin try-fonts() {
+  @each $font-var, $font-val in $font-map {
+    /* font-family: #{$font-val}; */
+  }
+}
+
+@mixin try-ms() {
+  @each $ms-var, $ms-val in $ms-map {
+    /* font-size: #{$ms-val}; */
+  }
+}

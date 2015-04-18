@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js {{ htmlClass }}" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }} | MAC Prototype</title>
+  <meta name="description" content="">
+
+  <!-- Mobile  Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../css/styles.css?{{ cacheBuster }}" media="all">
+
+  <!--[if lt IE 9]>
+    <!-- to add JS here, look under the 'injector' target in 'Gruntfile.js' -->
+    <!-- start:PL_only_JS_for_IE8:JS -->
+    <script src="../../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <!-- end:PL_only_JS_for_IE8:JS -->
+  <![endif]-->
+
+
+
+
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  {% pattern-lab-head %}
+  <!-- End Pattern Lab -->
+
+</head>
+
+<body class="{{ bodyClass }} js-product-app">

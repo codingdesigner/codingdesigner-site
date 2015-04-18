@@ -1,0 +1,48 @@
+{
+  "pl_colors": [
+    {
+      "name": "$color--red",
+      "value": "red"
+    },
+    {
+      "name": "$color--orange",
+      "value": "orange"
+    },
+    {
+      "name": "$color--yellow",
+      "value": "yellow"
+    },
+    {
+      "name": "$color--green",
+      "value": "green"
+    },
+    {
+      "name": "$color--blue",
+      "value": "blue"
+    },
+    {
+      "name": "$color--indigo",
+      "value": "indigo"
+    },
+    {
+      "name": "$color--violet",
+      "value": "violet"
+    },
+    {
+      "name": "$color--white",
+      "value": "white"
+    },
+    {
+      "name": "$color--gray",
+      "value": "gray"
+    },
+    {
+      "name": "$color--black",
+      "value": "black"
+    },
+    {
+      "name": "$color--transparent--white",
+      "value": "hsla(0, 0%, 100%, 0)"
+    }
+  ]
+}

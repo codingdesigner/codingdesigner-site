@@ -1,0 +1,28 @@
+// ==========================================================================
+// Base - Typography
+// ========================================================================== */
+
+
+//
+// Loop through our map and load font files
+// $fonts map defined in scss/00-global/02-variables/_fonts.scss
+//
+
+//@each $font-index, $font-info in $fonts {
+//  $font-name: map-get($font-info, font-name);
+//  $font-folder: map-get($font-info, font-folder);
+//  $font-filename: map-get($font-info, font-filename);
+//  $font-weight: map-get($font-info, font-weight);
+//  $font-style: map-get($font-info, font-style);
+//  @include font-face(
+//  "#{$font-name}",
+//  (
+//    'eot': "#{$font-folder}/#{$font-filename}.eot",
+//    'woff': "#{$font-folder}/#{$font-filename}.woff",
+//    'ttf': "#{$font-folder}/#{$font-filename}.ttf",
+//    'svg': "#{$font-folder}/#{$font-filename}.svg"
+//  ),
+//  "#{$font-weight}",
+//  "#{$font-style}"
+//  );
+//}

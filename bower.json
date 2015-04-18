@@ -1,0 +1,28 @@
+{
+  "name": "pattern-lab-starter",
+  "version": "0.0.0",
+  "description": "Components for PL work via Bower",
+  "keywords": [
+    "js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "jquery-migrate": "~1.2.1",
+    "underscore": "~1.6.0",
+    "html5shiv": "~3.7.2",
+    "eq.js": "~1.4.1",
+    "unison": "~0.6.0",
+    "sly": "~1.2.7",
+    "jquery-selectric": "~1.8.4"
+  }
+}

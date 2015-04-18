@@ -1,0 +1,66 @@
+// ==========================================================================
+// Global Variables - Colors
+// ========================================================================== */
+
+
+//
+// Here's a great tutorial on how to use color 02-variables properly:
+// @see http://sachagreif.com/sass-color-02-variables/
+//
+
+$color--red: red;
+$color--orange: orange;
+$color--yellow: yellow;
+$color--green: green;
+$color--blue: blue;
+$color--indigo: indigo;
+$color--violet: violet;
+$color--white: white;
+$color--gray: gray;
+$color--black: black;
+$color--transparent--white: hsla(0, 0%, 100%, 0);
+
+$color-map: (
+  color--red: $color--red,
+  color--orange: $color--orange,
+  color--yellow: $color--yellow,
+  color--green: $color--green,
+  color--blue: $color--blue,
+  color--indigo: $color--indigo,
+  color--violet: $color--violet,
+  color--white: $color--white,
+  color--gray: $color--gray,
+  color--black: $color--black
+);
+
+// Semantic Colors
+$color--text: $color--black;
+$color--link: $color--black;
+$color--border: $color--gray;
+$color--border-active: $color--black;
+$bg-color: $color--white;
+
+// Emphasis Colors
+$color--information: $color--blue;
+$color--success: $color--yellow;
+$color--error: $color--red;
+$color--warning: $color--indigo;
+
+// Links
+$cs-link-normal            : $color--blue;
+$cs-link-hover             : $color--indigo;
+$cs-link-active            : $color--blue;
+$cs-link-visited           : $color--blue;
+$cs-link-focus             : $color--indigo;
+$cs-link-underline-normal  : $color--blue;
+$cs-link-underline-hover   : $color--indigo;
+$cs-link-underline-active  : $color--blue;
+$cs-link-underline-visited : $color--blue;
+$cs-link-underline-focus   : $color--indigo;
+//
+$cs-link-background-normal: $color--blue;
+$cs-link-background-hover: $color--indigo;
+$cs-link-background-active: $color--blue;
+$cs-link-background-visited: $color--blue;
+$cs-link-background-focus: $color--indigo;
+$cs-link-background-bkg: $color--white;

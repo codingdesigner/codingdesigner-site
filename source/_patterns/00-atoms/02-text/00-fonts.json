@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "font-skolar": {
+      "scss-style": [
+        "font-family: $font--skolar"
+      ]
+    },
+    "font-skolar-italic": {
+      "scss-style": [
+        "font-family: $font--skolar",
+        "font-style: italic"
+      ]
+    },
+    "font-skolar-bold": {
+      "scss-style": [
+        "font-family: $font--skolar",
+        "font-weight: bold"
+      ]
+    },
+    "font-skolar-bold-italic": {
+      "scss-style": [
+        "font-family: $font--skolar",
+        "font-weight: bold",
+        "font-style: italic"
+      ]
+    },
+    "font-futura": {
+      "scss-style": [
+        "font-family: $font--futura"
+      ]
+    },
+    "font-futura-italic": {
+      "scss-style": [
+        "font-family: $font--futura",
+        "font-style: italic"
+      ]
+    },
+    "font-futura-bold": {
+      "scss-style": [
+        "font-family: $font--futura",
+        "font-weight: bold"
+      ]
+    },
+    "font-futura-bold-italic": {
+      "scss-style": [
+        "font-family: $font--futura",
+        "font-weight: bold",
+        "font-style: italic"
+      ]
+    }
+  }
+}

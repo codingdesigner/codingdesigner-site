@@ -1,0 +1,18 @@
+<!--<div class="demo-animate animate-move"><div class="demo-shape"></div><strong>Movement:</strong> Duration: 0.8s  Easing: ease-in-out; (Hover to see effect)</div>-->
+<h2>Animations</h2>
+<p>See _styleguide-specific.scss for implementation details. Specific settings are in global/variables/_settings.scss:
+  <ul>
+    {{#pl_animations}}
+      <li>{{name}}: {{value}}</li>
+    {{/pl_animations}}
+  </ul>
+</p>
+<p>Apply like:</p>
+<code>.thing { @extend %animation-background-color; }</code>
+
+
+<div class="demo-animate animate-fade"><strong>Fade:</strong> Duration: 0.3s Easing: ease-in-out (Hover to see effect)</div>
+<div class="demo-animate animate-background-color"><strong>BACKGROUND Color:</strong> Duration: 0.3s Easing: ease-in-out (hover to see effect)</div>
+<div class="demo-animate animate-text-color"><strong>TEXT Color:</strong> Duration: 0.3s Easing: ease-in-out (hover to see effect)</div>
+<div class="demo-animate animate-all"><strong>Combined animations (background and text):</strong> Duration: 0.3s Easing: ease-in-out (hover to see effect)</div>
+<div class="demo-animate animate-min-height"><strong>Height:</strong> Duration: 0.3s Easing: ease-in-out (Hover to see effect)</div>

@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "scss-singularity": {
+      "grid-var": "$grid--2: 2;",
+      "layout": "$grid--2",
+      "spans": [
+        "grid-span(1, 1); clear: both;",
+        "grid-span(1, 2);"
+      ]
+    }
+  }
+}

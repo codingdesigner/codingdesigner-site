@@ -1,0 +1,43 @@
+// ==========================================================================
+// Layout - Mixins
+// ========================================================================== */
+
+
+// Mixin - Full Container
+// ========================================================================== */
+
+@mixin full-container() {
+  display: block;
+  width: 100%;
+}
+
+// Mixins - Absolute Position Abstraction
+// ========================================================================== */
+
+@mixin abs-pos() {
+  position: absolute;
+  margin: 0;
+  clear: none;
+  display: block;
+  z-index: $z-low;
+}
+@mixin abs-pos-left-top() {
+  @include abs-pos();
+  left: 0;
+  top: 0;
+}
+@mixin abs-pos-right-top() {
+  @include abs-pos();
+  right: 0;
+  top: 0;
+}
+@mixin abs-pos-right-bottom() {
+  @include abs-pos();
+  right: 0;
+  bottom: 0;
+}
+@mixin abs-pos-left-bottom() {
+  @include abs-pos();
+  left: 0;
+  bottom: 0;
+}

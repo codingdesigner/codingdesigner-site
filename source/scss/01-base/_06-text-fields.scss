@@ -1,0 +1,65 @@
+///==========================================================================
+// Components Atoms - Forms, Text-fields
+// ========================================================================== */
+//
+//
+///Extendable - Text-field Base
+// ========================================================================== */
+
+%text-field-base {
+  outline: 0;
+  padding: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color--border;
+  width: 100%;
+  @include single-transition(border-color);
+  &:focus {
+    @extend %form-item--active;
+  }
+}
+
+
+// Extendable - Form Item Active
+// ========================================================================== */
+
+%form-item--active {
+  border: 1px solid $color--border-active;
+  outline: none;
+}
+
+[type=text],
+[type=email],
+[type=password],
+[type=search],
+textarea {
+  @extend %text-field-base;
+}
+
+input[type="search"] { // overridding Normalize
+  @include box-sizing(border-box);
+}
+
+.form-text {
+  @extend %text-field-base;
+}
+
+.form-type-textfield {
+  &--required {
+    .required {
+      color: $color--error;
+    }
+  }
+  &--error {
+    label {
+      color: $color--error;
+    }
+    .form-text {
+      border-color: $color--error;
+      color: $color--error;
+      &:focus {
+        border-color: $color--error;
+      }
+    }
+  }
+}

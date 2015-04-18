@@ -1,0 +1,52 @@
+{
+  "pl_fonts": [
+    {
+      "name": "ms(0)",
+      "value": "16px"
+    },
+    {
+      "name": "ms(1)",
+      "value": "20px"
+    },
+    {
+      "name": "ms(2)",
+      "value": "24px"
+    },
+    {
+      "name": "ms(3)",
+      "value": "25px"
+    },
+    {
+      "name": "ms(4)",
+      "value": "31px"
+    },
+    {
+      "name": "ms(5)",
+      "value": "36px"
+    },
+    {
+      "name": "ms(6)",
+      "value": "39px"
+    },
+    {
+      "name": "ms(7)",
+      "value": "49px"
+    },
+    {
+      "name": "ms(8)",
+      "value": "54px"
+    },
+    {
+      "name": "ms(9)",
+      "value": "61px"
+    },
+    {
+      "name": "ms(10)",
+      "value": "76px"
+    },
+    {
+      "name": "ms(11)",
+      "value": "95px"
+    }
+  ]
+}

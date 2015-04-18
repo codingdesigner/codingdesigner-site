@@ -1,0 +1,60 @@
+{
+  "pl_breakpoints": [
+    {
+      "name": "$bp--global--inline-title",
+      "value": "480px"
+    },
+    {
+      "name": "$bp--global--wide-nav",
+      "value": "600px"
+    },
+    {
+      "name": "$bp--overview-2col",
+      "value": "600px"
+    },
+    {
+      "name": "$bp--overview-2col-wide",
+      "value": "880px"
+    },
+    {
+      "name": "$bp--timeline-2col",
+      "value": "700px"
+    },
+    {
+      "name": "$bp--timeline-2col-wide",
+      "value": "860px"
+    },
+    {
+      "name": "$bp--timeline--navigation-buttons",
+      "value": "1360px"
+    },
+    {
+      "name": "$bp--financial--wide-chart",
+      "value": "680px"
+    },
+    {
+      "name": "$bp--financial--horizontal-tabs",
+      "value": "620px"
+    },
+    {
+      "name": "$bp--financial--inline-date",
+      "value": "620px"
+    },
+    {
+      "name": "$bp--river-unstack-tabs",
+      "value": "640px"
+    },
+    {
+      "name": "$bp--river--two-cols",
+      "value": "912px"
+    },
+    {
+      "name": "$bp--river-2col",
+      "value": "640px"
+    },
+    {
+      "name": "$bp--river-2col-wide",
+      "value": "800px"
+    }
+  ]
+}

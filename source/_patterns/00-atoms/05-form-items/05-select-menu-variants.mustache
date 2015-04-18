@@ -1,0 +1,29 @@
+<p>Select with Option Groups</p>
+<select>
+  <option>Option One</option>
+  <option>Option Two</option>
+  <option>Option Three</option>
+  <optgroup label="Option Group">
+    <option>Option One</option>
+    <option>Option Two</option>
+    <option>Option Three</option>
+  </optgroup>
+  <optgroup label="Option Group">
+    <option>Option One</option>
+    <option>Option Two</option>
+    <option>Option Three</option>
+  </optgroup>
+</select>
+
+<div style="width: 33%; margin: 1em auto; padding: 3px; outline: dotted 1px #ccc;">
+  <label>Normal Select in centered 33% width container</label>
+  {{>atoms-select(atoms.select.text: "Option One")}}
+</div>
+
+<p>Big Select</p>
+<select class="select--big">
+  <option>Option One</option>
+  <option>Option Two</option>
+  <option>Option Three</option>
+</select>
+

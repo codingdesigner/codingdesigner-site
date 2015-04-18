@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "h1": {
+      "scss-extend": [
+        "%h1"
+      ]
+    },
+    "h2": {
+      "scss-extend": [
+        "%h2"
+      ]
+    },
+    "h3": {
+      "scss-extend": [
+        "%h3"
+      ]
+    },
+    "h4": {
+      "scss-extend": [
+        "%h4"
+      ]
+    },
+    "h5": {
+      "scss-extend": [
+        "%h5"
+      ]
+    },
+    "h6": {
+      "scss-extend": [
+        "%h6"
+      ]
+    }
+  }
+}

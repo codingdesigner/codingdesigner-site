@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Pattern Lab - Fonts
+   ========================================================================== */
+
+
+.pl-font { font-size: 2em; }
+.pl-font-helvetica { font-family: $font--helvetica; }
+.pl-font-helvetica-italic { font-family: $font--helvetica; font-style: italic; }
+.pl-font-helvetica-bold { font-family: $font--helvetica; font-weight: bold; }
+.pl-font-helvetica-bold-italic { font-family: $font--helvetica; font-weight: bold; font-style: italic; }
+.pl-font-serif { font-family: $font--serif; }
+.pl-font-serif-italic { font-family: $font--serif; font-style: italic; }
+.pl-font-serif-bold { font-family: $font--serif; font-weight: bold; }
+.pl-font-serif-bold-italic { font-family: $font--serif; font-weight: bold; font-style: italic; }

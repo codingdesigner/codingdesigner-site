@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "scss-singularity": {
+      "grid-var": "$grid--4: 4;",
+      "layout": "$grid--4",
+      "spans": [
+        "grid-span(1, 1); clear: both;",
+        "grid-span(1, 2);",
+        "grid-span(1, 3);",
+        "grid-span(1, 4);"
+      ]
+    }
+  }
+}

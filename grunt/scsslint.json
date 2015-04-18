@@ -1,0 +1,10 @@
+{
+  "options": {
+    "bundleExec": true,
+    "config": ".scss-lint--strict.yml",
+    "force": true,
+    "maxBuffer": 999999,
+    "colorizeOutput": true,
+    "compact": true
+  }
+}

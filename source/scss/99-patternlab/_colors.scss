@@ -1,0 +1,21 @@
+%sg-colors--primary {
+  outline: {
+    width: 2px;
+    style: solid;
+    color: hsl(0, 0%, 25%)
+  }
+  + .sg-info {
+    font-weight: bold;
+    &:before {
+      content: "Main Color";
+      text-transform: uppercase;
+    }
+  }
+}
+
+.sg-colors {
+  .sg-swatch[style*="#0a5d82"] { @extend %sg-colors--primary; }
+  .sg-swatch[style*="#b393e1"] { @extend %sg-colors--primary; }
+  .sg-swatch[style*="#1989ba"] { @extend %sg-colors--primary; }
+  .sg-swatch[style*="#494949"] { @extend %sg-colors--primary; }
+}

@@ -1,0 +1,16 @@
+// ==========================================================================
+// Global Variables - Z-index
+// ========================================================================== */
+
+
+//
+// Use consistent z-index
+//
+
+$z-lowest: 1;
+$z-low: 10;
+$z-mid: 50;
+$z-high: 100;
+$z-highest: 500;
+// add a custom z-index for when we need to beat contextual links
+$z-above-clinks: 1000;

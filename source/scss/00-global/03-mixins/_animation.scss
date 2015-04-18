@@ -1,0 +1,36 @@
+//////////////////////////////
+@mixin animate($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+}
+//////////////////////////////
+
+// Animation Opacity
+// ========================================================================== */
+@mixin animation-opacity() {
+  @include single-transition(opacity, $default-transition-duration, $default-transition-function);
+}
+
+// Animation Min-height
+// ========================================================================== */
+@mixin animation-min-height() {
+  @include single-transition(min-height, $default-transition-duration, $default-transition-function);
+}
+
+// Extendable - Animation Background-color
+// ========================================================================== */
+@mixin animation-background-color() {
+  @include single-transition(background-color, $default-transition-duration, $default-transition-function);
+}
+
+// Extendable - Animation Text Color
+// ========================================================================== */
+@mixin animation-text-color() {
+  @include single-transition(color, $default-transition-duration, $default-transition-function);
+}
+
+// Extendable - Animation All
+// ========================================================================== */
+@mixin animation-all() {
+  @include single-transition($default-transition-property, $default-transition-duration, $default-transition-function);
+}

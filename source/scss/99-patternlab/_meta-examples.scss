@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Pattern Lab - Meta Examples
+   ========================================================================== */
+
+
+.pl-meta {
+//  @include fontsize-rem($typesize--12px);
+  border-top: 1px solid $color--gray;
+  font-family: $font-body;
+  font-weight: normal;
+  margin: 0.5rem 1rem;
+  font-size: $base-font-size;
+  li {
+    padding: 0.5rem;
+    &:nth-of-type(odd) {
+      background-color: rgba($color--gray, 0.05);
+    }
+    &:nth-of-type(even) {
+      background-color: rgba($color--gray, 0.1);
+    }
+  }
+}

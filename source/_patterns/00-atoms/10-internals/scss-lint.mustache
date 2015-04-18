@@ -1,0 +1,21 @@
+<h6>Scss lint Report</h6>
+<p>To rebuild this report, run `grunt reportSCSS`</p>
+<ul>
+  <li>Ran: {{dateRan}}</li>
+</ul>
+{{#report}}
+  <div class="file">
+    <h5><strong> {{file}} </strong></h5>
+    {{#errors}}
+      <h6>{{linter}}</h6>
+      <ul>
+        <li>Severity: {{severity}}</li>
+        <li>Line: {{line}}</li>
+      </ul>
+      <p>{{reason}}</p>
+
+    {{/errors}}
+
+  </div>
+  <!-- /.file -->
+{{/report}}

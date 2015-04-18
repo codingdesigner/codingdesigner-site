@@ -1,0 +1,45 @@
+// ==========================================================================
+// Components Atoms - Buttons
+// ========================================================================== */
+
+
+// Extendable - Button Base
+// ========================================================================== */
+
+@mixin btn() {
+  @include unset-background-links();
+  @include link-colors($normal: white, $hover: white, $active: white, $visited: white, $focus: white);
+  @include antialiased;
+  font-size: 15px;
+  text-align: center;
+  padding: 0.7em 1.25em;
+  min-height: 40px;
+  line-height: 1.2;
+  border-style: solid;
+  border-color: $color--white;
+  border-width: 0; // need `.btn--border` or `.btn--clear-bg` to invoke border; other classes determine color
+  display: inline-block;
+  background-color: $color--black;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.btn {
+  @include btn();
+}
+
+// Extendable - Button Disabled
+// ========================================================================== */
+
+@mixin btn--disabled() {
+  @include opacity(0.3);
+  cursor: not-allowed;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.btn[disabled] {
+  @include btn--disabled();
+}
