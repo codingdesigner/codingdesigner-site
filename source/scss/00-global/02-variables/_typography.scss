@@ -10,27 +10,39 @@
 // to actual usable font family strings.
 //
 
-$font--helvetica: Helvetica, Arial, sans-serif;
+$font--surveyor: 'Surveyor SSm A', 'Surveyor SSm B', serif;
+$font--whitney: 'Whitney SSm A', 'Whitney SSm B', sans-serif;
+$font--landmark: 'Landmark Regular A', 'Landmark Regular B', sans-serif;
+$font--landmark-inline: 'Landmark Inline A', 'Landmark Inline B', sans-serif;
+$font--landmark-shadow: 'Landmark Shadow A', 'Landmark Shadow B', sans-serif;
+$font--landmark-dimensional: 'Landmark Dimensional A', 'Landmark Dimensional B', sans-serif;
+$font--sans: sans-serif;
 $font--serif: serif;
 
 $font-map: (
-  font--helvetica: $font--helvetica,
-  font--sans: $font--serif
+  font--surveyor: $font--surveyor,
+  font--whitney: $font--whitney,
+  font--landmark: $font--landmark,
+  font--landmark-inline: $font--landmark-inline,
+  font--landmark-shadow: $font--landmark-shadow,
+  font--landmark-dimensional: $font--landmark-dimensional,
+  font--sans: $font--sans,
+  font--serif: $font--serif
 );
 
-$font-body: $font--serif;
-$font-headline: $font--helvetica;
+$font-body: font(font--surveyor);
+$font-headline: font(font--surveyor);
 
 // Font size and line-height
-$root-typesize   : 16px;
+$root-typesize   : 20px;
 $base-font-size  : $root-typesize;
-$base-line-px    : 24px;
+$base-line-px    : $root-typesize * 1.5;
 $base-line-em    : em($base-line-px);
 $base-line-height: unitless-convert($base-line-em);
 
 // Sassy Modular-scale
 $ms-base: $root-typesize;
-$ms-ratio: $major-third $fifth;
+$ms-ratio: $minor-third $golden;
 
 // Heading sizes
 $heading-sizes:

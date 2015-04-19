@@ -4,11 +4,15 @@
 
 
 .pl-font { font-size: 2em; }
-.pl-font-helvetica { font-family: $font--helvetica; }
-.pl-font-helvetica-italic { font-family: $font--helvetica; font-style: italic; }
-.pl-font-helvetica-bold { font-family: $font--helvetica; font-weight: bold; }
-.pl-font-helvetica-bold-italic { font-family: $font--helvetica; font-weight: bold; font-style: italic; }
-.pl-font-serif { font-family: $font--serif; }
-.pl-font-serif-italic { font-family: $font--serif; font-style: italic; }
-.pl-font-serif-bold { font-family: $font--serif; font-weight: bold; }
-.pl-font-serif-bold-italic { font-family: $font--serif; font-weight: bold; font-style: italic; }
+.pl-font-surveyor { font-family: font(font--surveyor); }
+.pl-font-surveyor-italic { font-family: font(font--surveyor); font-style: italic; }
+.pl-font-surveyor-bold { font-family: font(font--surveyor); font-weight: bold; }
+.pl-font-surveyor-bold-italic { font-family: font(font--surveyor); font-weight: bold; font-style: italic; }
+.pl-font-whitney { font-family: font(font--whitney); }
+.pl-font-whitney-italic { font-family: font(font--whitney); font-style: italic; }
+.pl-font-whitney-bold { font-family: font(font--whitney); font-weight: bold; }
+.pl-font-whitney-bold-italic { font-family: font(font--whitney); font-weight: bold; font-style: italic; }
+.pl-font-landmark { font-family: font(font--landmark); }
+.pl-font-landmark-inline { font-family: font(font--landmark-inline); }
+.pl-font-landmark-shadow { font-family: font(font--landmark-shadow); }
+.pl-font-landmark-dimensional { font-family: font(font--landmark-dimensional); }

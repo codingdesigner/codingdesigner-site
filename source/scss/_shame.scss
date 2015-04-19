@@ -3,3 +3,55 @@
 //
 // For misc styles that don't belong anywhere else or need to appear last in source order
 //
+
+.site-name {
+  font-style: italic;
+  line-height: 0.9;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  [class|="word"] {
+//    @include debug();
+    display: block;
+    text-shadow: 2px 2px 0px white, -2px -2px 0px white;
+  }
+  .word-1 {
+    float: left;
+    font-size: 0.5em;
+    -webkit-transform: translateX(47px) translateY(-13px);
+    position: absolute;
+    font-weight: 100;
+  }
+  .word-2 {
+//    -webkit-transform: translateX(4px) translateY(3px);
+//    position: relative;
+  }
+}
+
+.site-subtitle {
+  font-style: italic;
+  font-weight: 100;
+  font-variant: small-caps;
+  margin-top: -19px;
+//  margin-left: 166px;
+  border-top: 4px solid black;
+  display: inline-block;
+  line-height: 1;
+//  margin-left: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: rotate(-5deg);
+  -webkit-transform-origin: 24% 50%;
+  span {
+    display: block;
+    -webkit-transform: rotate(5deg);
+    -webkit-transform-origin: 8% 50%;
+  }
+}
+
+html, p {
+  @include try-all();
+//  font-style: italic;
+}

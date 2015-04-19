@@ -6,6 +6,9 @@
   background-size: 100% $base-line-px;
 }
 
+@mixin debug($color: red) {
+  outline: 1px solid $color;
+}
 
 @mixin try-colors() {
   @each $color-var, $color-val in $color-map {
@@ -26,8 +29,23 @@
   }
 }
 
+@mixin try-font-weights() {
+  @each $font-weight in (200, 300, 400, 500, 600, 700, 800) {
+    /* font-weight: #{$font-weight}; */
+  }
+}
+
+
 @mixin try-ms() {
   @each $ms-var, $ms-val in $ms-map {
     /* font-size: #{$ms-val}; */
   }
+}
+
+@mixin try-all() {
+  @include try-colors();
+  @include try-borders();
+  @include try-fonts();
+  @include try-font-weights();
+  @include try-ms();
 }
