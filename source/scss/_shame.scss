@@ -51,7 +51,28 @@
   }
 }
 
-html, p {
-  @include try-all();
-//  font-style: italic;
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.jag {
+  &-right {
+    image {
+      clip-path: url(#jag-right);
+    }
+  }
+  &-left {
+    margin-left: -16px;
+    image {
+      clip-path: url(#jag-left);
+    }
+  }
+  &-both {
+    margin-left: -16px;
+    image {
+      clip-path: url(#jag-both);
+    }
+  }
 }
