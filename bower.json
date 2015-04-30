@@ -22,7 +22,7 @@
     "html5shiv": "~3.7.2",
     "eq.js": "~1.4.1",
     "unison": "~0.6.0",
-    "sly": "~1.2.7",
+    "prefixfree": "gh-pages",
     "jquery-selectric": "~1.8.4"
   }
 }

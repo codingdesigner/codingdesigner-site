@@ -64,15 +64,145 @@
     }
   }
   &-left {
-    margin-left: -16px;
+//    margin-left: -16px;
     image {
       clip-path: url(#jag-left);
     }
   }
   &-both {
-    margin-left: -16px;
+//    margin-left: -16px;
     image {
       clip-path: url(#jag-both);
+    }
+  }
+}
+
+@function jag-right-edge($height, $direction, $depth, $count) {
+  $right-edge: '';
+  $x: 0;
+  $y: 0;
+  $comma: ", ";
+  @for $i from 1 through $count {
+    @if ($i % 2 == 0) {
+      @if $direction == left {
+        $x: '100%';
+      } @else {
+        $x: 100% - $depth;
+      }
+    }
+  @else {
+      @if $direction == left {
+        $x: 100% - $depth;
+      } @else {
+        $x: '100%';
+      }
+    }
+    $y: $i * ($height / $count);
+    @if $y == $height {
+      $y: 100%;
+    }
+    @if $i == $count {
+      $comma: '';
+    }
+    $right-edge: #{$right-edge} #{$x} #{$y}#{$comma};
+  }
+  @return $right-edge;
+}
+
+@function jag-left-edge($height, $direction, $depth, $count) {
+  $left-edge: '';
+  $x: 0;
+  $y: 0;
+  $comma: ", ";
+  @for $i from $count through 1 {
+    @if ($i % 2 == 0) {
+      @if $direction == left {
+        $x: $depth;
+      } @else {
+        $x: '0';
+      }
+    } @else {
+      @if $direction == left {
+        $x: '0';
+      } @else {
+        $x: $depth;
+      }
+    }
+    $y: $i * ($height / $count);
+    @if $y == $height {
+      $y: 100%;
+    }
+    @if $i == 1 {
+      $comma: '';
+    }
+    $left-edge: #{$left-edge} #{$x} #{$y}#{$comma};
+  }
+  @return $left-edge;
+}
+
+@mixin jag-edge($side: right, $direction: left, $height: 300px, $depth: 5%, $count: 10) {
+  @if $side == right {
+    $right-edge: jag-right-edge($height, $direction, $depth, $count);
+    @if $direction == left {
+      @include experimental(clip-path, polygon(0 0, 100% 0, #{$right-edge}, 0 100%));
+    } @else {
+      @include experimental(clip-path, polygon(0 0, #{100% - $depth} 0, #{$right-edge}, 0 100%));
+    }
+  }
+  @if $side == left {
+    $left-edge: jag-left-edge($height, $direction, $depth, $count);
+    @if $direction == left {
+      @include experimental(clip-path, polygon(#{$depth} 0, 100% 0, 100% 100%, 0 100%, #{$left-edge}));
+    } @else {
+      @include experimental(clip-path, polygon(0 0, 100% 0, 100% 100%, 0 100%, #{$left-edge}));
+    }
+  }
+  @if $side == both {
+    $right-edge: jag-right-edge($height, $direction, $depth, $count);
+    $left-edge: jag-left-edge($height, $direction, $depth, $count);
+    @if $direction == left {
+      @include experimental(clip-path, polygon(#{$depth} 0, 100% 0, #{$right-edge}, 0 100%, #{$left-edge}));
+    } @else {
+      @include experimental(clip-path, polygon(0 0, #{100% - $depth} 0, #{$right-edge}, 0 100%, #{$left-edge}));
+    }
+  }
+}
+
+.portfolio--project {
+  position: relative;
+  clear: both;
+}
+
+.project--image,
+.project--lead {
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in-out);
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  z-index: 0;
+}
+.project--lead {
+  //  @include jag-edge(right, $direction: right, $depth: 50%, $count: 99);
+  padding: 0.5rem 4rem 0.5rem 0.5rem;
+  background-color: lightgrey;
+}
+.project--image {
+  @include jag-edge(both, $direction: right, $depth: 50%, $count: 99);
+  margin-left: -150px;
+  &:hover {
+    @include jag-edge(both, $direction: right, $depth: 0%, $count: 99);
+    z-index: 1;
+  }
+  &:last-of-type {
+    @include jag-edge(left, $direction: right, $depth: 50%, $count: 99);
+    &:hover {
+      @include jag-edge(left, $direction: right, $depth: 0%, $count: 99);
+      z-index: 1;
     }
   }
 }
