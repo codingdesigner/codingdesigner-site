@@ -1,0 +1,34 @@
+//
+// Here's where the magic happens.
+// All styles that are imported here will be compiled into css/style.css
+//
+
+@import
+  // gems
+"compass",
+"compass/support",
+"toolkit",
+"breakpoint",
+"singularitygs",
+"modular-scale",
+  // "normalize",
+
+  // Global Settings
+"00-global/01-functions/**/*",
+"00-global/02-variables/**/*",
+"00-global/03-mixins/**/*",
+"00-global/04-extends/**/*",
+  //  "00-global/05-icons/icons-mixins", // vector sprites
+
+  // Global Styles
+    "01-base/**/*",
+    "02-layout/**/*",
+
+  //  Components
+    "03-components/**/*",
+
+  //  PL UI
+  //"99-patternlab/*",
+
+  // temporary styles
+"shame";

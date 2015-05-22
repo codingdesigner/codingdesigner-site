@@ -1,8 +1,8 @@
 {
   "pl_breakpoints": [
     {
-      "name": "$bp--global--inline-title",
-      "value": "480px"
+      "name": "$bp--something",
+      "value": "500px"
     }
   ]
 }

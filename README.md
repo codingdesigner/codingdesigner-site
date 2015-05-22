@@ -1,13 +1,13 @@
-# UN Crisis Page Pattern Lab
+# PDMS Pattern Lab
 
 ## Brief Overview
 
 ### One line install and setup
 
     git clone git@bitbucket.org:codingdesigner/un-crisis-pattern-lab.git && cd un-crisis-pattern-lab && bash scripts/setup-everything.sh
-  
+
 Already downloaded the repo? Just run this to make you've got dependencies and helpers taken care of:
-  
+
     bash scripts/setup-everything.sh
 
 
@@ -48,7 +48,7 @@ Already downloaded the repo? Just run this to make you've got dependencies and h
 
 [More info](http://patternlab.io/about.html)
 
-    
+
 ## Details
 
 ### Configuration
