@@ -7,13 +7,13 @@
 // ========================================================================== */
 
 %text-field-base {
-  outline: 0;
+  @include single-transition(border-color);
+  width: 100%;
   padding: 12px;
   border-width: 1px;
   border-style: solid;
   border-color: $color--border;
-  width: 100%;
-  @include single-transition(border-color);
+  outline: 0;
   &:focus {
     @extend %form-item--active;
   }
@@ -36,15 +36,18 @@ textarea {
   @extend %text-field-base;
 }
 
+// scss-lint:disable QualifyingElement
 input[type="search"] { // overridding Normalize
   @include box-sizing(border-box);
 }
+// scss-lint:enable QualifyingElement
 
 .form-text {
   @extend %text-field-base;
 }
 
 .form-type-textfield {
+  // scss-lint:disable NestingDepth
   &--required {
     .required {
       color: $color--error;

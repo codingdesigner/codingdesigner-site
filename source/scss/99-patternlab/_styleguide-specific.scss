@@ -8,56 +8,60 @@
  */
 
 // Style Guide Interface Colors
-$sg-primary : #222;
-$sg-secondary : #808080;
-$sg-tertiary : #ddd;
-$sg-quaternary : #fff;
-$sg-quinary : #999;
-$sg-tint : rgba(255,255,255,0.05);
-$sg-tint-2 : rgba(255,255,255,0.25);
-$sg-tone : rgba(0,0,0,0.1);
-$sg-tone-2 : rgba(0,0,0,0.3);
+$sg-primary: #222;
+$sg-secondary: #808080;
+$sg-tertiary: #ddd;
+$sg-quaternary: #fff;
+$sg-quinary: #999;
+$sg-tint: rgba(255, 255, 255, 0.05);
+$sg-tint-2: rgba(255, 255, 255, 0.25);
+$sg-tone: rgba(0, 0, 0, 0.1);
+$sg-tone-2: rgba(0, 0, 0, 0.3);
 
 // Typography
-$sg-font-size-norm : 100%;
-$sg-font-size-sm : 70%;
-$sg-font-size-large : 120%;
+$sg-font-size-norm: 100%;
+$sg-font-size-sm: 70%;
+$sg-font-size-large: 120%;
 
 // Defaults
-$sg-space : 1em;
-$sg-doublespace : $sg-space*2;
-$sg-pad : 1em;
-$sg-pad-half : $sg-pad/2;
+$sg-space: 1em;
+$sg-doublespace: $sg-space*2;
+$sg-pad: 1em;
+$sg-pad-half: $sg-pad/2;
 
 // Dimensions
 $offset-top: 2em;
 
 // Breakpoints
-$sg-bp-small : 400px;
-$sg-bp-small-2 : $sg-bp-small;
-$sg-bp-med : 750px;
-$sg-bp-large : 900px;
-$sg-bp-xl : 1200px;
+$sg-bp-small: 400px;
+$sg-bp-small-2: $sg-bp-small;
+$sg-bp-med: 750px;
+$sg-bp-large: 900px;
+$sg-bp-xl: 1200px;
 
 $animate-quick: 0.2s;
 
-body {// just giving everything an extra level of specificity so it can override PL defaults
+// scss-lint:disable NestingDepth
+body {
+  // scss-lint:disable SelectorDepth
+  // just giving everything an extra level of specificity so it can override PL defaults
   // Demo to show grid system - in this stylesheet because it shouldn't be included in the production styles
   .demo {
-    overflow: hidden;
     margin-bottom: 1rem;
+    overflow: hidden;
   }
 
-  .demo .gi, .demo .demo-block {
+  .demo .gi,
+  .demo .demo-block {
+    margin-bottom: $sg-pad-half;
+    padding: 1em !important;
     background: $sg-tertiary;
     color: $sg-secondary;
     text-align: center;
-    margin-bottom: $sg-pad-half;
-    padding: 1em !important;
 
     &:nth-of-type(2n) {
-      color: $sg-tertiary;
       background: $sg-secondary;
+      color: $sg-tertiary;
     }
 
     .gi {
@@ -72,9 +76,9 @@ body {// just giving everything an extra level of specificity so it can override
 
   //Demo box for animation
   .demo-animate {
-    background: #ddd;
-    padding: $sg-pad;
     margin-bottom: $sg-space;
+    padding: $sg-pad;
+    background: #ddd;
     text-align: center;
   }
 
@@ -85,8 +89,8 @@ body {// just giving everything an extra level of specificity so it can override
     .demo-shape {
       position: absolute;
       top: 0;
-      left: 0;
       bottom: 0;
+      left: 0;
       width: 20px;
       background: $sg-secondary;
     }
@@ -102,28 +106,28 @@ body {// just giving everything an extra level of specificity so it can override
   // Style Guide color swatches
   .sg-colors {
     overflow: hidden;
-    >li {
-      overflow: hidden;
-      border: 1px solid $sg-tertiary;
-      padding: 0.3em;
+    > li {
       margin: 0;
+      padding: 0.3em;
+      border: 1px solid $sg-tertiary;
+      overflow: hidden;
       box-sizing: border-box;
       .sg-swatch {
         display: block;
+        width: 33%;
         height: 50px;
         float: left;
-        width: 33%;
         outline: dotted 1px hsl(0, 0%, 50%);
       }
       .sg-info {
-        line-height: 1;
-        float: right;
         width: 66%;
+        float: right;
+        line-height: 1;
       }
       @media all and (min-width: $sg-bp-small) {
-        float: left;
         width: 49%;
         margin-right: 1%;
+        float: left;
         .sg-swatch {
           height: 100px;
         }
@@ -134,7 +138,6 @@ body {// just giving everything an extra level of specificity so it can override
     }
   }
 
-
   .sg-code-contains {
     code {
       color: black;
@@ -142,24 +145,23 @@ body {// just giving everything an extra level of specificity so it can override
   }
 
   .needsrefactor:before {
-      color: #a4799d !important;
+    color: #a4799d !important;
   }
 }
 
 .sg-breakpoints {
+  // scss-lint:disable SelectorDepth
   .breakpoints {
-    >li {
+    > li {
       position: absolute;
-      border-left: solid 3px hsl(0, 0%, 35%);
       height: 100%;
-      >.label {
+      border-left: solid 3px hsl(0, 0%, 35%);
+      > .label {
         @include transform(rotate(90deg));
         @include transform-origin(bottom, left);
         display: block;
-//        position: absolute;
-//        bottom: 20px;
-        background: hsl(0, 0%, 35%);
         padding: 3px;
+        background: hsl(0, 0%, 35%);
         color: white;
       }
       &:hover {
@@ -169,12 +171,12 @@ body {// just giving everything an extra level of specificity so it can override
   }
   .device_widths {
     padding-top: 20px;
-    >li {
-      border-bottom: solid 3px hsl(0, 0%, 80%);
-      text-align: right;
+    > li {
       margin-bottom: 15px;
       padding-right: 15px;
       border-right: solid 3px hsl(0, 0%, 80%);
+      border-bottom: solid 3px hsl(0, 0%, 80%);
+      text-align: right;
     }
   }
 }
@@ -183,6 +185,7 @@ body {// just giving everything an extra level of specificity so it can override
   min-height: 60px;
   cursor: pointer;
 }
+
 .animate-fade {
   @include animation-opacity();
   opacity: 1;
@@ -190,6 +193,7 @@ body {// just giving everything an extra level of specificity so it can override
     opacity: 0;
   }
 }
+
 .animate-min-height {
   @include animation-min-height();
   min-height: 60px;
@@ -197,23 +201,26 @@ body {// just giving everything an extra level of specificity so it can override
     min-height: 180px;
   }
 }
+
 .animate-background-color {
   @include animation-background-color();
   &:hover {
     background-color: color(black);
   }
 }
+
 .animate-text-color {
   @include animation-text-color();
   &:hover {
     color: $color--error;
   }
 }
+
 .animate-all {
   @include animation-all();
   &:hover {
-    color: $color--error;
     background: color(black);
+    color: $color--error;
   }
 }
 
@@ -222,15 +229,16 @@ pre {
 }
 
 // Mess with patterns when laid out on the big view all page
-.site-header{
+.site-header {
   .sg-pattern & {
     position: relative;
   }
 }
+
 .sg-pattern-body {
+  // scss-lint:disable VendorPrefixes
   -webkit-transform: translateZ(0); // fixed position elements will be contrained to this, so patterns don't go to the top of the all patterns list ~ http://stackoverflow.com/a/15885486
 }
-
 
 // UN 05-icons
 .sg-un-icons {

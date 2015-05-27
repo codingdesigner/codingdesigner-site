@@ -5,14 +5,15 @@
 
 .pl-typesizes {
   thead {
+    border-bottom: 2px solid black;
     font-weight: bold;
     text-transform: uppercase;
-    border-bottom: 2px solid black;
   }
-  th, td {
+  th,
+  td {
+    line-height: 1.5em;
     text-align: left;
     white-space: nowrap;
-    line-height: 1.5em;
     &:first-child {
       padding-right: 1rem;
     }

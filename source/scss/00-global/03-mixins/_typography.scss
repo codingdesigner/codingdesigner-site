@@ -10,10 +10,12 @@
 //  $root-px
 //
 
+// scss-lint:disable DuplicateProperty
 @mixin fontsize-rem($px, $root-px: $root-typesize) {
   font-size: $px;
   font-size: #{$px / $root-px}rem;
 }
+// scss-lint:enable DuplicateProperty
 
 // Mixin - Margin-bottom rem
 // ========================================================================== */
@@ -23,10 +25,12 @@
 //  $root-px
 //
 
+// scss-lint:disable DuplicateProperty
 @mixin margin-bottom-rem($px, $root-px: $root-typesize) {
   margin-bottom: $px;
   margin-bottom: #{$px / $root-px}rem;
 }
+// scss-lint:enable DuplicateProperty
 
 // Others
 // ========================================================================== */

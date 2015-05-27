@@ -5,11 +5,11 @@
 
 .pl-meta {
 //  @include fontsize-rem($typesize--12px);
+  margin: 0.5rem 1rem;
   border-top: 1px solid color(gray);
   font-family: $font-body;
-  font-weight: normal;
-  margin: 0.5rem 1rem;
   font-size: $base-font-size;
+  font-weight: normal;
   li {
     padding: 0.5rem;
     &:nth-of-type(odd) {

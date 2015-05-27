@@ -15,34 +15,26 @@
   }
 }
 
-
 @mixin padding-sides($side: both, $amount: 0.5rem) {
-  padding: {
-    @if $side == left {
-      left: $amount;
-    }
-    @else if $side == right {
-      right: $amount;
-    }
-    @else {
-      left: $amount;
-      right: $amount;
-    }
+  @if $side == left {
+    padding-left: $amount;
+  } @else if $side == right {
+    padding-right: $amount;
+  } @else {
+    padding-right: $amount;
+    padding-left: $amount;
   }
 }
 
 @mixin margin-sides($side: both, $amount: 0.5rem) {
-  margin: {
-    @if $side == left {
-      left: $amount;
-    }
-    @else if $side == right {
-      right: $amount;
-    }
-    @else {
-      left: $amount;
-      right: $amount;
-    }
+  // scss-lint:disable TrailingSemicolon
+  @if $side == left {
+    margin-left: $amount;
+  } @else if $side == right {
+    margin-right: $amount;
+  } @else {
+    margin-right: $amount;
+    margin-left: $amount;
   }
 }
 

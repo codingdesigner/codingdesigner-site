@@ -1,4 +1,5 @@
 //////////////////////////////
+// scss-lint:disable VendorPrefixes
 @mixin animate($name) {
   @-webkit-keyframes #{$name} { @content; }
   @-moz-keyframes #{$name} { @content; }

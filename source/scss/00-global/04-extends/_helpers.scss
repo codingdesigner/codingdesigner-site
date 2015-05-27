@@ -11,26 +11,27 @@
 
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
 %visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 // Extends the .visuallyhidden class to allow the element to be focusable
 // when navigated to via the keyboard: h5bp.com/p
 %visuallyhidden--focusable {
-  &:active, &:focus {
-    clip: auto;
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
     height: auto;
     margin: 0;
     overflow: visible;
-    position: static;
-    width: auto;
+    clip: auto;
   }
 }
 
@@ -62,6 +63,6 @@
 
 // Basic styles for almost all pseudo
 %pseudo-base {
-  content: "";
   display: block;
+  content: '';
 }

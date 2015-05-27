@@ -18,7 +18,7 @@ $default-transition-function: ease-in-out;
 //
 // use sprites like this:
 // @include sprites-sprite(
-//   $spritename: name of image in images/sprites without the .png suffix: "thingy",
+//   $spritename: name of image in images/sprites without the .png suffix: 'thingy',
 //   [$dimensions: include dimensions in output?]: true/false,
 //   [$offset-x: offset from left of sprite image]: 10px,
 //   [$offset-y: offset from top of sprite image]: 10px
@@ -41,16 +41,16 @@ $sprites-sprite-dimensions: true;
 //$sprites-down-arrow-position: 100%; // set specific sprite to right side of spritesheet
 //$sprites-search-position: 100%; // example
 //$sprites-search_hover-position: 100%; // example
-//$sprites-country_chooser-position: 100%; // "for country_chooser.png, move it to right side of spriteesheet"
+//$sprites-country_chooser-position: 100%; // 'for country_chooser.png, move it to right side of spriteesheet'
 //$sprites-country_chooser_hover-position: 100%;
 
 // Used for various compass 03-mixins
 $browser-minimum-versions: (
-  "ie": null,
-  "android": "4",
-  "chrome": "31",
-  "safari": "5",
-  "firefox": "25",
-  "ios-safari": "6.0-6.1",
-  "android-chrome": "0"
+  'ie': null,
+  'android': '4',
+  'chrome': '31',
+  'safari': '5',
+  'firefox': '25',
+  'ios-safari': '6.0-6.1',
+  'android-chrome': '0'
 );

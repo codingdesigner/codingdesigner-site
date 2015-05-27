@@ -178,3 +178,7 @@ linters:
 
   Compass::*:
     enabled: true
+    ignore:
+     - 'inline-block'
+     - 'box-sizing'
+     - 'opacity'
