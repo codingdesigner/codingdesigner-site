@@ -1,48 +1,79 @@
 {
   "pl_colors": [
     {
-      "name": "$color--red",
-      "value": "red"
+      "name": "color(blue, dark)",
+      "value": "rgb(0, 52, 121)",
+      "class": "pl-blue-dark"
     },
     {
-      "name": "$color--orange",
-      "value": "orange"
+      "name": "color(blue, light)",
+      "value": "rgb(0, 160, 223)",
+      "class": "pl-blue-light"
     },
     {
-      "name": "$color--yellow",
-      "value": "yellow"
+      "name": "color(blue)",
+      "value": "rgb(28, 117, 188)",
+      "class": "pl-blue-base"
     },
     {
-      "name": "$color--green",
-      "value": "green"
+      "name": "color(red)",
+      "value": "rgb(243, 6, 23)",
+      "class": "pl-red-base"
     },
     {
-      "name": "$color--blue",
-      "value": "blue"
+      "name": "color(gray)",
+      "value": "rgb(130, 130, 130)",
+      "class": "pl-gray-base"
     },
     {
-      "name": "$color--indigo",
-      "value": "indigo"
+      "name": "color(gray, dark)",
+      "value": "rgb(78, 80, 84)",
+      "class": "pl-gray-dark"
     },
     {
-      "name": "$color--violet",
-      "value": "violet"
+      "name": "color(green)",
+      "value": "rgb(90, 135, 57)",
+      "class": "pl-green-base"
     },
     {
-      "name": "$color--white",
-      "value": "white"
+      "name": "color(green, light)",
+      "value": "rgb(133, 187, 61)",
+      "class": "pl-green-light"
     },
     {
-      "name": "$color--gray",
-      "value": "gray"
+      "name": "color(red, dark)",
+      "value": "rgb(99, 50, 63)",
+      "class": "pl-red-dark"
     },
     {
-      "name": "$color--black",
-      "value": "black"
+      "name": "color(purple)",
+      "value": "rgb(92, 49, 131)",
+      "class": "pl-purple-base"
     },
     {
-      "name": "$color--transparent--white",
-      "value": "hsla(0, 0%, 100%, 0)"
+      "name": "color(orange)",
+      "value": "rgb(203, 113, 19)",
+      "class": "pl-orange-base"
+    },
+    {
+      "name": "color(orange, light)",
+      "value": "rgb(225, 173, 64)",
+      "class": "pl-orange-light"
+    },
+    {
+      "name": "color(yellow)",
+      "value": "rgb(231, 230, 47)",
+      "class": "pl-yellow-base"
+    },
+    {
+      "name": "color(white)",
+      "value": "rgb(255, 255, 255)",
+      "class": "pl-white-base"
+    },
+    {
+      "name": "color(black)",
+      "value": "rgb(0, 0, 0)",
+      "class": "pl-black-base"
     }
   ]
 }

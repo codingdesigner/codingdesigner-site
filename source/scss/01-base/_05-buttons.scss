@@ -16,10 +16,10 @@
   min-height: 40px;
   line-height: 1.2;
   border-style: solid;
-  border-color: $color--white;
+  border-color: color(white);
   border-width: 0; // need `.btn--border` or `.btn--clear-bg` to invoke border; other classes determine color
   display: inline-block;
-  background-color: $color--black;
+  background-color: color(black);
   text-transform: uppercase;
   cursor: pointer;
   &:hover {

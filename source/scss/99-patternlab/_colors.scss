@@ -1,3 +1,15 @@
+@mixin pl-bg-colors() {
+  @each $palette, $items in $palettes {
+    @each $name, $value in $items {
+      .pl-#{$palette}-#{$name} {
+        background-color: #{$value};
+      }
+    }
+  }
+}
+
+@include pl-bg-colors();
+
 %sg-colors--primary {
   outline: {
     width: 2px;

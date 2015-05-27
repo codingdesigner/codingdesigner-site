@@ -48,14 +48,14 @@ module.exports = function (grunt, options) {
         open: getOpenConfig()
       }
     },
-    pattern_lab_component_builder__colors: {
-      options: {
-        'regex': "^\\$color--.*",
-        'allow_var_values': false
-      },
-      src: 'source/scss/00-global/02-variables/_colors.scss',
-      dest: 'source/_patterns/00-atoms/01-global/00-colors.json'
-    },
+    //pattern_lab_component_builder__colors: {
+    //  options: {
+    //    'regex': "^\\$color--.*",
+    //    'allow_var_values': false
+    //  },
+    //  src: 'source/scss/00-global/02-variables/_colors.scss',
+    //  dest: 'source/_patterns/00-atoms/01-global/00-colors.json'
+    //},
     //pattern_lab_component_builder__fonts: {
     //  options: {
     //    'regex': "^\\$type.*"

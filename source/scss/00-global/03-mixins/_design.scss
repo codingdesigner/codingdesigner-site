@@ -11,15 +11,19 @@
 }
 
 @mixin try-colors() {
-  @each $color-var, $color-val in $color-map {
-    /* color: #{$color-val}; */
-    /* background-color: #{$color-val}; */
+  @each $palette, $items in $palettes {
+    @each $name, $value in $items {
+      /* color: #{$value}; */
+      /* background-color: #{$value}; */
+    }
   }
 }
 
 @mixin try-borders() {
-  @each $color-var, $color-val in $color-map {
-    /* border: 1px solid #{$color-val}; */
+  @each $palette, $items in $palettes {
+    @each $name, $value in $items {
+      /* border: 1px solid #{$value}; */
+    }
   }
 }
 

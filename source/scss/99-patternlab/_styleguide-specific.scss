@@ -200,7 +200,7 @@ body {// just giving everything an extra level of specificity so it can override
 .animate-background-color {
   @include animation-background-color();
   &:hover {
-    background-color: $color--black;
+    background-color: color(black);
   }
 }
 .animate-text-color {
@@ -213,7 +213,7 @@ body {// just giving everything an extra level of specificity so it can override
   @include animation-all();
   &:hover {
     color: $color--error;
-    background: $color--black;
+    background: color(black);
   }
 }
 
