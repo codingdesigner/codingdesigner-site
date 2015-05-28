@@ -6,58 +6,34 @@
   font-size: 2em;
 }
 
-.pl-font-surveyor {
-  font-family: font(font--surveyor);
+.pl-font-karbon-regular {
+  font-family: font(font--karbon);
 }
 
-.pl-font-surveyor-italic {
-  font-family: font(font--surveyor);
+.pl-font-karbon-regular-italic {
+  font-family: font(font--karbon);
   font-style: italic;
 }
 
-.pl-font-surveyor-bold {
-  font-family: font(font--surveyor);
-  font-weight: bold;
+.pl-font-karbon-medium {
+  font-family: font(font--karbon);
+  font-weight: 600;
 }
 
-.pl-font-surveyor-bold-italic {
-  font-family: font(font--surveyor);
-  font-style: italic;
-  font-weight: bold;
-}
-
-.pl-font-whitney {
-  font-family: font(font--whitney);
-}
-
-.pl-font-whitney-italic {
-  font-family: font(font--whitney);
+.pl-font-karbon-medium-italic {
+  font-family: font(font--karbon);
+  font-weight: 600;
   font-style: italic;
 }
 
-.pl-font-whitney-bold {
-  font-family: font(font--whitney);
-  font-weight: bold;
+
+.pl-font-karbon-semibold {
+  font-family: font(font--karbon);
+  font-weight: 700;
 }
 
-.pl-font-whitney-bold-italic {
-  font-family: font(font--whitney);
+.pl-font-karbon-semibold-italic {
+  font-family: font(font--karbon);
+  font-weight: 700;
   font-style: italic;
-  font-weight: bold;
-}
-
-.pl-font-landmark {
-  font-family: font(font--landmark);
-}
-
-.pl-font-landmark-inline {
-  font-family: font(font--landmark-inline);
-}
-
-.pl-font-landmark-shadow {
-  font-family: font(font--landmark-shadow);
-}
-
-.pl-font-landmark-dimensional {
-  font-family: font(font--landmark-dimensional);
 }

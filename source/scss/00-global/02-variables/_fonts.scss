@@ -14,20 +14,48 @@
 // TradeGothicLTStdBold for the bold variant.
 //
 
-//$fonts: (
-//  rw-icomoon: (
-//    font-name: 'rw-icomoon',
-//    font-folder: 'rw-icomoon',
-//    font-filename: 'rw-icomoon',
-//    font-weight: 'normal',
-//    font-style: 'normal'
-//  ),
-//  humanitarian-icons: (
-//    font-name: 'humanitarian_icons',
-//    font-folder: 'humanitarian-icons',
-//    font-filename: 'humanitarian_icons',
-//    font-weight: 'normal',
-//    font-style: 'normal'
-//  )
-//);
+$fonts: (
+  karbon-regular: (
+    font-name: 'KarbonWeb',
+    font-folder: 'KarbonWeb-Regular',
+    font-filename: 'KarbonWeb-Regular',
+    font-weight: normal,
+    font-style: normal
+  ),
+  karbon-regular-italic: (
+    font-name: 'KarbonWeb',
+    font-folder: 'KarbonWeb-RegularItalic',
+    font-filename: 'KarbonWeb-RegularItalic',
+    font-weight: normal,
+    font-style: italic
+  ),
+  karbon-medium: (
+    font-name: 'KarbonWeb',
+    font-folder: 'KarbonWeb-Medium',
+    font-filename: 'KarbonWeb-Medium',
+    font-weight: 600,
+    font-style: normal
+  ),
+  karbon-medium-italic: (
+    font-name: 'KarbonWeb',
+    font-folder: 'KarbonWeb-MediumItalic',
+    font-filename: 'KarbonWeb-MediumItalic',
+    font-weight: 600,
+    font-style: italic
+  ),
+  karbon-semibold: (
+    font-name: 'KarbonWeb',
+    font-folder: 'KarbonWeb-Semibold',
+    font-filename: 'KarbonWeb-Semibold',
+    font-weight: 700,
+    font-style: normal
+  ),
+  karbon-semibold-italic: (
+    font-name: 'KarbonWeb',
+    font-folder: 'KarbonWeb-SemiboldItalic',
+    font-filename: 'KarbonWeb-SemiboldItalic',
+    font-weight: 700,
+    font-style: italic
+  )
+);
 

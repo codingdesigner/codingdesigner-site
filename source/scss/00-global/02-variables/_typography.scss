@@ -10,16 +10,16 @@
 // to actual usable font family strings.
 //
 
-$font--sans: sans-serif;
-$font--serif: serif;
+$font--karbon: 'KarbonWeb', Verdana, Helvetica, sans-serif;
+$font--serif: georgia, serif;
 
 $font-map: (
-  font--sans: $font--sans,
+  font--karbon: $font--karbon,
   font--serif: $font--serif
 );
 
-$font-body: font(font--sans);
-$font-headline: font(font--serif);
+$font-body: font(font--karbon);
+$font-headline: font(font--karbon);
 
 // Font size and line-height
 $root-typesize   : 20px;
