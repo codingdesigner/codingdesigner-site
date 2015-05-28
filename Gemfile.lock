@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (5.2.0)
+      execjs
+      json
+    bootstrap-sass (3.3.4.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     breakpoint (2.5.0)
       sass (~> 3.3)
       sassy-maps (< 1.0.0)
@@ -19,7 +25,12 @@ GEM
       sass (>= 3.2, < 3.5)
     compass-normalize (1.4.3)
       compass (>= 0.12.0)
+    compass_radix (3.1.5)
+      bootstrap-sass (~> 3.2)
+      compass (~> 1.0)
+    execjs (2.5.2)
     ffi (1.9.6)
+    json (1.8.2)
     modular-scale (2.0.5)
       compass (>= 0.12.0)
     multi_json (1.10.1)
@@ -48,10 +59,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (>= 3.0.3.0)
   breakpoint (~> 2.5.x)
   compass (~> 1.0.x)
   compass-import-once
   compass-normalize (~> 1.4.3)
+  compass_radix (>= 3.0.1)
   modular-scale (~> 2.0.x)
   oily_png (~> 1.1.1)
   sass (~> 3.4.x)

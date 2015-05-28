@@ -22,11 +22,11 @@ $font-body: font(font--karbon);
 $font-headline: font(font--karbon);
 
 // Font size and line-height
-$root-typesize   : 20px;
+$root-typesize   : 18px;
 $base-font-size  : $root-typesize;
 $base-line-px    : $root-typesize * 1.5;
 $base-line-em    : em($base-line-px);
-$base-line-height: unitless-convert($base-line-em);
+$base-line-height: $base-line-px; // unitless-convert($base-line-em);
 
 // Sassy Modular-scale
 $ms-base: $root-typesize;

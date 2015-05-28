@@ -3,5 +3,4 @@ description = Design Files for PDMS
 core = 7.x
 package = PDMS
 
-stylesheets[all][] = public/css/pdms.css
 scripts[] = public/js/modernizr-custom.js

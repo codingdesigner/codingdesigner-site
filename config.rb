@@ -7,6 +7,8 @@ require 'sass-globbing'
 require 'oily_png'
 require 'compass'
 require 'compass-import-once'
+require 'bootstrap-sass';
+require "compass_radix";
 
 # Set this to the root of your project when deployed:
 http_path = ""
