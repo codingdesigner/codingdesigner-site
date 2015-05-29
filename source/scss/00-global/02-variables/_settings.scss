@@ -46,11 +46,11 @@ $sprites-sprite-dimensions: true;
 
 // Used for various compass 03-mixins
 $browser-minimum-versions: (
-  'ie': null,
+  'ie': '8',
   'android': '4',
   'chrome': '31',
   'safari': '5',
-  'firefox': '25',
+  'firefox': '31',
   'ios-safari': '6.0-6.1',
-  'android-chrome': '0'
+  'android-chrome': '42'
 );

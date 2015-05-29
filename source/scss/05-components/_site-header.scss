@@ -1,0 +1,43 @@
+/* HEADER */
+
+.site-wide-header {
+  padding: 2em 0;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  @include breakpoint($bp-header-one-line) {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  &:before,
+  &:after {
+    display: none;
+  }
+}
+
+.site-wide-header--logo {
+  @include breakpoint($bp-header-one-line) {
+    margin-right: 0.5em;
+    .no-flexbox & {
+      float: left;
+    }
+  }
+}
+
+.site-wide-header--title {
+  font-size: ms(1);
+  @include try-ms();
+  font-weight: 600;
+  color: color(blue, light);
+  @include breakpoint($bp-header-one-line) {
+    margin-left: 0.5em;
+    .no-flexbox & {
+      float: right;
+    }
+  }
+}
