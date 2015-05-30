@@ -1,0 +1,44 @@
+/* FOOTER */
+body #footer {
+  border-top: 1em solid color(blue, dark);
+  padding: 2em 0;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: white;
+  .container {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    @include breakpoint($bp-header-one-line) {
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.powered-by-atrium {
+  padding: 5px 10px;
+  span {
+    //    @extend %visuallyhidden;
+    display: block;
+    font-style: italic;
+    color: color(gray);
+  }
+  .oa_powered_link {
+    display: block;
+    background: url("../images/openatrium_logo.png") no-repeat 0 0;
+    width: 299px;
+    height: 90px;
+    opacity: 0.8;
+  }
+}

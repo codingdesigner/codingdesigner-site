@@ -16,60 +16,20 @@
 //  color: inherit;
 //}
 
+@mixin jpc-gradient($grad: darkblue-blue) {
+  @if $grad == darkblue-blue {
+    background-color: color(blue);
+    background-image: linear-gradient(to right, color(blue, dark), color(blue));
+  }
+  @else if $grad == lightorange-yellow {
+    background-color: color(orange);
+    background-image: linear-gradient(to right, color(orange, light), color(yellow));
+  }
+}
+
 
 #page-title {
+  @include jpc-gradient();
   color: color(white);
-  background-color: color(blue);
-  background: linear-gradient(to right, color(blue, dark), color(blue));
-}
-
-
-
-/* FOOTER */
-#footer {
-  background-color: #003853;
-  > .container {
-    min-height: 100px;
-    padding: 18px 0;
-    box-sizing: "border-box";
-  }
-}
-.oa_powered_link {
-  display: inline-block;
-  background: url("../images/openatrium-powered.png") no-repeat 70px 10px;
-  width: 231px;
-  height: 53px;
-  padding: 5px 10px;
-}
-
-/*system*/
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-@media (min-width: 992px) {
-  .col-md-12, .calendar-calendar, .view .row > .list-group {
-    width: 100%;
-  }
-}
-.container .container-fluid {
-  width: auto;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.pull-right {
-  float: right !important;
-}
-.pull-right {
-  float: right;
-}
-.panel-pane {
-  position: relative;
 }
 
