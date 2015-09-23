@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Pattern Lab - Type-sizes
+   ========================================================================== */
+
+
+.pl-typesizes {
+  thead {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  th,
+  td {
+    line-height: 1.5em;
+    text-align: left;
+    white-space: nowrap;
+    &:first-child {
+      padding-right: 1rem;
+    }
+  }
+}

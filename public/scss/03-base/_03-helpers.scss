@@ -1,0 +1,28 @@
+// ==========================================================================
+// Global Extends - Helpers
+// ========================================================================== */
+
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden {
+  @extend %hidden;
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyhidden {
+  @extend %visuallyhidden;
+  &.focusable {
+    @extend %visuallyhidden--focusable;
+  }
+}
+
+// Hide visually and from screenreaders, but maintain 02-layout
+.invisible {
+  @extend %invisible;
+}
+
+// Clearfix: contain floats
+// ========================================================================== */
+.clearfix {
+  @extend %clearfix;
+}

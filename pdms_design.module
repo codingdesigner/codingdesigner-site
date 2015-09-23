@@ -4,5 +4,5 @@
  * Implements hook_init().
  */
 function pdms_design_init() {
-  drupal_add_css(drupal_get_path('module', 'pdms_design') . '/public/css/pdms.css', array('weight' => -50, 'group' => CSS_THEME));
+  drupal_add_css(drupal_get_path('module', 'pdms_design') . '/source/css/pdms.css', array('weight' => -50, 'group' => CSS_THEME));
 }

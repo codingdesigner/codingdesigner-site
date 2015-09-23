@@ -1,0 +1,68 @@
+//
+// Here's where the magic happens.
+// All styles that are imported here will be compiled into css/style.css
+//
+
+// scss-lint:disable Indentation
+@import
+  // gems
+'compass',
+'compass/support',
+'toolkit',
+'singularitygs',
+'modular-scale',
+  // 'normalize',
+
+
+  // Global Settings
+'00-global/01-functions/**/*',
+'00-global/02-variables/**/*',
+'00-global/03-mixins/**/*',
+'00-global/04-extends/**/*',
+  //  '00-global/05-icons/icons-mixins', // vector sprites
+
+  // fonts
+'01-assets/**/*',
+
+  // Structure from Radix
+'02-oa-radix/global/variable',
+'compass_radix',
+  //'02-oa-radix/global/helper',
+  //'02-oa-radix/global/font',
+  //'02-oa-radix/global/mixin',
+  //'02-oa-radix/layout/layout',
+  //'02-oa-radix/layout/auto_widths',
+  //'02-oa-radix/layout/media_query_pulls',
+  //'02-oa-radix/base/page',
+  //'02-oa-radix/base/panel',
+  //'02-oa-radix/base/node',
+  //'02-oa-radix/base/view',
+  //'02-oa-radix/components/sub-menu',
+  //'02-oa-radix/components/structure',
+  //'02-oa-radix/components/menu',
+  //'02-oa-radix/components/form',
+  //'02-oa-radix/components/select2',
+  //'02-oa-radix/components/comment',
+  //'02-oa-radix/components/user',
+  //'02-oa-radix/components/navbar',
+  //'02-oa-radix/components/add-content-modal',
+  //'02-oa-radix/components/oa-pulls',
+  //'02-oa-radix/components/notifications',
+  //'02-oa-radix/components/table',
+  //'02-oa-radix/components/apps',
+
+  // Global Styles
+'breakpoint',
+  //    '03-base/**/*',
+'03-base/02-base',
+'03-base/04-headings',
+'04-layout/**/*',
+
+  //  Components
+    '05-components/**/*',
+
+  //  PL UI
+  //'99-patternlab/*',
+
+  // temporary styles
+'shame';

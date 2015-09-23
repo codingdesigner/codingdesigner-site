@@ -1,0 +1,21 @@
+&lt;h6&gt;Scss lint Report&lt;/h6&gt;
+&lt;p&gt;To rebuild this report, run `grunt reportSCSS`&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ran: {{dateRan}}&lt;/li&gt;
+&lt;/ul&gt;
+{{#report}}
+  &lt;div class=&quot;file&quot;&gt;
+    &lt;h5&gt;&lt;strong&gt; {{file}} &lt;/strong&gt;&lt;/h5&gt;
+    {{#errors}}
+      &lt;h6&gt;{{linter}}&lt;/h6&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Severity: {{severity}}&lt;/li&gt;
+        &lt;li&gt;Line: {{line}}&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;{{reason}}&lt;/p&gt;
+
+    {{/errors}}
+
+  &lt;/div&gt;
+  &lt;!-- /.file --&gt;
+{{/report}}

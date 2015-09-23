@@ -1,0 +1,824 @@
+<!-- CSS FROM DRUPAL -->
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/modules/system/system.base.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/system/system.messages.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/system/system.theme.css?npms3h");
+</style>
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/vendor/jqueryui/jquery-ui-1.10.0.custom.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.tabs.min.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/libraries/chosen/chosen.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/chosen/css/chosen-drupal.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/libraries/select2/select2.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/select2widget/css/select2widget.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/media/css/media.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.menu.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.base.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.theme.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.icons.css?npms3h");
+</style>
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/modules/aggregator/aggregator.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/comment/comment.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/contextual_tabs/contextual_tabs.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/date/date_api/date.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/date/date_popup/themes/datepicker.1.7.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/date/date_repeat_field/date_repeat_field.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/field/theme/field.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/node/node.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_appearance/oa_appearance.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/css/oa_core.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_events/oa-events.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_media/oa_media.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_related/oa_related.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_river/oa_river.css?npms3h");
+</style>
+<style type="text/css" media="screen">
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_subspaces/oa-subspaces.css?npms3h");
+</style>
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_teams/oa_teams.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_toolbar/css/oa_toolbar.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_widgets/oa_widgets.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_wiki/oa_wiki.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_worktracker/oa_worktracker.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_worktracker/modules/oa_worktracker_duedate/oa_worktracker_duedate.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_admin/panopoly-admin-navbar.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_core/css/panopoly-dropbutton.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_magic/css/panopoly-magic.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_theme/css/panopoly-featured.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_theme/css/panopoly-accordian.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_theme/css/panopoly-layouts.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_widgets/panopoly-widgets.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_wysiwyg/panopoly-wysiwyg.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/poll/poll.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/radix_layouts/radix_layouts.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/search/search.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/modules/user/user.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/views/css/views.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/caption_filter/caption-filter.css?npms3h");
+</style>
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/libraries/colorbox/example1/colorbox.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/ctools/css/ctools.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/dhtml_menu/dhtml_menu.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_diff/oa_diff.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/css/panels.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/ctools/css/modal.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/css/panels_dnd.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/css/panels_admin.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/panels_ipe/css/panels_ipe.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/flag/theme/flag.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panelizer/css/panelizer-ipe.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_comment/oa_comment.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/plugins/layouts/flexible/flexible.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/sites/all/modules/print/print_ui/css/print_ui.theme.css?npms3h");
+</style>
+<style type="text/css" media="all">
+  <!--/*--><![CDATA[/*><!--*/
+  .panels-flexible-new .panels-flexible-region {
+    padding: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-region-inside {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .panels-flexible-new .panels-flexible-region-inside-first {
+    padding-left: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-region-inside-last {
+    padding-right: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-column {
+    padding: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-column-inside {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .panels-flexible-new .panels-flexible-column-inside-first {
+    padding-left: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-column-inside-last {
+    padding-right: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-row {
+    padding: 0 0 0.5em 0;
+    margin: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-row-last {
+    padding-bottom: 0;
+  }
+
+  .panels-flexible-column-new-main {
+    float: left;
+    width: 99.0000%;
+  }
+
+  .panels-flexible-new-inside {
+    padding-right: 0px;
+  }
+
+  .panels-flexible-new {
+    width: auto;
+  }
+
+  .panels-flexible-region-new-center {
+    float: left;
+    width: 99.0000%;
+  }
+
+  .panels-flexible-row-new-main-row-inside {
+    padding-right: 0px;
+  }
+
+
+  /*]]>*/-->
+</style>
+<link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.6.1/css/bootstrap-tour.min.css" media="all" />
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/sites/all/modules/forward/forward.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/bootstrap_tour/css/bootstrap-tour.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_tour/oa_tour.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_favorites/oa_favorites.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_responsive_regions/assets/stylesheets/oa_responsive_regions.css?npms3h");
+</style>
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/radix-livestyle.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/screen.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/font-awesome.min.css?npms3h");
+</style>
+<style type="text/css" media="print">
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/print.css?npms3h");
+</style>
+
+<!--[if lte IE 9]>
+<style type="text/css" media="all">
+@import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/ie.css?npms3h");
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+<style type="text/css" media="all">
+@import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/radix-ie7.css?npms3h");
+</style>
+<![endif]-->
+
+<!--[if IE 8]>
+<style type="text/css" media="all">
+@import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/radix-ie8.css?npms3h");
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+<style type="text/css" media="all">
+@import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/ie7.css?npms3h");
+</style>
+<![endif]-->
+
+<!--[if IE 8]>
+<style type="text/css" media="all">
+@import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/ie8.css?npms3h");
+</style>
+<![endif]-->
+<style type="text/css" media="all">
+  @import url("http://jj.openatrium.p2devcloud.com/sites/all/modules/pdms_design/source/css/pdms.css?npms3h");
+  @import url("http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_images/panopoly-images.css?npms3h");
+</style>
+<!-- CSS FROM DRUPAL -->
+
+<div id="skip-link">
+  <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<div class="region region-page-top">
+  <nav id="navbar-administration" class="drupal-navbar overlay-displace-top navbar-processed" role="navigation"><div id="navbar-bar" class="navbar-bar clearfix" style="display: none;"><h2 class="element-invisible">Navbar items</h2><div class="navbar-tab" aria-pressed="false"><a href="/" title="Home page" class="navbar-icon navbar-icon-home active">Home</a></div><div class="navbar-tab" aria-pressed="false"><a href="/admin" title="Admin menu" class="navbar-icon navbar-icon-menu navbar-tab" id="navbar-tab-navbar-tray" data-navbar-tray="navbar-tray" aria-owns="navbar-tray" role="button" aria-pressed="false">Menu</a></div><div class="navbar-tab" aria-pressed="false"><a href="/admin/config/user-interface/shortcut" title="Shortcuts" class="navbar-icon navbar-icon-shortcut navbar-tab" id="navbar-tab-navbar-tray--2" data-navbar-tray="navbar-tray--2" aria-owns="navbar-tray--2" role="button" aria-pressed="false">Shortcuts</a></div><div class="navbar-tab" aria-pressed="false"><a href="/user" title="My account" class="navbar-icon navbar-icon-user navbar-tab" id="navbar-tab-navbar-tray--3" data-navbar-tray="navbar-tray--3" aria-owns="navbar-tray--3" role="button" aria-pressed="false">Adam Fermier</a></div></div><div id="navbar-tray" data-navbar-tray="navbar-tray" aria-owned-by="navbar-tab-navbar-tray" class="navbar-tray overlay-displace-top navbar-tray-vertical" style="top: 39px;"><div class="navbar-lining clearfix"><h3 class="element-invisible">User-defined shortcuts</h3><ul class="menu"><li class="first leaf"><a href="/node/add">Add content</a></li>
+    <li class="last leaf"><a href="/admin/content">Find content</a></li>
+  </ul><a href="/admin/config/user-interface/shortcut/shortcut-set-1" class="edit-shortcuts">Edit shortcuts</a><div class="navbar-toggle-orientation"><div class="navbar-lining"></div></div><button class="navbar-icon navbar-icon-toggle-horizontal" type="button" value="horizontal">Horizontal orientation</button><h3 class="element-invisible">Administration menu</h3><div class="navbar-menu-administration"><ul class="menu navbar-menu-processed root"><li class="first leaf level-1"><div class="navbar-box"><a href="/admin/dashboard" id="navbar-link-admin-dashboard" class="navbar-icon navbar-icon-dashboard">Dashboard</a></div></li>
+    <li class="collapsed level-1"><div class="navbar-box"><a href="/admin/apps" id="navbar-link-admin-apps" class="navbar-icon navbar-icon-apps">Apps</a></div></li>
+    <li class="expanded level-1"><div class="navbar-box"><a href="/admin/content" id="navbar-link-admin-content" class="navbar-icon navbar-icon-content">Content</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Content</span></button></div><ul class="menu"><li class="first leaf level-2"><div class="navbar-box"><a href="/admin/content/comment" id="navbar-link-admin-content-comment" class="navbar-icon navbar-icon-comments">Comments</a></div></li>
+      <li class="last expanded level-2"><div class="navbar-box"><a href="/admin/content/file" id="navbar-link-admin-content-file" class="navbar-icon navbar-icon-files">Files</a></div></li>
+    </ul></li>
+    <li class="expanded level-1"><div class="navbar-box"><a href="/admin/panopoly" id="navbar-link-admin-panopoly" class="navbar-icon navbar-icon-panopoly">Panopoly</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Panopoly</span></button></div><ul class="menu"><li class="first leaf level-2"><div class="navbar-box"><a href="/admin/panopoly/layouts" id="navbar-link-admin-panopoly-layouts" class="navbar-icon navbar-icon-panopoly-layouts">Panopoly Layouts</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/panopoly/pages" id="navbar-link-admin-panopoly-pages" class="navbar-icon navbar-icon-panopoly-pages">Panopoly Pages</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/panopoly/panes" id="navbar-link-admin-panopoly-panes" class="navbar-icon navbar-icon-panopoly-panes">Panopoly Panes</a></div></li>
+      <li class="last expanded level-2"><div class="navbar-box"><a href="/admin/panopoly/settings" id="navbar-link-admin-panopoly-settings" class="navbar-icon navbar-icon-panopoly-settings">Panopoly Settings</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Panopoly Settings</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/panopoly/settings/panopoly_admin" id="navbar-link-admin-panopoly-settings-panopoly_admin" class="navbar-icon navbar-icon-panopoly-admin">Panopoly Admin</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/panopoly/settings/panopoly_core" id="navbar-link-admin-panopoly-settings-panopoly_core" class="navbar-icon navbar-icon-panopoly-core">Panopoly Core</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/panopoly/settings/panopoly_magic" id="navbar-link-admin-panopoly-settings-panopoly_magic" class="navbar-icon navbar-icon-panopoly-magic">Panopoly Magic</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/panopoly/settings/panopoly_users" id="navbar-link-admin-panopoly-settings-panopoly_users" class="navbar-icon navbar-icon-panopoly-users">Panopoly Users</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/panopoly/settings/panopoly_wysiwyg" id="navbar-link-admin-panopoly-settings-panopoly_wysiwyg" class="navbar-icon navbar-icon-panopoly-wysiwyg">Panopoly WYSIWYG</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/panopoly/settings/panopoly_widgets" id="navbar-link-admin-panopoly-settings-panopoly_widgets" class="navbar-icon navbar-icon-panopoly-widgets">Panopoly Widgets</a></div></li>
+      </ul></li>
+    </ul></li>
+    <li class="expanded level-1"><div class="navbar-box"><a href="/admin/structure" id="navbar-link-admin-structure" class="navbar-icon navbar-icon-structure">Structure</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Structure</span></button></div><ul class="menu"><li class="first expanded level-2"><div class="navbar-box"><a href="/admin/structure/block" id="navbar-link-admin-structure-block" class="navbar-icon navbar-icon-blocks">Blocks</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/command-buttons" id="navbar-link-admin-structure-command-buttons" class="navbar-icon navbar-icon-command-buttons">Command Buttons</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/types" id="navbar-link-admin-structure-types" class="navbar-icon navbar-icon-content-types">Content types</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/defaultconfig" id="navbar-link-admin-structure-defaultconfig" class="navbar-icon navbar-icon-default-config">Default config</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/extensions" id="navbar-link-admin-structure-extensions" class="navbar-icon navbar-icon-extensions">Extensions</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/features" id="navbar-link-admin-structure-features" class="navbar-icon navbar-icon-features">Features</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/feeds" id="navbar-link-admin-structure-feeds" class="navbar-icon navbar-icon-feeds-importers">Feeds importers</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/dependencies" id="navbar-link-admin-structure-dependencies" class="navbar-icon navbar-icon-field-dependencies">Field dependencies</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/fieldable-panels-panes" id="navbar-link-admin-structure-fieldable-panels-panes" class="navbar-icon navbar-icon-fieldable-panels-panes">Fieldable Panels Panes</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/file-types" id="navbar-link-admin-structure-file-types" class="navbar-icon navbar-icon-file-types">File types</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/flags" id="navbar-link-admin-structure-flags" class="navbar-icon navbar-icon-flags">Flags</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/menu" id="navbar-link-admin-structure-menu" class="navbar-icon navbar-icon-menus">Menus</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Menus</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/structure/menu/manage/main-menu" id="navbar-link-admin-structure-menu-manage-main-menu" class="navbar-icon navbar-icon-main-menu">Main menu</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/structure/menu/manage/management" id="navbar-link-admin-structure-menu-manage-management" class="navbar-icon navbar-icon-management">Management</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/structure/menu/manage/navigation" id="navbar-link-admin-structure-menu-manage-navigation" class="navbar-icon navbar-icon-navigation">Navigation</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/structure/menu/manage/user-menu" id="navbar-link-admin-structure-menu-manage-user-menu" class="navbar-icon navbar-icon-user-menu">User menu</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/messages" id="navbar-link-admin-structure-messages" class="navbar-icon navbar-icon-message-types">Message types</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/mini-panels" id="navbar-link-admin-structure-mini-panels" class="navbar-icon navbar-icon-mini-panels">Mini panels</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/node_convert_templates" id="navbar-link-admin-structure-node_convert_templates" class="navbar-icon navbar-icon-node-convert-templates">Node Convert templates</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/pages" id="navbar-link-admin-structure-pages" class="navbar-icon navbar-icon-pages">Pages</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/panels" id="navbar-link-admin-structure-panels" class="navbar-icon navbar-icon-panels">Panels</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/paragraphs" id="navbar-link-admin-structure-paragraphs" class="navbar-icon navbar-icon-paragraph-bundles">Paragraph Bundles</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/structure/sparql_registry" id="navbar-link-admin-structure-sparql_registry" class="navbar-icon navbar-icon-sparql-endpoints-registry">SPARQL Endpoints Registry</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="http://pdms4store.twhitak.transixsys.com/atrium/?q=sitemap" id="navbar-link-http:--pdms4store.twhitak.transixsys.com-atrium-?q=sitemap" class="navbar-icon navbar-icon-site-map">Site Map</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/tours" id="navbar-link-admin-structure-tours" class="navbar-icon navbar-icon-site-tours">Site Tours</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/taxonomy" id="navbar-link-admin-structure-taxonomy" class="navbar-icon navbar-icon-taxonomy">Taxonomy</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/structure/views" id="navbar-link-admin-structure-views" class="navbar-icon navbar-icon-views">Views</a></div></li>
+      <li class="last expanded level-2"><div class="navbar-box"><a href="/admin/structure/wizards" id="navbar-link-admin-structure-wizards" class="navbar-icon navbar-icon-wizards">Wizards</a></div></li>
+    </ul></li>
+    <li class="leaf level-1"><div class="navbar-box"><a href="/admin/appearance" id="navbar-link-admin-appearance" class="navbar-icon navbar-icon-appearance">Appearance</a></div></li>
+    <li class="leaf level-1"><div class="navbar-box"><a href="/admin/people" id="navbar-link-admin-people" class="navbar-icon navbar-icon-people">People</a></div></li>
+    <li class="leaf level-1"><div class="navbar-box"><a href="/admin/modules" id="navbar-link-admin-modules" class="navbar-icon navbar-icon-modules">Modules</a></div></li>
+    <li class="expanded level-1"><div class="navbar-box"><a href="/admin/config" id="navbar-link-admin-config" class="navbar-icon navbar-icon-configuration">Configuration</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Configuration</span></button></div><ul class="menu"><li class="first expanded level-2"><div class="navbar-box"><a href="/admin/config/people" id="navbar-link-admin-config-people" class="navbar-icon navbar-icon-people">People</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">People</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/people/accounts" id="navbar-link-admin-config-people-accounts" class="navbar-icon navbar-icon-account-settings">Account settings</a></div></li>
+      <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/people/cas" id="navbar-link-admin-config-people-cas" class="navbar-icon navbar-icon-cas-settings">CAS settings</a></div></li>
+      <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/people/realname" id="navbar-link-admin-config-people-realname" class="navbar-icon navbar-icon-real-name">Real name</a></div></li>
+      <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/people/user_picture_field" id="navbar-link-admin-config-people-user_picture_field" class="navbar-icon navbar-icon-user-picture-field">User picture field</a></div></li>
+      <li class="last collapsed level-3"><div class="navbar-box"><a href="/admin/config/people/ip-blocking" id="navbar-link-admin-config-people-ip-blocking" class="navbar-icon navbar-icon-ip-address-blocking">IP address blocking</a></div></li>
+    </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/system" id="navbar-link-admin-config-system" class="navbar-icon navbar-icon-system">System</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">System</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/system/site-information" id="navbar-link-admin-config-system-site-information" class="navbar-icon navbar-icon-site-information">Site information</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/statistics" id="navbar-link-admin-config-system-statistics" class="navbar-icon navbar-icon-statistics">Statistics</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/system/actions" id="navbar-link-admin-config-system-actions" class="navbar-icon navbar-icon-actions">Actions</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/apps" id="navbar-link-admin-config-system-apps" class="navbar-icon navbar-icon-apps-configuration">Apps Configuration</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/backup_migrate" id="navbar-link-admin-config-system-backup_migrate" class="navbar-icon navbar-icon-backup-and-migrate">Backup and Migrate</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/fasttoggle" id="navbar-link-admin-config-system-fasttoggle" class="navbar-icon navbar-icon-fasttoggle">Fasttoggle</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/googleanalytics" id="navbar-link-admin-config-system-googleanalytics" class="navbar-icon navbar-icon-google-analytics">Google Analytics</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/htmlmail" id="navbar-link-admin-config-system-htmlmail" class="navbar-icon navbar-icon-html-mail">HTML Mail</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/mailsystem" id="navbar-link-admin-config-system-mailsystem" class="navbar-icon navbar-icon-mail-system">Mail System</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/system/message" id="navbar-link-admin-config-system-message" class="navbar-icon navbar-icon-message-settings">Message settings</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Message settings</span></button></div><ul class="menu"><li class="first last leaf level-4"><div class="navbar-box"><a href="/admin/config/system/message/text-copy" id="navbar-link-admin-config-system-message-text-copy" class="navbar-icon navbar-icon-copy-messages-text-fields">Copy messages text fields</a></div></li>
+        </ul></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/message-subscribe" id="navbar-link-admin-config-system-message-subscribe" class="navbar-icon navbar-icon-message-subscribe-settings">Message subscribe settings</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/mimemail" id="navbar-link-admin-config-system-mimemail" class="navbar-icon navbar-icon-mime-mail">Mime Mail</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/system/tokens" id="navbar-link-admin-config-system-tokens" class="navbar-icon navbar-icon-tokens">Tokens</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/system/cron" id="navbar-link-admin-config-system-cron" class="navbar-icon navbar-icon-cron">Cron</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/content" id="navbar-link-admin-config-content" class="navbar-icon navbar-icon-content-authoring">Content authoring</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Content authoring</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/content/diff" id="navbar-link-admin-config-content-diff" class="navbar-icon navbar-icon-diff">Diff</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/content/geocoder" id="navbar-link-admin-config-content-geocoder" class="navbar-icon navbar-icon-geocoder-settings">Geocoder settings</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/content/linkit" id="navbar-link-admin-config-content-linkit" class="navbar-icon navbar-icon-linkit-profiles">Linkit Profiles</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/content/clone" id="navbar-link-admin-config-content-clone" class="navbar-icon navbar-icon-node-clone-module">Node clone module</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/content/panelizer" id="navbar-link-admin-config-content-panelizer" class="navbar-icon navbar-icon-panelizer">Panelizer</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/content/rrssb" id="navbar-link-admin-config-content-rrssb" class="navbar-icon navbar-icon-ridiculously-responsive-social-sharing-buttons">Ridiculously Responsive Social Sharing Buttons</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/content/formats" id="navbar-link-admin-config-content-formats" class="navbar-icon navbar-icon-text-formats">Text formats</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/content/wysiwyg" id="navbar-link-admin-config-content-wysiwyg" class="navbar-icon navbar-icon-wysiwyg-profiles">Wysiwyg profiles</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/content/tablefield" id="navbar-link-admin-config-content-tablefield" class="navbar-icon navbar-icon-tablefield">tablefield</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/user-interface" id="navbar-link-admin-config-user-interface" class="navbar-icon navbar-icon-user-interface">User interface</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">User interface</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/chosen" id="navbar-link-admin-config-user-interface-chosen" class="navbar-icon navbar-icon-chosen">Chosen</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/colors" id="navbar-link-admin-config-user-interface-colors" class="navbar-icon navbar-icon-colors">Colors</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/contextual-tabs" id="navbar-link-admin-config-user-interface-contextual-tabs" class="navbar-icon navbar-icon-contextual-tabs">Contextual Tabs</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/dhtml_menu" id="navbar-link-admin-config-user-interface-dhtml_menu" class="navbar-icon navbar-icon-dhtml-menu">DHTML Menu</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/forward" id="navbar-link-admin-config-user-interface-forward" class="navbar-icon navbar-icon-forward">Forward</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/fullcalendar" id="navbar-link-admin-config-user-interface-fullcalendar" class="navbar-icon navbar-icon-fullcalendar">FullCalendar</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/menu-block" id="navbar-link-admin-config-user-interface-menu-block" class="navbar-icon navbar-icon-menu-block">Menu block</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/modulefilter" id="navbar-link-admin-config-user-interface-modulefilter" class="navbar-icon navbar-icon-module-filter">Module filter</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/user-interface/print" id="navbar-link-admin-config-user-interface-print" class="navbar-icon navbar-icon-printer,-email-and-pdf-versions">Printer, email and PDF versions</a></div></li>
+        <li class="last expanded level-3"><div class="navbar-box"><a href="/admin/config/user-interface/shortcut" id="navbar-link-admin-config-user-interface-shortcut" class="navbar-icon navbar-icon-shortcuts">Shortcuts</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/date" id="navbar-link-admin-config-date" class="navbar-icon navbar-icon-date-api">Date API</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Date API</span></button></div><ul class="menu"><li class="first last leaf level-3"><div class="navbar-box"><a href="/admin/config/date/date_popup" id="navbar-link-admin-config-date-date_popup" class="navbar-icon navbar-icon-date-popup">Date Popup</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/development" id="navbar-link-admin-config-development" class="navbar-icon navbar-icon-development">Development</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Development</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/development/performance" id="navbar-link-admin-config-development-performance" class="navbar-icon navbar-icon-performance">Performance</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/development/logging" id="navbar-link-admin-config-development-logging" class="navbar-icon navbar-icon-logging-and-errors">Logging and errors</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/development/maintenance" id="navbar-link-admin-config-development-maintenance" class="navbar-icon navbar-icon-maintenance-mode">Maintenance mode</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/development/devel" id="navbar-link-admin-config-development-devel" class="navbar-icon navbar-icon-devel-settings">Devel settings</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/development/strongarm" id="navbar-link-admin-config-development-strongarm" class="navbar-icon navbar-icon-strongarm">Strongarm</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/development/jquery_update" id="navbar-link-admin-config-development-jquery_update" class="navbar-icon navbar-icon-jquery-update">jQuery update</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/media" id="navbar-link-admin-config-media" class="navbar-icon navbar-icon-media">Media</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Media</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/media/file-system" id="navbar-link-admin-config-media-file-system" class="navbar-icon navbar-icon-file-system">File system</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/media/breakpoints" id="navbar-link-admin-config-media-breakpoints" class="navbar-icon navbar-icon-breakpoints">Breakpoints</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/media/colorbox" id="navbar-link-admin-config-media-colorbox" class="navbar-icon navbar-icon-colorbox">Colorbox</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/media/file-settings" id="navbar-link-admin-config-media-file-settings" class="navbar-icon navbar-icon-file-settings">File settings</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/media/image-styles" id="navbar-link-admin-config-media-image-styles" class="navbar-icon navbar-icon-image-styles">Image styles</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/media/manualcrop" id="navbar-link-admin-config-media-manualcrop" class="navbar-icon navbar-icon-manual-crop">Manual Crop</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/media/wysiwyg-view-mode" id="navbar-link-admin-config-media-wysiwyg-view-mode" class="navbar-icon navbar-icon-media-wysiwyg-view-mode">Media WYSIWYG View Mode</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/media/browser" id="navbar-link-admin-config-media-browser" class="navbar-icon navbar-icon-media-browser-settings">Media browser settings</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/media/image-toolkit" id="navbar-link-admin-config-media-image-toolkit" class="navbar-icon navbar-icon-image-toolkit">Image toolkit</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/search" id="navbar-link-admin-config-search" class="navbar-icon navbar-icon-search-and-metadata">Search and metadata</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Search and metadata</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/search/settings" id="navbar-link-admin-config-search-settings" class="navbar-icon navbar-icon-search-settings">Search settings</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/search/path" id="navbar-link-admin-config-search-path" class="navbar-icon navbar-icon-url-aliases">URL aliases</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/search/search_api" id="navbar-link-admin-config-search-search_api" class="navbar-icon navbar-icon-search-api">Search API</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/search/sitemap" id="navbar-link-admin-config-search-sitemap" class="navbar-icon navbar-icon-site-map">Site map</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/search/clean-urls" id="navbar-link-admin-config-search-clean-urls" class="navbar-icon navbar-icon-clean-urls">Clean URLs</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/group" id="navbar-link-admin-config-group" class="navbar-icon navbar-icon-organic-groups">Organic groups</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Organic groups</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/group/variable" id="navbar-link-admin-config-group-variable" class="navbar-icon navbar-icon-og-variables">OG Variables</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/group/context" id="navbar-link-admin-config-group-context" class="navbar-icon navbar-icon-og-context">OG context</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/group/fields" id="navbar-link-admin-config-group-fields" class="navbar-icon navbar-icon-og-field-settings">OG field settings</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/group/group-membership" id="navbar-link-admin-config-group-group-membership" class="navbar-icon navbar-icon-og-membership-types">OG membership types</a></div></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/group/permissions" id="navbar-link-admin-config-group-permissions" class="navbar-icon navbar-icon-og-permissions-overview">OG permissions overview</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">OG permissions overview</span></button></div><ul class="menu"><li class="first leaf level-4"><div class="navbar-box"><a href="/admin/config/group/permissions/node/oa_group" id="navbar-link-admin-config-group-permissions-node-oa_group" class="navbar-icon navbar-icon-">OG Node - Group permissions</a></div></li>
+          <li class="last leaf level-4"><div class="navbar-box"><a href="/admin/config/group/permissions/node/oa_space" id="navbar-link-admin-config-group-permissions-node-oa_space" class="navbar-icon navbar-icon-">OG Node - Space permissions</a></div></li>
+        </ul></li>
+        <li class="expanded level-3"><div class="navbar-box"><a href="/admin/config/group/roles" id="navbar-link-admin-config-group-roles" class="navbar-icon navbar-icon-og-roles-overview">OG roles overview</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">OG roles overview</span></button></div><ul class="menu"><li class="first leaf level-4"><div class="navbar-box"><a href="/admin/config/group/roles/node/oa_group" id="navbar-link-admin-config-group-roles-node-oa_group" class="navbar-icon navbar-icon-">OG Node - Group roles</a></div></li>
+          <li class="last leaf level-4"><div class="navbar-box"><a href="/admin/config/group/roles/node/oa_space" id="navbar-link-admin-config-group-roles-node-oa_space" class="navbar-icon navbar-icon-">OG Node - Space roles</a></div></li>
+        </ul></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/group/settings" id="navbar-link-admin-config-group-settings" class="navbar-icon navbar-icon-og-settings">OG settings</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/group/og-vocab" id="navbar-link-admin-config-group-og-vocab" class="navbar-icon navbar-icon-og-vocabulary-settings">OG vocabulary settings</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/regional" id="navbar-link-admin-config-regional" class="navbar-icon navbar-icon-regional-and-language">Regional and language</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Regional and language</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/regional/settings" id="navbar-link-admin-config-regional-settings" class="navbar-icon navbar-icon-regional-settings">Regional settings</a></div></li>
+        <li class="last leaf level-3"><div class="navbar-box"><a href="/admin/config/regional/date-time" id="navbar-link-admin-config-regional-date-time" class="navbar-icon navbar-icon-date-and-time">Date and time</a></div></li>
+      </ul></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/config/tableau" id="navbar-link-admin-config-tableau" class="navbar-icon navbar-icon-tableau">Tableau</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/services" id="navbar-link-admin-config-services" class="navbar-icon navbar-icon-web-services">Web services</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Web services</span></button></div><ul class="menu"><li class="first leaf level-3"><div class="navbar-box"><a href="/admin/config/services/rdf" id="navbar-link-admin-config-services-rdf" class="navbar-icon navbar-icon-rdf-publishing-settings">RDF publishing settings</a></div></li>
+        <li class="leaf level-3"><div class="navbar-box"><a href="/admin/config/services/rss-publishing" id="navbar-link-admin-config-services-rss-publishing" class="navbar-icon navbar-icon-rss-publishing">RSS publishing</a></div></li>
+        <li class="last expanded level-3"><div class="navbar-box"><a href="/admin/config/services/aggregator" id="navbar-link-admin-config-services-aggregator" class="navbar-icon navbar-icon-feed-aggregator">Feed aggregator</a></div></li>
+      </ul></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/config/workflow" id="navbar-link-admin-config-workflow" class="navbar-icon navbar-icon-workflow">Workflow</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Workflow</span></button></div><ul class="menu"><li class="first last leaf level-3"><div class="navbar-box"><a href="/admin/config/workflow/rules" id="navbar-link-admin-config-workflow-rules" class="navbar-icon navbar-icon-rules">Rules</a></div></li>
+      </ul></li>
+      <li class="last expanded level-2"><div class="navbar-box"><a href="/admin/config/d3" id="navbar-link-admin-config-d3" class="navbar-icon navbar-icon-d3">D3</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">D3</span></button></div><ul class="menu"><li class="first last leaf level-3"><div class="navbar-box"><a href="/admin/config/d3/settings" id="navbar-link-admin-config-d3-settings" class="navbar-icon navbar-icon-d3-settings">D3 Settings</a></div></li>
+      </ul></li>
+    </ul></li>
+    <li class="expanded level-1"><div class="navbar-box"><a href="/admin/openatrium" id="navbar-link-admin-openatrium" class="navbar-icon navbar-icon-open-atrium">Open Atrium</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Open Atrium</span></button></div><ul class="menu"><li class="first leaf level-2"><div class="navbar-box"><a href="/admin/openatrium/setting" id="navbar-link-admin-openatrium-setting" class="navbar-icon navbar-icon-config">Config</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/openatrium/groups" id="navbar-link-admin-openatrium-groups" class="navbar-icon navbar-icon-groups">Groups</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/openatrium/sandbox" id="navbar-link-admin-openatrium-sandbox" class="navbar-icon navbar-icon-sandbox-mode">Sandbox Mode</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/openatrium/section-templates" id="navbar-link-admin-openatrium-section-templates" class="navbar-icon navbar-icon-section-templates">Section Templates</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/openatrium/space-templates" id="navbar-link-admin-openatrium-space-templates" class="navbar-icon navbar-icon-space-templates">Space Templates</a></div></li>
+      <li class="last leaf level-2"><div class="navbar-box"><a href="/admin/openatrium/worktracker" id="navbar-link-admin-openatrium-worktracker" class="navbar-icon navbar-icon-work-tracker-settings">Work Tracker settings</a></div></li>
+    </ul></li>
+    <li class="last expanded level-1"><div class="navbar-box"><a href="/admin/reports" id="navbar-link-admin-reports" class="navbar-icon navbar-icon-reports">Reports</a><button class="navbar-icon navbar-handle"><span class="action">Extend</span><span class="label">Reports</span></button></div><ul class="menu"><li class="first leaf level-2"><div class="navbar-box"><a href="/admin/reports/status" id="navbar-link-admin-reports-status" class="navbar-icon navbar-icon-status-report">Status report</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/updates" id="navbar-link-admin-reports-updates" class="navbar-icon navbar-icon-available-updates">Available updates</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/feeds" id="navbar-link-admin-reports-feeds" class="navbar-icon navbar-icon-feeds-log">Feeds log</a></div></li>
+      <li class="expanded level-2"><div class="navbar-box"><a href="/admin/reports/fields" id="navbar-link-admin-reports-fields" class="navbar-icon navbar-icon-field-list">Field list</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/forward" id="navbar-link-admin-reports-forward" class="navbar-icon navbar-icon-forward-tracking">Forward tracking</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/hits" id="navbar-link-admin-reports-hits" class="navbar-icon navbar-icon-recent-hits">Recent hits</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/referrers" id="navbar-link-admin-reports-referrers" class="navbar-icon navbar-icon-top-referrers">Top referrers</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/views-plugins" id="navbar-link-admin-reports-views-plugins" class="navbar-icon navbar-icon-views-plugins">Views plugins</a></div></li>
+      <li class="leaf level-2"><div class="navbar-box"><a href="/admin/reports/pages" id="navbar-link-admin-reports-pages" class="navbar-icon navbar-icon-top-pages">Top pages</a></div></li>
+      <li class="last leaf level-2"><div class="navbar-box"><a href="/admin/reports/visitors" id="navbar-link-admin-reports-visitors" class="navbar-icon navbar-icon-top-visitors">Top visitors</a></div></li>
+    </ul></li>
+  </ul></div><div class="navbar-toggle-orientation"><div class="navbar-lining"><h3 class="element-invisible">User-defined shortcuts</h3><ul class="menu"><li class="first leaf"><a href="/node/add">Add content</a></li>
+    <li class="last leaf"><a href="/admin/content">Find content</a></li>
+  </ul><a href="/admin/config/user-interface/shortcut/shortcut-set-1" class="edit-shortcuts">Edit shortcuts</a><div class="navbar-toggle-orientation"><div class="navbar-lining"></div></div><button class="navbar-icon navbar-icon-toggle-horizontal" type="button" value="horizontal">Horizontal orientation</button><button class="navbar-icon navbar-icon-toggle-horizontal" type="button" value="horizontal">Horizontal orientation</button></div></div></div></div><div id="navbar-tray--2" data-navbar-tray="navbar-tray--2" aria-owned-by="navbar-tab-navbar-tray--2" class="navbar-tray overlay-displace-top navbar-tray-vertical" style="top: 39px;"><div class="navbar-lining clearfix"></div></div><div id="navbar-tray--3" data-navbar-tray="navbar-tray--3" aria-owned-by="navbar-tab-navbar-tray--3" class="navbar-tray overlay-displace-top navbar-tray-vertical" style="top: 39px;"><div class="navbar-lining clearfix"><h3 class="element-invisible">User account actions</h3><ul class="menu"><li class="account first"><a href="/user" title="User account">View profile</a></li>
+    <li class="logout last"><a href="/user/logout">Log out</a></li>
+  </ul><div class="navbar-toggle-orientation"><div class="navbar-lining"><button class="navbar-icon navbar-icon-toggle-horizontal" type="button" value="horizontal">Horizontal orientation</button></div></div></div></div></nav>  </div>
+
+<!--SITE-WIDE HEADER-->
+<div class="site-wide-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="site-wide-header--logo">
+        <a href="/" title="Janssen"><img src="../../images/Janssen_Prof_RGB.png" alt="Janssen"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--SITE-WIDE HEADER-->
+
+<div class="responsive-panels-region responsive-panels-region-top">
+  <div id="oa-navbar" class="navbar navbar-inverse navbar-fixed-top" data-offset-top="">
+    <div class="navbar-inner">
+      <div class="panel-panel clearfix">
+        <div class="pane-oa-mobile">
+          <div class="mobile-menu-icons clearfix">
+            <button type="button" class="navbar-toggle user" data-toggle="collapse" data-target="#oa-navbar-user">
+              <img class="oa-small-thumbnail" typeof="foaf:Image" src="http://jj.openatrium.p2devcloud.com/sites/default/files/styles/oa_small_thumbnail/public/pictures/adam.jpg?itok=CilhVYQ8" width="30" height="30" alt="Your profile picture"></button>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#oa-navbar-header">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <button type="button" class="navbar-toggle spaces" data-toggle="collapse" data-target="#oa-navbar-spaces">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa fa-square odd first"></span>
+              <span class="fa fa-square even second"></span>
+              <span class="fa fa-square odd third"></span>
+              <span class="fa fa-square even fourth"></span>
+            </button>
+
+            <button type="button" class="navbar-toggle search" data-toggle="collapse" data-target="#oa-navbar-search">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa fa-search"></span>
+            </button>
+
+            <button type="button" class="navbar-toggle admin" data-toggle="collapse" data-target="#oa-navbar-admin">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa fa-drupal"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="oa-navbar-spaces"></div>
+          <div class="collapse navbar-collapse" id="oa-navbar-admin"></div>
+          <div class="collapse navbar-collapse" id="oa-navbar-search"></div>
+          <div class="collapse navbar-collapse" id="oa-navbar-user"></div>
+        </div>
+      </div>
+
+
+      <div class="panel-display moscone-flipped clearfix radix-moscone-flipped" id="mini-panel-oa_toolbar_panel">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 radix-layouts-header panel-panel">
+              <div class="panel-panel-inner">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9 radix-layouts-content panel-panel">
+              <div class="panel-panel-inner">
+              </div>
+            </div>
+            <div class="col-md-3 radix-layouts-sidebar panel-panel">
+              <div class="panel-panel-inner">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 radix-layouts-footer panel-panel">
+              <div class="panel-panel-inner">
+                <div class="panel-pane pane-block pane-oa-toolbar-oa-toolbar-menu-button admin-mobile-menu pull-left">
+
+
+
+                  <div class="pane-content">
+
+                    <div id="toolbar-menu-button" class="toggle-tray btn btn-inverse">
+                      <span>Admin</span>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+                <div class="panel-pane pane-block pane-oa-toolbar-oa-breadcrumb spaces-mobile-menu pull-left">
+
+
+
+                  <div class="pane-content" menu-desktop="2">
+                    <ul id="oa_breadcrumb" class="oa_toolbar" menu-item="2">
+                      <li class="btn-group oa-breadcrumb dropdown radix-dropdown-processed">
+                        <a href="http://jj.openatrium.p2devcloud.com/" class="btn btn-home btn-inverse"><i class="icon-home"></i><span class="element-invisible">Home</span></a>
+                        <a class="dropdown-toggle btn btn-inverse" id="parent-dropdown" data-toggle="dropdown" href="#"><b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="home-dropdown">
+                          <li><div class="item-list"><h3>Recent Spaces</h3><ul><li class="first"><a href="/knowledge-management/process-knowledge-and-understanding" class="active">Process Knowledge and Understanding</a></li>
+                            <li><a href="/modeling/business-modeling">Business Modeling</a></li>
+                            <li><a href="/process-knowledge-and-understanding/modeling">Modeling</a></li>
+                            <li><a href="/process-knowledge-and-understanding/remicade-mspc">Remicade MSPC</a></li>
+                            <li><a href="/process-knowledge-and-understanding/solids-recipe-development-gainer">Solids Recipe Development for Gainer</a></li>
+                            <li><a href="/process-knowledge-and-understanding/strategic-operations">Strategic Operations</a></li>
+                            <li><a href="/process-knowledge-and-understanding/stability">Stability</a></li>
+                            <li><a href="/process-knowledge-and-understanding/risk-assessments">Risk Assessments</a></li>
+                            <li><a href="/process-knowledge-and-understanding/lab-tomorrow">Lab of Tomorrow</a></li>
+                            <li><a href="/process-knowledge-and-understanding/idm-rw">IDM-RW</a></li>
+                            <li><a href="/spaces" class="more-link">All Spaces...</a></li>
+                            <li class="dropdown-submenu"><a href="/node/add/oa-space" class="more-link">Create new Space</a><ul class="dropdown-menu"><li class="0 first"><a href="/node/add/oa-space/51">Create new CMC Milestone 11 Space</a></li>
+                              <li class="1"><a href="/node/add/oa-space/74">Create new FPx Layout</a></li>
+                              <li class="2"><a href="/node/add/oa-space/52">Create new CMC Milestone 12 Space</a></li>
+                              <li class="3"><a href="/node/add/oa-space/10">Create new FPx Space</a></li>
+                              <li class="4"><a href="/node/add/oa-space/50">Create new CMC Milestone 10 Space</a></li>
+                              <li class="5"><a href="/node/add/oa-space/65">Create new Play Book</a></li>
+                              <li class="6"><a href="/node/add/oa-space/47">Create new CMC Milestone 07 Space</a></li>
+                              <li class="7"><a href="/node/add/oa-space/1">Create new Default</a></li>
+                              <li class="8"><a href="/node/add/oa-space/43">Create new CMC Milestone 03 Space</a></li>
+                              <li class="9"><a href="/node/add/oa-space/40">Create new Create New CMC Space</a></li>
+                              <li class="10"><a href="/node/add/oa-space/42">Create new CMC Milestone 02 Space</a></li>
+                              <li class="11"><a href="/node/add/oa-space/55">Create new CMC Milestone 01 Space</a></li>
+                              <li class="12"><a href="/node/add/oa-space/44">Create new CMC Milestone 04 Space</a></li>
+                              <li class="13"><a href="/node/add/oa-space/45">Create new CMC Milestone 05 Space</a></li>
+                              <li class="14"><a href="/node/add/oa-space/48">Create new CMC Milestone 08 Space</a></li>
+                              <li class="15"><a href="/node/add/oa-space/46">Create new CMC Milestone 06 Space</a></li>
+                              <li class="16 last"><a href="/node/add/oa-space/49">Create new CMC Milestone 09 Space</a></li>
+                            </ul></li>
+                            <li class="last"><a href="/sitemap" class="more-link">Site map</a></li>
+                          </ul></div></li>
+                        </ul>
+                      </li>
+                      <li class="btn-group oa-breadcrumb dropdown radix-dropdown-processed">
+                        <a href="/knowledge-management" class="btn btn-inverse" id="oa-breadcrumb-parent-link">Knowledge Management</a>
+                        <a class="dropdown-toggle btn btn-inverse" id="sibling-dropdown" data-toggle="dropdown" href="#"><b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="sibling-dropdown">
+                          <li><div class="item-list"><h3>Subspaces</h3><ul><li class="first"><a href="/knowledge-management/dpd-knowledge-management-team">DPD Knowledge Management Team</a></li>
+                            <li><a href="/knowledge-management/lean-early-development">Lean Early Development</a></li>
+                            <li><a href="/knowledge-management/lessons-learned">Lessons Learned</a></li>
+                            <li><a href="/knowledge-management/material-science-knowledge-platform">Material Science Knowledge Platform</a></li>
+                            <li class="last"><a href="/knowledge-management/process-knowledge-and-understanding" class="active">Process Knowledge and Understanding</a></li>
+                          </ul></div></li>
+                        </ul>
+                      </li>
+                      <li class="btn-group oa-breadcrumb dropdown radix-dropdown-processed">
+                        <a href="/knowledge-management/process-knowledge-and-understanding" class="btn btn-inverse" id="oa-breadcrumb-space-link">Process Knowledge and Understanding</a>
+                        <a class="dropdown-toggle btn btn-inverse" id="subspace-dropdown" data-toggle="dropdown" href="#"><b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="subspace-dropdown">
+                          <li><div class="item-list"><h3>Subspaces</h3><ul><li class="first"><a href="/process-knowledge-and-understanding/collaborations">Collaborations</a></li>
+                            <li><a href="/node/2431">FDA Collaboration</a></li>
+                            <li><a href="/process-knowledge-and-understanding/idm-rw">IDM-RW</a></li>
+                            <li><a href="/process-knowledge-and-understanding/lab-tomorrow">Lab of Tomorrow</a></li>
+                            <li><a href="/process-knowledge-and-understanding/modeling">Modeling</a></li>
+                            <li><a href="/process-knowledge-and-understanding/remicade-mspc">Remicade MSPC</a></li>
+                            <li><a href="/process-knowledge-and-understanding/risk-assessments">Risk Assessments</a></li>
+                            <li><a href="/process-knowledge-and-understanding/solids-recipe-development-gainer">Solids Recipe Development for Gainer</a></li>
+                            <li><a href="/process-knowledge-and-understanding/stability">Stability</a></li>
+                            <li><a href="/process-knowledge-and-understanding/strategic-operations">Strategic Operations</a></li>
+                            <li class="dropdown-submenu last"><a href="/node/add/oa-space?oa_parent_space=796" class="more-link">Create new subspace</a><ul class="dropdown-menu"><li class="0 first"><a href="/node/add/oa-space/51?oa_parent_space=796">Create new CMC Milestone 11 Space</a></li>
+                              <li class="1"><a href="/node/add/oa-space/74?oa_parent_space=796">Create new FPx Layout</a></li>
+                              <li class="2"><a href="/node/add/oa-space/52?oa_parent_space=796">Create new CMC Milestone 12 Space</a></li>
+                              <li class="3"><a href="/node/add/oa-space/10?oa_parent_space=796">Create new FPx Space</a></li>
+                              <li class="4"><a href="/node/add/oa-space/50?oa_parent_space=796">Create new CMC Milestone 10 Space</a></li>
+                              <li class="5"><a href="/node/add/oa-space/65?oa_parent_space=796">Create new Play Book</a></li>
+                              <li class="6"><a href="/node/add/oa-space/47?oa_parent_space=796">Create new CMC Milestone 07 Space</a></li>
+                              <li class="7"><a href="/node/add/oa-space/1?oa_parent_space=796">Create new Default</a></li>
+                              <li class="8"><a href="/node/add/oa-space/43?oa_parent_space=796">Create new CMC Milestone 03 Space</a></li>
+                              <li class="9"><a href="/node/add/oa-space/40?oa_parent_space=796">Create new Create New CMC Space</a></li>
+                              <li class="10"><a href="/node/add/oa-space/42?oa_parent_space=796">Create new CMC Milestone 02 Space</a></li>
+                              <li class="11"><a href="/node/add/oa-space/55?oa_parent_space=796">Create new CMC Milestone 01 Space</a></li>
+                              <li class="12"><a href="/node/add/oa-space/44?oa_parent_space=796">Create new CMC Milestone 04 Space</a></li>
+                              <li class="13"><a href="/node/add/oa-space/45?oa_parent_space=796">Create new CMC Milestone 05 Space</a></li>
+                              <li class="14"><a href="/node/add/oa-space/48?oa_parent_space=796">Create new CMC Milestone 08 Space</a></li>
+                              <li class="15"><a href="/node/add/oa-space/46?oa_parent_space=796">Create new CMC Milestone 06 Space</a></li>
+                              <li class="16 last"><a href="/node/add/oa-space/49?oa_parent_space=796">Create new CMC Milestone 09 Space</a></li>
+                            </ul></li>
+                          </ul></div></li>
+                          <li><div class="item-list"><h3>Sections</h3><ul><li class="first"><a href="/knowledge-management/process-knowledge-and-understanding/budgets">Budgets</a></li>
+                            <li><a href="/process-knowledge-and-understanding/files">Files</a></li>
+                            <li><a href="/knowledge-management/process-knowledge-and-understanding/fpx">FPx</a></li>
+                            <li><a href="/process-knowledge-and-understanding/calendar">Calendar</a></li>
+                            <li><a href="/process-knowledge-and-understanding/discussions">Discussions</a></li>
+                            <li><a href="/knowledge-management/process-knowledge-and-understanding/library">Library</a></li>
+                            <li class="dropdown-submenu last"><a href="/node/add/oa-section" class="more-link">Create new section</a><ul class="dropdown-menu"><li class="0 first"><a href="/node/add/oa-section/16">Create new Budgets</a></li>
+                              <li class="1"><a href="/node/add/oa-section/3">Create new Calendar Section</a></li>
+                              <li class="2"><a href="/node/add/oa-section/2">Create new Default</a></li>
+                              <li class="3"><a href="/node/add/oa-section/4">Create new Discussion Section</a></li>
+                              <li class="4"><a href="/node/add/oa-section/20">Create new Files Section</a></li>
+                              <li class="5"><a href="/node/add/oa-section/25">Create new FPx Activities</a></li>
+                              <li class="6"><a href="/node/add/oa-section/5">Create new News Section</a></li>
+                              <li class="7"><a href="/node/add/oa-section/66">Create new Playbook Library Section</a></li>
+                              <li class="8"><a href="/node/add/oa-section/6">Create new Tasks Section</a></li>
+                              <li class="9 last"><a href="/node/add/oa-section/18">Create new Visualization Section</a></li>
+                            </ul></li>
+                          </ul></div></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div class="panel-pane pane-block pane-oa-toolbar-oa-user-badge user-mobile-menu pull-right">
+
+
+
+                  <div class="pane-content">
+                    <div id="oa-user-badge">
+                      <div class="dropdown oa-dropdown btn-group oa-pull-right radix-dropdown-processed">
+                        <div class="dropdown-toggle btn clearfix oa-pull-right user-badge btn-inverse" id="user-badge-dropdown" data-toggle="dropdown">
+                          Adam Fermier        <img class="oa-small-thumbnail" typeof="foaf:Image" src="http://jj.openatrium.p2devcloud.com/sites/default/files/styles/oa_small_thumbnail/public/pictures/adam.jpg?itok=CilhVYQ8" width="30" height="30" alt="Your profile picture">      </div>
+                        <div class="dropdown-menu" role="menu" aria-labelledby="section-dropdown" menu-desktop="1">
+                          <ul class="links" menu-item="1"><li class="dashboard first"><a href="/user/1/view">Dashboard</a></li>
+                            <li class="edit_profile"><a href="/user/1/edit">Edit profile</a></li>
+                            <li class="logout last"><a href="/user/logout">Log out</a></li>
+                          </ul>      </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="panel-pane pane-oa-toolbar-search search-mobile-menu pull-right">
+
+
+
+                  <div class="pane-content">
+
+                    <div class="toolbar-search" menu-desktop="3">
+                      <form action="search/site" method="post" menu-item="3">
+                        <div class="input-append">
+                          <input type="text" class="search-text form-control" name="search_text">
+                          <div class="btn-group">
+                            <button type="submit" class="btn submit btn-inverse">
+                              <i class="icon-search"></i><span class="element-invisible">Search Button</span>
+                            </button>
+                            <button class="btn dropdown-toggle btn-inverse" data-toggle="dropdown">
+                              <i class="caret"></i><span class="element-invisible">Search Options</span>
+                            </button>
+                            <ul class="dropdown-menu options radio">
+                              <li>
+                                <label class="radio">
+                                  <input type="radio" name="searchOptions" value="all_spaces" checked="">
+                                  All spaces            </label>
+                              </li>
+                              <li>
+                                <label class="radio">
+                                  <input type="radio" name="searchOptions" value="this_space">
+                                  This space            </label>
+                              </li>
+                              <li>
+                                <label class="radio">
+                                  <input type="radio" name="searchOptions" value="users">
+                                  Users            </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="panel-pane pane-oa-favorites-favorites-button search-mobile-menu pull-right">
+
+
+
+                  <div class="pane-content" menu-desktop="4">
+                    <ul id="oa_favorites" menu-item="4">
+                      <li class="dropdown btn-group radix-dropdown-processed">
+                        <a class="dropdown-toggle btn  btn-inverse" id="favorites-dropdown" data-toggle="dropdown" href="#" title="Favorites">
+                          <i class="icon-star"></i><span class="element-invisible">Favorites</span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="space-dropdown">
+                          <li class="dropdown-column"><div class="item-list"><h3>Favorite Spaces</h3><ul><li class="first"><a href="/process-knowledge-and-understanding/idm-rw">IDM-RW</a></li>
+                            <li class="last"><span class="flag-wrapper flag-favorite-space flag-favorite-space-796">
+      <a href="/flag/flag/favorite_space/796?destination=node/796&amp;token=agMSGHml0LqO1NyEH6RdsnnVuEnNSC2KReg3MGsHQEI" title="Mark Space as Favorite" class="flag flag-action flag-link-toggle btn btn-default flag-processed" rel="nofollow"><i class="icon-star-empty"></i> Favorite</a><span class="flag-throbber">&nbsp;</span>
+    </span>
+                            </li>
+                          </ul></div></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div class="panel-pane pane-oa-tour-custom-pane search-mobile-menu pull-right">
+
+
+
+                  <div class="pane-content" menu-desktop="5">
+                    <ul id="oa_tours" menu-item="5">
+                      <li class="dropdown btn-group radix-dropdown-processed">
+                        <a class="dropdown-toggle btn  btn-inverse" id="tours-dropdown" data-toggle="dropdown" href="#" title="Site Tours">
+                          <i class="icon-question-sign"></i><span class="element-invisible">Site Tours</span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="space-dropdown">
+                          <li class="dropdown-column">
+                            <div class="item-list"><ul><li class="first"><a href="/?tour=fpx_v2" class="active">FPx</a></li>
+                              <li><a href="/node/add/oa-space/10?tour=banners">Banners</a></li>
+                              <li><a href="/analytical-development/bioassay?tour=colorizing_a_space">Colorizing a Space</a></li>
+                              <li><a href="/analytical-development/bioassay?tour=configuring_layout">Configuring Layout</a></li>
+                              <li><a href="/node/add/oa-space/10?tour=content_visibility">Content Visibility</a></li>
+                              <li><a href="/?tour=groups" class="active">Groups</a></li>
+                              <li><a href="/?tour=menus" class="active">Menus</a></li>
+                              <li><a href="/node/add/oa-space/10?tour=notifications">Notifications</a></li>
+                              <li><a href="/?tour=sandbox_mode" class="active">Sandbox Mode</a></li>
+                              <li><a href="/node/add/oa-section/16?tour=section_visibility">Section Visibility</a></li>
+                              <li><a href="/node/add/oa-section/16?tour=sections_overview">Sections Overview</a></li>
+                              <li><a href="/?tour=setting_your_home" class="active">Setting Your Home</a></li>
+                              <li><a href="/?tour=site_tours" class="active">Site Tours</a></li>
+                              <li><a href="/node/add/oa-space/10?tour=spaces">Spaces Overview</a></li>
+                              <li><a href="/analytical-development/bioassay?tour=subspaces">Subspaces</a></li>
+                              <li><a href="/?tour=teams" class="active">Teams</a></li>
+                              <li><a href="/?tour=toolbar" class="active">Toolbar</a></li>
+                              <li><a href="/?tour=user_creation" class="active">User Creation</a></li>
+                              <li class="last"><a href="/?tour=welcome_to_oa2_" class="active">Welcome to OA2!</a></li>
+                            </ul></div>        </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+                <div class="panel-pane pane-add-space-content search-mobile-menu pull-right">
+
+
+
+                  <div class="pane-content" menu-desktop="6">
+                    <ul class="command-button-wrapper" menu-item="6">
+                      <li class="dropdown btn-group radix-dropdown-processed">
+                        <a class="dropdown-toggle oa-buttons btn btn-inverse" data-toggle="dropdown" title="Create Content" href="#">Create Content      <span class="caret"></span>
+                        </a>
+                        <ul class="command-buttons dropdown-menu">
+                          <li><a href="/oa-files/upload?oa_section_ref=4175" class="oa-button oa-files-processed"><i class="icon-upload"></i> Add File</a></li><li><a href="/node/add/activity?oa_section_ref=18970" class="oa-button">Create Activity</a></li><li><a href="/node/add/budget?oa_section_ref=21796" class="oa-button">Create Budget</a></li><li><a href="/node/add/oa-discussion-post?oa_section_ref=798" class="oa-button">Create Discussion Post</a></li><li><a href="/node/add/oa-wiki-page?oa_section_ref=4175" class="oa-button">Create Document Page in Files</a></li><li><a href="/node/add/oa-wiki-page?oa_section_ref=799" class="oa-button">Create Document Page in Library</a></li><li><a href="/node/add/oa-event?oa_section_ref=797" class="oa-button">Create Event</a></li>      </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.moscone-flipped -->
+    </div>
+  </div>
+</div>
+
+<div id="main-wrapper">
+  <div id="main" class="main container"><div id="panels-ipe-control-container" class="clearfix" style="overflow: hidden; display: block;"><div id="panels-ipe-control-panelizer-node-796-page-manager" class="panels-ipe-control"><div class="panels-ipe-button-container clearfix"><div class="panels-ipe-pseudobutton-container"><a href="/panels/ajax/ipe/save_form/panelizer%3Anode%3A796%3Apage_manager?destination=node/796" class="panels-ipe-startedit panels-ipe-pseudobutton ajax-processed" id="panels-ipe-customize-page">Customize this page</a></div><div class="panels-ipe-pseudobutton-container"><a href="/panels/ajax/ipe/change_layout/panelizer%3Anode%3A796%3Apage_manager?destination=node/796" class="panels-ipe-change-layout panels-ipe-pseudobutton ctools-modal-layout ajax-processed" id="ajax-link">Change layout</a></div></div><div class="panels-ipe-form-container clearfix"></div></div></div>
+    <div id="content">
+      <div class="row">
+        <div class="col-md-12 inner">
+          <ul id="contextual-tabs">
+            <li>
+              <a class="btn btn-small btn-sm btn-default" href="/node/796/edit" title="Edit">
+                <i class="icon-pencil"></i>&nbsp;Edit    </a>
+            </li>
+            <li>
+              <a class="btn btn-small btn-sm btn-default" href="/node/796/members" title="Members">
+                <i class="icon-user"></i>&nbsp;Members    </a>
+            </li>
+            <li>
+              <ul id="oa_visibility_toolbar">
+                <li class="dropdown btn-group radix-dropdown-processed">
+                  <a class="dropdown-toggle btn btn-small btn-sm btn-default" id="visibility-dropdown" data-toggle="dropdown" href="#" title="Public">
+                    <i class="icon-unlock"></i><span>This content is Public</span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="visibility-dropdown">
+                    <li class="dropdown-column">
+                      <div class="oa-visibility-public">Public</div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown btn-group radix-dropdown-processed">
+              <a class="dropdown-toggle btn btn-small btn-sm btn-default" id="contextual-dropdown" data-toggle="dropdown" href="#" title="Configure">
+                <i class="icon-cog"></i><span>Configure</span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="contextual-dropdown">
+                <li class="dropdown-column"><div class="item-list"><ul><li class="first"><a href="/node/796/group">Config</a></li>
+                  <li><a href="/node/796/content">Content</a></li>
+                  <li><a href="/node/796/oa_clone_create_space_type">Create Blueprint from this Space</a></li>
+                  <li><a href="/node/796/map">Map</a></li>
+                  <li><a href="/node/796/backlinks">What links here</a></li>
+                  <li><a href="/node/796/track">Track</a></li>
+                  <li><a href="/node/796/clone/confirm">Clone this space</a></li>
+                  <li><a href="/node/796/convert">Convert</a></li>
+                  <li><a href="/node/796/panelizer">Panelizer</a></li>
+                  <li><a href="/node/796/log">Log</a></li>
+                  <li><a href="/node/796/archive">Show Archive</a></li>
+                  <li><a href="/node/796/archive-content">Archive This</a></li>
+                  <li><a href="/node/796/devel">Devel</a></li>
+                  <li class="last"><span class="flag-wrapper flag-subscribe-section-content flag-subscribe-section-content-796">
+      <a href="/flag/flag/subscribe_section_content/796?destination=node/796&amp;token=agMSGHml0LqO1NyEH6RdsnnVuEnNSC2KReg3MGsHQEI" title="Subscribe to receive messages related to this content" class="flag-action flag-link-toggle btn-default flag-processed" rel="nofollow"> Subscribe</a>
+    </span>
+                  </li>
+                </ul></div></li>
+              </ul>
+            </li>
+          </ul>
+          <a id="main-content"></a>
+          <h1 class="title" id="page-title">Process Knowledge and Understanding</h1>                                                                        <div class="region region-content">
+          <div id="block-forward-form" class="block block-forward">
+
+
+            <div class="content">
+              <a href="/forward?path=knowledge-management/process-knowledge-and-understanding" title="Forward this page to a friend" class="forward-page"><img class="forward-icon forward-icon-margin" typeof="foaf:Image" src="http://jj.openatrium.p2devcloud.com/sites/all/modules/forward/forward.gif" alt="Email this Space">Email this Space</a>  </div>
+          </div>
+          <div id="block-system-main" class="block block-system">
+
+
+            <div class="content">
+              <div id="panels-ipe-display-panelizer-node-796-page-manager" class="panels-ipe-display-container panels-ipe-processed">
+                <div class="panel-display bryant-flipped clearfix radix-bryant-flipped">
+
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-9 radix-layouts-content panel-panel">
+                        <div class="panel-panel-inner">
+                          <div id="panels-ipe-regionid-contentmain" class="panels-ipe-region">
+                            <div
+                                class="panels-ipe-placeholder panels-ipe-on panels-ipe-portlet-marker panels-ipe-portlet-static">
+                              <div class="panels-ipe-placeholder-content"><h3>Content</h3></div>
+                              <div class="panels-ipe-newblock panels-ipe-on">
+                                <ul class="panels-ipe-linkbar inline">
+                                  <li class="style first"><a
+                                      href="/panels/ajax/ipe/style-type/panelizer%3Anode%3A796%3Apage_manager/region/contentmain"
+                                      class="ctools-use-modal panels-ipe-hide-bar style ctools-use-modal-processed panels-ipe-hide-bar-processed-processed"
+                                      title="Region style"><span>Region style</span></a></li>
+                                  <li class="add-pane last"><a
+                                      href="/panels/ajax/ipe/select-content/panelizer%3Anode%3A796%3Apage_manager/contentmain"
+                                      class="ctools-use-modal add panels-ipe-hide-bar ctools-use-modal-processed panels-ipe-hide-bar-processed-processed"
+                                      title="Add new pane"><span>Add new pane</span></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="panels-ipe-sort-container">

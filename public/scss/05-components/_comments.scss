@@ -1,0 +1,45 @@
+/* comments */
+.pane-content {
+  .oa-list.well {
+    &:nth-of-type(even) {
+      background-color: color(gray, xx-light);
+    }
+  }
+}
+
+
+.oa-list .oa-comment-reply-body {
+  .pane-node-comments &,
+  .pane-content #comments & {
+    @include fontsize-rem(ms());
+  }
+}
+
+.oa-list {
+  &.oa-comment {
+    .oa-pullout-left {
+      border: 1px solid color(gray, x-light);
+      position: static;
+      background-color: color(white);
+      float: left;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      line-height: 32px;
+      border-radius: 50%;
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.oa-comment {
+  .comment-created-date {
+    @include fontsize-rem(ms(-2));
+    margin-top: 9px;
+  }
+}
+
+.oa-list .pull-right img, .oa-list .oa-pull-right img {
+  position: relative;
+  top: -4px;
+}

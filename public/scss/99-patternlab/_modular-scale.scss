@@ -1,0 +1,22 @@
+// MODULAR SCALE
+// scss-lint:disable NestingDepth
+.sg-ms {
+  white-space: nowrap;
+  overflow: hidden;
+  li {
+    @for $i from 0 through 12 {
+      &:nth-of-type(#{$i + 1}) {
+        font-size: ms($i);
+        &:before {
+          font-size: ms(0);
+          content: 'ms(#{$i}): ';
+        }
+      }
+    }
+  }
+}
+// scss-lint:enable NestingDepth
+
+.sg-ms-fonts {
+  @include display-flex;
+}

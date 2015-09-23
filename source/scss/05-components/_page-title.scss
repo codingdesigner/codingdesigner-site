@@ -1,0 +1,6 @@
+#page-title {
+  @include jpc-gradient();
+  color: color(white);
+  padding: 0.5em 0.25em 0.25em;
+  margin-top: 0;
+}

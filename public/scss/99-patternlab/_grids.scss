@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Pattern Lab - Grids
+   ========================================================================== */
+
+
+.demo {
+  .grid--item {
+    margin-bottom: 0.5em;
+    padding: 1em !important;
+    background: rgba(0, 0, 0, 0.1);
+    color: gray;
+    text-align: center;
+    &:nth-of-type(2n) {
+      background: rgba(0, 0, 0, 0.3);
+      color: #DDDDDD;
+    }
+  }
+}

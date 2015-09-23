@@ -1,0 +1,18 @@
+@mixin jpc-gradient($grad: darkblue-blue) {
+  @if $grad == darkblue-blue {
+    background-color: color(blue);
+    background-image: linear-gradient(to right, color(blue, dark), color(blue));
+  }
+  @else if $grad == lightgreen-yellow {
+    background-color: color(green, light);
+    background-image: linear-gradient(to right, color(green, light), color(yellow));
+  }
+  @else if $grad == lightgreen-yellow-light {
+    background-color: color(green, light);
+    background-image: linear-gradient(to right, color(green, light), mix(color(yellow), color(green, light)));
+  }
+  @else if $grad == lightorange-yellow {
+    background-color: color(orange);
+    background-image: linear-gradient(to right, color(orange, light), color(yellow));
+  }
+}

@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Pattern Lab - Fonts
+   ========================================================================== */
+
+.pl-font {
+  font-size: 2em;
+}
+
+.pl-font-karbon-regular {
+  font-family: font(font--karbon);
+}
+
+.pl-font-karbon-regular-italic {
+  font-family: font(font--karbon);
+  font-style: italic;
+}
+
+.pl-font-karbon-medium {
+  font-family: font(font--karbon);
+  font-weight: 600;
+}
+
+.pl-font-karbon-medium-italic {
+  font-family: font(font--karbon);
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+.pl-font-karbon-semibold {
+  font-family: font(font--karbon);
+  font-weight: 700;
+}
+
+.pl-font-karbon-semibold-italic {
+  font-family: font(font--karbon);
+  font-weight: 700;
+  font-style: italic;
+}

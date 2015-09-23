@@ -1,0 +1,46 @@
+/* notification lists */
+.group-header {
+  h4 {
+    @include h4();
+  }
+}
+
+.well {
+  border-radius: 0;
+  border-width: 1px 0;
+}
+
+.oa-list.well {
+  background-image: none;
+}
+.group-content {
+  li {
+    &:nth-of-type(even) {
+      .oa-list {
+        &.well {
+          background-color: color(gray, xx-light);
+        }
+      }
+    }
+  }
+}
+
+.views-exposed-form .views-submit-button, .views-exposed-form .views-reset-button {
+  margin-top: 0;
+  padding-top: 7px;
+}
+
+.oa-pane .pane-content, body.page-node-edit #main .burr-flipped-sidebar-inner .pane-content, body.page-node-add #main .burr-flipped-sidebar-inner .pane-content, body.page-node-edit #main .burr-flipped .sidebar .panel-panel-inner .pane-content, body.page-node-add #main .burr-flipped .sidebar .panel-panel-inner .pane-content {
+  padding: 15px 0 0;
+}
+
+.oa-pane .pane-content .oa-list, body.page-node-edit #main .burr-flipped-sidebar-inner .pane-content .oa-list, body.page-node-add #main .burr-flipped-sidebar-inner .pane-content .oa-list, body.page-node-edit #main .burr-flipped .sidebar .panel-panel-inner .pane-content .oa-list, body.page-node-add #main .burr-flipped .sidebar .panel-panel-inner .pane-content .oa-list {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.oa-description {
+  @include fontsize-rem(ms(-1));
+  color: color(gray);
+  line-height: 1;
+}

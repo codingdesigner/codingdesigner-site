@@ -1,0 +1,38 @@
+// STOP!!!
+// If you are editing `source/images/05-icons/06-templates/05-icons.template.css` then you're good; if not, then you are editing what that file compiles to and it will get overwritten
+// How to use our font icon system:
+// 1. Add an SVG file to source/images/05-icons/src/ while the command `grunt` is running (which runs `grunt create_font_icons`)
+// 2. Give an HTML element the class name `icon--{name of file}`
+// 3. OR Use this Sass Mixin: `@include icon(name of file);`
+// Also, you can view all 05-icons on the Icon Atom in Pattern Lab
+
+
+// Content Values auto-generated from source/images/05-icons/src/*.svg
+$font-icons: (
+  arrow--down: "\f101",
+  arrow--left-medium: "\f102",
+  arrow--left: "\f103",
+  arrow--right-medium: "\f104",
+  arrow--right: "\f105",
+  arrow--up-medium: "\f106",
+  arrow--up: "\f107",
+  bars: "\f108",
+  caret-down: "\f109",
+  caret-right: "\f10a",
+  caret-up: "\f10b",
+  check: "\f10c",
+  envelope: "\f10d",
+  facebook: "\f10e",
+  heart-o: "\f10f",
+  heart: "\f110",
+  instagram: "\f111",
+  pinterest: "\f112",
+  play-circle: "\f113",
+  play: "\f114",
+  remove: "\f115",
+  search: "\f116",
+  shopping-bag: "\f117",
+  tumblr: "\f118",
+  twitter: "\f119",
+  youtube: "\f11a",
+);

@@ -1,0 +1,107 @@
+// ==========================================================================
+// Base - Base Styles
+// ========================================================================== */
+
+
+* {
+  @include box-sizing(border-box);
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $color--text;
+  font-family: $font-body;
+  font-size: $root-typesize;
+  line-height: $base-line-height;
+}
+
+body {
+  background: $bg-color;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $base-line-em;
+}
+
+a {
+  @include link-standard();
+  @include single-transition(color, $default-transition-duration, $default-transition-function);
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid color(gray);
+}
+
+// Remove bullets from lists
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+ol {
+  margin-left: 2em;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Remove default fieldset styles.
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+  resize: vertical;
+}
+
+blockquote {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+button {
+  outline: none;
+}

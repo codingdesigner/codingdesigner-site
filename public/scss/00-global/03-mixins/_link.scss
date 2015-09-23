@@ -1,0 +1,226 @@
+// ==========================================================================
+// Global Mixins - Link
+// ========================================================================== */
+
+
+//
+// @See the following articles by Hugo Giraudel for a comprehensive
+// discussion around 04-extends and media queries.
+//
+// http://www.sitepoint.com/sass-extend-nobody-told-you/
+// http://www.sitepoint.com/cross-media-query-extend-sass/
+//
+
+//////////////////////
+// Links Element Default Variables
+$link-normal-default: $cs-link-normal !default;
+$link-hover-default: $cs-link-hover !default;
+$link-active-default: $cs-link-active !default;
+$link-visited-default: $cs-link-visited !default;
+$link-focus-default: $cs-link-focus !default;
+
+$set-background-links-default: true !default;
+$link-background-size-default: 1px !default;
+
+$link-underline-normal-default: $cs-link-underline-normal !default;
+$link-underline-hover-default: $cs-link-underline-hover !default;
+$link-underline-active-default: $cs-link-underline-active !default;
+$link-underline-visited-default: $cs-link-underline-visited !default;
+$link-underline-focus-default: $cs-link-underline-focus !default;
+
+$link-background-normal-default: $cs-link-background-normal !default;
+$link-background-hover-default: $cs-link-background-hover !default;
+$link-background-active-default: $cs-link-background-active !default;
+$link-background-visited-default: $cs-link-background-visited !default;
+$link-background-focus-default: $cs-link-background-focus !default;
+$link-background-size-default: $base-line-px !default;
+$link-background-bkg-default: $cs-link-background-bkg !default;
+//////////////////////
+
+// Mixin - Set Link Defaults
+// ========================================================================== */
+@mixin set-link-defaults() {
+  &:focus {
+    outline: none;
+  }
+}
+
+// Mixin - Set Link Colors
+// ========================================================================== */
+@mixin set-link-colors(
+$link-normal: $link-normal-default,
+$link-hover: $link-hover-default,
+$link-active: $link-active-default,
+$link-visited: $link-visited-default,
+$link-focus: $link-focus-default
+) {
+  @include link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus);
+}
+
+// Mixin - Set Underline Links
+// ========================================================================== */
+@mixin set-underline-links(
+$link-underline-normal: $link-underline-normal-default,
+$link-underline-hover: $link-underline-hover-default,
+$link-underline-active: $link-underline-active-default,
+$link-underline-visited: $link-underline-visited-default,
+$link-underline-focus: $link-underline-focus-default,
+$link-underline-size: $link-background-size-default
+) {
+  text-decoration: none;
+  border-bottom: $link-underline-size solid $link-underline-normal;
+  &:visited {
+    border-bottom-color: $link-underline-visited;
+  }
+  &:focus {
+    border-bottom-color: $link-underline-focus;
+  }
+  &:hover {
+    border-bottom-color: $link-underline-hover;
+  }
+  &:active {
+    border-bottom-color: $link-underline-active;
+  }
+}
+
+// Mixin - Unset Underline Links
+// ========================================================================== */
+@mixin unset-underline-links() {
+  text-decoration: none;
+  border-bottom: none;
+  &:visited {
+    border-bottom: none;
+  }
+  &:focus {
+    border-bottom: none;
+  }
+  &:hover {
+    border-bottom: none;
+  }
+  &:active {
+    border-bottom: none;
+  }
+}
+
+
+
+// Set a background as the underline on a link, with a text shadow on the text.
+// Allows the decenders to "break" the underline
+@mixin set-background-links($link-background-normal: $link-background-normal-default, $link-background-hover: $link-background-hover-default, $link-background-active: $link-background-active-default, $link-background-visited: $link-background-visited-default, $link-background-focus: $link-background-focus-default, $link-background-size: $link-background-size-default, $bkg: $link-background-bkg-default) {
+  $bkg-gradient: transparent;
+  @include text-shadow($bkg -1px 1px 0, $bkg 0 1px 0, $bkg 1px 1px 0);
+  @include background-image(linear-gradient(to top, $link-background-normal $link-background-size, $bkg-gradient ($link-background-size + 1)));
+  &:visited {
+    @include background-image(linear-gradient(to top, $link-background-visited $link-background-size, $bkg-gradient ($link-background-size + 1)));
+  }
+  &:focus {
+    @include background-image(linear-gradient(to top, $link-background-focus $link-background-size, $bkg-gradient ($link-background-size + 1)));
+  }
+  &:hover {
+    @include background-image(linear-gradient(to top, $link-background-hover $link-background-size, $bkg-gradient ($link-background-size + 1)));
+  }
+  &:active {
+    @include background-image(linear-gradient(to top, $link-background-active $link-background-size, $bkg-gradient ($link-background-size + 1)));
+  }
+  text-decoration: none;
+  background-position: 100% 97%;
+  background-repeat-y: no-repeat;
+  background-size: 50% 100%;
+}
+
+// unset the background underline
+@mixin unset-background-links() {
+  text-decoration: none;
+  @include text-shadow(none);
+  @include background-image(none);
+  &:visited {
+    @include text-shadow(none);
+    @include background-image(none);
+  }
+  &:focus {
+    @include text-shadow(none);
+    @include background-image(none);
+  }
+  &:hover {
+    @include text-shadow(none);
+    @include background-image(none);
+  }
+  &:active {
+    @include text-shadow(none);
+    @include background-image(none);
+  }
+}
+
+
+
+
+///* Extendables - Link Element Extendables
+//   ========================================================================== */
+//
+///*
+// * Use this standalone extendable to set link defaults
+// * when inside a media query.
+// *
+// * Usage:
+// * @extend %link-defaults-extend;
+// */
+//
+//%link-defaults-extend {
+//  @include set-link-defaults($extend: false);
+//}
+//
+///*
+// * Use this standalone extendable to set link colors
+// * when inside a media query.
+// *
+// * Usage:
+// * @extend %link-colors-extend;
+// */
+//
+//%link-colors-extend {
+//  @include set-link-colors($extend: false);
+//}
+//
+///*
+// * Use this standalone extendable to set link underlines
+// * when inside a media query.
+// *
+// * Usage:
+// * @extend %link-underline-extend;
+// */
+//
+//%link-underline-extend {
+//  @include set-underline-links($extend: false);
+//}
+//
+///*
+// * Use this standalone extendable to unset link underlines
+// * when inside a media query.
+// *
+// * Usage:
+// * @extend %link-unset-underline-extend;
+// */
+//
+//%link-unset-underline-extend {
+//  @include unset-underline-links($extend: false);
+//}
+//
+///*
+// * Use this inclusive extendable to set all link properties
+// * when outside of a media query.
+// *
+// * Usage:
+// * @extend %links-extend;
+// */
+//
+//%links-extend {
+//  @extend %link-defaults-extend;
+//  @extend %link-colors-extend;
+//  @include set-background-links($extend: false);
+//}
+
+@mixin link-standard() {
+  @include set-link-defaults();
+  @include set-link-colors();
+//  @include set-background-links();
+}

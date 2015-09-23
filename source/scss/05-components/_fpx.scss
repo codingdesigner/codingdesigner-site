@@ -1,0 +1,44 @@
+.fpx--status {
+  margin-right: 0.5em;
+  font-style: italic;
+  color: color(gray);
+  font-size: ms(-1);
+}
+
+.fpx-item {
+  margin-bottom: 1em;
+}
+
+.fpx-item--title {
+  font-weight: 600;
+}
+
+.fpx--header {
+  margin-bottom: 1.5em;
+}
+
+.fpx--title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.raci {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+.raci--role {
+  font-style: italic;
+}
+.raci--text {
+  a {
+    display: block;
+  }
+}
+
+.fpx-item--table {
+  tbody {
+    .updated {
+      background-color: color(gray, xx-light);
+    }
+  }
+}

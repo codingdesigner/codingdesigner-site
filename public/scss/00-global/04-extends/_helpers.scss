@@ -1,0 +1,68 @@
+// ==========================================================================
+// Global Extends - Helpers
+// ========================================================================== */
+
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+%hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+%visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+// Extends the .visuallyhidden class to allow the element to be focusable
+// when navigated to via the keyboard: h5bp.com/p
+%visuallyhidden--focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+// Hide visually and from screenreaders, but maintain 02-layout
+%invisible {
+  visibility: hidden;
+}
+
+// Presentational Classes
+// ========================================================================== */
+
+%hide {
+  display: none;
+}
+
+%show {
+  display: block;
+}
+
+%hide-text {
+  text-indent: -9999px;
+}
+
+// Clearfix: contain floats
+// ========================================================================== */
+%clearfix {
+  @include clearfix();
+}
+
+// Basic styles for almost all pseudo
+%pseudo-base {
+  display: block;
+  content: '';
+}

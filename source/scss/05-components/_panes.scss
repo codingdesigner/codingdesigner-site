@@ -1,0 +1,34 @@
+.oa-pane {
+  border: none;
+  .panel-pane {
+    padding-bottom: $base-line-em;
+    border-bottom: 1px solid color(orange);
+    border-bottom: 1px solid color(orange, light);
+  }
+  .pane-title {
+    @include h5();
+    color: color(orange);
+    background: none;
+    line-height: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid color(gray, light);
+    .col-md-9 & {
+      padding-left: 0;
+    }
+    + .pane-content {
+      padding-top: 0.5em;
+    }
+  }
+}
+
+.oa-visibility-public {
+  min-width: 150px;
+  font-size: ms(0);
+  text-align: center;
+  color: shade(color(green), 25%);
+  background-color: tint(color(green, light), 50%);
+  border: 1px solid color(green, light);
+  padding: 0.25em;
+}

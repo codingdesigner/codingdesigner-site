@@ -1,0 +1,135 @@
+/////* ==========================================================================
+////   Global Icons - Mixins
+////   ========================================================================== */
+//
+//
+//@import "05-icons";
+//
+///* Mixin - Font Icon Base
+//   ========================================================================== */
+///*
+//* Common styles used by all 05-icons in HTML and CSS
+//*/
+//
+//@mixin font-icon-01-base() {
+//  font-family:"05-icons";
+//  display:inline-block;
+//  vertical-align:middle;
+//  line-height:1;
+//  font-weight:normal;
+//  font-style:normal;
+//  speak:none;
+//  text-decoration:inherit;
+//  text-transform:none;
+//  text-rendering:optimizeLegibility;
+//  -webkit-font-smoothing:antialiased;
+//  -moz-osx-font-smoothing:grayscale;
+//}
+//%font-icon-01-base {
+//  @include font-icon-01-base();
+//  @extend %link-unset-underline-extend;
+//}
+//
+///* Mixin - Font Icon Replace
+//   ========================================================================== */
+///*
+//* Replace text with a font icon
+//*/
+//
+//@mixin font-icon-replace($pseudo) {
+//  position: relative;
+//  right: 9999px;
+//  &:#{$pseudo} {
+//    position: absolute;
+//    height: 100%;
+//    text-align: center;
+//    top: 0;
+//    right: -9999px;
+//  }
+//}
+//
+///* Mixin - Icon
+//   ========================================================================== */
+///*
+//* @params
+//*  $icon
+//*  $pseudo
+//*  $mq
+//*  $text-replace
+//*  $size
+//*  $color
+//*/
+//
+//@mixin icon(
+//  $icon: $icon,
+//  $pseudo: before,
+//  $mq: false,
+//  $text-replace: false,
+//  $size: inherit,
+//  $color: inherit
+//) {
+//  &:#{$pseudo} {
+//    content: map-get($font-05-icons, $icon);
+//    font-size: $size;
+//    // If in a media query, include instead of extend
+//    @if $mq == true {
+//      @include font-icon-01-base();
+//      @include unset-underline-links($extend: false);
+//      @include set-link-colors($link-normal: $color, $link-hover: $color, $link-active: $color, $link-visited: $color, $link-focus: $color, $extend: false);
+//    } @else {
+//      @extend %font-icon-01-base;
+//      @include set-link-colors($link-normal: $color, $link-hover: $color, $link-active: $color, $link-visited: $color, $link-focus: $color, $extend: true);
+//    }
+//  }
+//  // Replace text with icon, like classic sprites
+//  @if $text-replace {
+//    @include font-icon-replace($pseudo);
+//  }
+//}
+//
+//// Shared styles for <i> elements
+//[class*="icon--"] {
+//  @extend %font-icon-01-base;
+//}
+//
+//// Generate classes for each icon
+//@each $font-icon in $font-05-icons {
+//  .icon--#{nth($font-icon, 1)}:before {
+//    content: nth($font-icon, 2);
+//  }
+//}
+//
+////// true as second options returns only path
+////$icon-path: image-url("", true) + "images/05-icons/output/fonts";
+////// Font Source Files
+////@include font-face("05-icons", (
+////  'eot': "#{$icon-path}/05-icons.eot",
+////  'woff': "#{$icon-path}/05-icons.woff",
+////  'ttf': "#{$icon-path}/05-icons.ttf",
+////  'svg': "#{$icon-path}/05-icons.svg"
+////));
+//
+/////* Mixin - Corner Triangle
+////   ========================================================================== */
+////
+////@mixin corner-triangle() {
+////  float: right;
+////  display: inline-block;
+////  .csstransforms & {
+////    @include transform(rotate(135deg));
+////    @include arrow($color: black, $width: 18px, $height: 9px, $direction: up);
+////    margin-top: 6px;
+////  }
+////  .no-csstransforms & {
+////    background: image-url('fallbacks/corner-triangle.gif') no-repeat;
+////    width: image-width('fallbacks/corner-triangle.gif');
+////    height: image-height('fallbacks/corner-triangle.gif');
+////    margin-right: 6px;
+////  }
+////}
+////%corner-triangle {
+////  @include corner-triangle();
+////}
+////.corner-triangle {
+////  @extend %corner-triangle;
+////}

@@ -1,0 +1,108 @@
+// ==========================================================================
+// Global Functions - Calculators
+// ========================================================================== */
+
+
+// Calculate pixels
+// ========================================================================== */
+//
+// @params
+//  $value
+//  $px
+//
+
+@function px($value, $px: 16) {
+  @return (($value * $px) / 1em) * 1px;
+}
+
+// Calculate ems
+// ========================================================================== */
+//
+// @params
+//  $value
+//  $context
+//
+
+@function em($value, $context: $base-font-size) {
+  @if unit($value) == '' {
+    $value: $value * 1em;
+  }
+  @if unit($value) != px {
+    $value: px($value);
+  }
+  @if unit($context) != px {
+    $context: px($context);
+  }
+  @return ($value / $context) * 1em;
+}
+
+// Convert em to unitless
+// ========================================================================== */
+//
+// @params
+//  $value
+//
+
+@function unitless-convert($value) {
+  @if unit($value) == '' {
+    $value: $value;
+  }
+  @if unit($value) == 'em' {
+    $value: $value / 1em;
+  }
+  @if unit($value) == 'px' {
+    $value: $value / $root-typesize;
+  }
+  @return $value;
+}
+
+// Calculate the em value of n baselines
+// ========================================================================== */
+//
+// @params
+//  $lines
+//  $context
+//
+
+@function base-line-calc($lines: 1, $context: false) {
+  $calc: $lines * $base-line-em;
+  @if $context {
+    $calc: em($lines * $base-line-em, em($context));
+  }
+  @return $calc;
+}
+
+// Calculate percentage widths from pixels based on common container width
+// ========================================================================== */
+//
+// @params
+//  $pixels
+//  $container
+//
+
+@function res-width($pixels, $container: 1280px) {
+  @return percentage($pixels / $container);
+}
+
+// Return proper font name from fonts map in _fonts.scss
+// ========================================================================== */
+//
+// @params
+//  $font-index
+//  $map
+//
+
+//@function font-name($font-index, $map: $fonts) {
+//  @return map-get(map-get($map, #{$font-index}), font-name);
+//}
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::://
+// :: Calculating Phi
+// :::::::::::::::::::::::::::::::::::::::::::::::::://
+@function phi-a($number) {
+  @return $number / 1.61803398875;
+}
+// :::::::::::::::::::::::::::::::::::::::::::::::::://
+@function phi-b($number) {
+  @return $number - ($number / 1.61803398875);
+}

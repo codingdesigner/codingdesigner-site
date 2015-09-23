@@ -1,0 +1,33 @@
+/* forms */
+.oa-pane {
+  .views-exposed-form {
+    .filter-btn {
+      top: 0;
+    }
+  }
+}
+
+.views-exposed-form {
+  .filter-btn {
+    //    position: absolute;
+    //    top: 0px;
+    //    right: 10px;
+    right: 0;
+  }
+}
+
+.form-control {
+  padding: 0;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: relative;
+  margin: auto;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.radio label, .checkbox label {
+  padding-left: 0;
+}

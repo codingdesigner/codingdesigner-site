@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function pdms_design_install() {
+  pdms_design_enable_theme();
+}
+
+/**
+ * Enables the pdms theme.
+ */
+function pdms_design_enable_theme() {
+  // Enable the theme.
+  theme_enable(array('pdms_oa_radix'));
+  // Set the theme as default.
+  variable_set('theme_default', 'pdms_oa_radix');
+}

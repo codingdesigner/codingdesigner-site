@@ -1,0 +1,824 @@
+&lt;!-- CSS FROM DRUPAL --&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/system/system.base.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/system/system.messages.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/system/system.theme.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/vendor/jqueryui/jquery-ui-1.10.0.custom.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.tabs.min.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/libraries/chosen/chosen.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/chosen/css/chosen-drupal.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/libraries/select2/select2.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/select2widget/css/select2widget.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/media/css/media.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.menu.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.base.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.theme.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/navbar/css/navbar.icons.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/aggregator/aggregator.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/comment/comment.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/contextual_tabs/contextual_tabs.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/date/date_api/date.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/date/date_popup/themes/datepicker.1.7.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/date/date_repeat_field/date_repeat_field.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/field/theme/field.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/node/node.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_appearance/oa_appearance.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/css/oa_core.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_events/oa-events.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_media/oa_media.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_related/oa_related.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_river/oa_river.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_subspaces/oa-subspaces.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_teams/oa_teams.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_toolbar/css/oa_toolbar.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_widgets/oa_widgets.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_wiki/oa_wiki.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_worktracker/oa_worktracker.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_worktracker/modules/oa_worktracker_duedate/oa_worktracker_duedate.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_admin/panopoly-admin-navbar.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_core/css/panopoly-dropbutton.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_magic/css/panopoly-magic.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_theme/css/panopoly-featured.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_theme/css/panopoly-accordian.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_theme/css/panopoly-layouts.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_widgets/panopoly-widgets.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_wysiwyg/panopoly-wysiwyg.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/poll/poll.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/radix_layouts/radix_layouts.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/search/search.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/modules/user/user.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/views/css/views.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/caption_filter/caption-filter.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/libraries/colorbox/example1/colorbox.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/ctools/css/ctools.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/dhtml_menu/dhtml_menu.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_core/modules/oa_diff/oa_diff.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/css/panels.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/ctools/css/modal.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/css/panels_dnd.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/css/panels_admin.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/panels_ipe/css/panels_ipe.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/flag/theme/flag.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panelizer/css/panelizer-ipe.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_comment/oa_comment.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/panels/plugins/layouts/flexible/flexible.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/sites/all/modules/print/print_ui/css/print_ui.theme.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  &lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+  .panels-flexible-new .panels-flexible-region {
+    padding: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-region-inside {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .panels-flexible-new .panels-flexible-region-inside-first {
+    padding-left: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-region-inside-last {
+    padding-right: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-column {
+    padding: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-column-inside {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  .panels-flexible-new .panels-flexible-column-inside-first {
+    padding-left: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-column-inside-last {
+    padding-right: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-row {
+    padding: 0 0 0.5em 0;
+    margin: 0;
+  }
+
+  .panels-flexible-new .panels-flexible-row-last {
+    padding-bottom: 0;
+  }
+
+  .panels-flexible-column-new-main {
+    float: left;
+    width: 99.0000%;
+  }
+
+  .panels-flexible-new-inside {
+    padding-right: 0px;
+  }
+
+  .panels-flexible-new {
+    width: auto;
+  }
+
+  .panels-flexible-region-new-center {
+    float: left;
+    width: 99.0000%;
+  }
+
+  .panels-flexible-row-new-main-row-inside {
+    padding-right: 0px;
+  }
+
+
+  /*]]&gt;*/--&gt;
+&lt;/style&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.6.1/css/bootstrap-tour.min.css&quot; media=&quot;all&quot; /&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/sites/all/modules/forward/forward.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/bootstrap_tour/css/bootstrap-tour.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_tour/oa_tour.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/apps/oa_favorites/oa_favorites.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/contrib/oa_responsive_regions/assets/stylesheets/oa_responsive_regions.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/radix-livestyle.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/screen.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/font-awesome.min.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;print&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/print.css?npms3h&quot;);
+&lt;/style&gt;
+
+&lt;!--[if lte IE 9]&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+@import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/ie.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;![endif]--&gt;
+
+&lt;!--[if IE 7]&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+@import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/radix-ie7.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;![endif]--&gt;
+
+&lt;!--[if IE 8]&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+@import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/radix/assets/stylesheets/radix-ie8.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;![endif]--&gt;
+
+&lt;!--[if IE 7]&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+@import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/ie7.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;![endif]--&gt;
+
+&lt;!--[if IE 8]&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+@import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/themes/oa_radix/assets/stylesheets/ie8.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;![endif]--&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/sites/all/modules/pdms_design/source/css/pdms.css?npms3h&quot;);
+  @import url(&quot;http://jj.openatrium.p2devcloud.com/profiles/openatrium/modules/panopoly/panopoly_images/panopoly-images.css?npms3h&quot;);
+&lt;/style&gt;
+&lt;!-- CSS FROM DRUPAL --&gt;
+
+&lt;div id=&quot;skip-link&quot;&gt;
+  &lt;a href=&quot;#main-content&quot; class=&quot;element-invisible element-focusable&quot;&gt;Skip to main content&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;region region-page-top&quot;&gt;
+  &lt;nav id=&quot;navbar-administration&quot; class=&quot;drupal-navbar overlay-displace-top navbar-processed&quot; role=&quot;navigation&quot;&gt;&lt;div id=&quot;navbar-bar&quot; class=&quot;navbar-bar clearfix&quot; style=&quot;display: none;&quot;&gt;&lt;h2 class=&quot;element-invisible&quot;&gt;Navbar items&lt;/h2&gt;&lt;div class=&quot;navbar-tab&quot; aria-pressed=&quot;false&quot;&gt;&lt;a href=&quot;/&quot; title=&quot;Home page&quot; class=&quot;navbar-icon navbar-icon-home active&quot;&gt;Home&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;navbar-tab&quot; aria-pressed=&quot;false&quot;&gt;&lt;a href=&quot;/admin&quot; title=&quot;Admin menu&quot; class=&quot;navbar-icon navbar-icon-menu navbar-tab&quot; id=&quot;navbar-tab-navbar-tray&quot; data-navbar-tray=&quot;navbar-tray&quot; aria-owns=&quot;navbar-tray&quot; role=&quot;button&quot; aria-pressed=&quot;false&quot;&gt;Menu&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;navbar-tab&quot; aria-pressed=&quot;false&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/shortcut&quot; title=&quot;Shortcuts&quot; class=&quot;navbar-icon navbar-icon-shortcut navbar-tab&quot; id=&quot;navbar-tab-navbar-tray--2&quot; data-navbar-tray=&quot;navbar-tray--2&quot; aria-owns=&quot;navbar-tray--2&quot; role=&quot;button&quot; aria-pressed=&quot;false&quot;&gt;Shortcuts&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;navbar-tab&quot; aria-pressed=&quot;false&quot;&gt;&lt;a href=&quot;/user&quot; title=&quot;My account&quot; class=&quot;navbar-icon navbar-icon-user navbar-tab&quot; id=&quot;navbar-tab-navbar-tray--3&quot; data-navbar-tray=&quot;navbar-tray--3&quot; aria-owns=&quot;navbar-tray--3&quot; role=&quot;button&quot; aria-pressed=&quot;false&quot;&gt;Adam Fermier&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;navbar-tray&quot; data-navbar-tray=&quot;navbar-tray&quot; aria-owned-by=&quot;navbar-tab-navbar-tray&quot; class=&quot;navbar-tray overlay-displace-top navbar-tray-vertical&quot; style=&quot;top: 39px;&quot;&gt;&lt;div class=&quot;navbar-lining clearfix&quot;&gt;&lt;h3 class=&quot;element-invisible&quot;&gt;User-defined shortcuts&lt;/h3&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;/node/add&quot;&gt;Add content&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;/admin/content&quot;&gt;Find content&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;a href=&quot;/admin/config/user-interface/shortcut/shortcut-set-1&quot; class=&quot;edit-shortcuts&quot;&gt;Edit shortcuts&lt;/a&gt;&lt;div class=&quot;navbar-toggle-orientation&quot;&gt;&lt;div class=&quot;navbar-lining&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;navbar-icon navbar-icon-toggle-horizontal&quot; type=&quot;button&quot; value=&quot;horizontal&quot;&gt;Horizontal orientation&lt;/button&gt;&lt;h3 class=&quot;element-invisible&quot;&gt;Administration menu&lt;/h3&gt;&lt;div class=&quot;navbar-menu-administration&quot;&gt;&lt;ul class=&quot;menu navbar-menu-processed root&quot;&gt;&lt;li class=&quot;first leaf level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/dashboard&quot; id=&quot;navbar-link-admin-dashboard&quot; class=&quot;navbar-icon navbar-icon-dashboard&quot;&gt;Dashboard&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;collapsed level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/apps&quot; id=&quot;navbar-link-admin-apps&quot; class=&quot;navbar-icon navbar-icon-apps&quot;&gt;Apps&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;expanded level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/content&quot; id=&quot;navbar-link-admin-content&quot; class=&quot;navbar-icon navbar-icon-content&quot;&gt;Content&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Content&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/content/comment&quot; id=&quot;navbar-link-admin-content-comment&quot; class=&quot;navbar-icon navbar-icon-comments&quot;&gt;Comments&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;last expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/content/file&quot; id=&quot;navbar-link-admin-content-file&quot; class=&quot;navbar-icon navbar-icon-files&quot;&gt;Files&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+    &lt;li class=&quot;expanded level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly&quot; id=&quot;navbar-link-admin-panopoly&quot; class=&quot;navbar-icon navbar-icon-panopoly&quot;&gt;Panopoly&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Panopoly&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/layouts&quot; id=&quot;navbar-link-admin-panopoly-layouts&quot; class=&quot;navbar-icon navbar-icon-panopoly-layouts&quot;&gt;Panopoly Layouts&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/pages&quot; id=&quot;navbar-link-admin-panopoly-pages&quot; class=&quot;navbar-icon navbar-icon-panopoly-pages&quot;&gt;Panopoly Pages&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/panes&quot; id=&quot;navbar-link-admin-panopoly-panes&quot; class=&quot;navbar-icon navbar-icon-panopoly-panes&quot;&gt;Panopoly Panes&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;last expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings&quot; id=&quot;navbar-link-admin-panopoly-settings&quot; class=&quot;navbar-icon navbar-icon-panopoly-settings&quot;&gt;Panopoly Settings&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Panopoly Settings&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings/panopoly_admin&quot; id=&quot;navbar-link-admin-panopoly-settings-panopoly_admin&quot; class=&quot;navbar-icon navbar-icon-panopoly-admin&quot;&gt;Panopoly Admin&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings/panopoly_core&quot; id=&quot;navbar-link-admin-panopoly-settings-panopoly_core&quot; class=&quot;navbar-icon navbar-icon-panopoly-core&quot;&gt;Panopoly Core&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings/panopoly_magic&quot; id=&quot;navbar-link-admin-panopoly-settings-panopoly_magic&quot; class=&quot;navbar-icon navbar-icon-panopoly-magic&quot;&gt;Panopoly Magic&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings/panopoly_users&quot; id=&quot;navbar-link-admin-panopoly-settings-panopoly_users&quot; class=&quot;navbar-icon navbar-icon-panopoly-users&quot;&gt;Panopoly Users&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings/panopoly_wysiwyg&quot; id=&quot;navbar-link-admin-panopoly-settings-panopoly_wysiwyg&quot; class=&quot;navbar-icon navbar-icon-panopoly-wysiwyg&quot;&gt;Panopoly WYSIWYG&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/panopoly/settings/panopoly_widgets&quot; id=&quot;navbar-link-admin-panopoly-settings-panopoly_widgets&quot; class=&quot;navbar-icon navbar-icon-panopoly-widgets&quot;&gt;Panopoly Widgets&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+    &lt;li class=&quot;expanded level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure&quot; id=&quot;navbar-link-admin-structure&quot; class=&quot;navbar-icon navbar-icon-structure&quot;&gt;Structure&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Structure&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/block&quot; id=&quot;navbar-link-admin-structure-block&quot; class=&quot;navbar-icon navbar-icon-blocks&quot;&gt;Blocks&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/command-buttons&quot; id=&quot;navbar-link-admin-structure-command-buttons&quot; class=&quot;navbar-icon navbar-icon-command-buttons&quot;&gt;Command Buttons&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/types&quot; id=&quot;navbar-link-admin-structure-types&quot; class=&quot;navbar-icon navbar-icon-content-types&quot;&gt;Content types&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/defaultconfig&quot; id=&quot;navbar-link-admin-structure-defaultconfig&quot; class=&quot;navbar-icon navbar-icon-default-config&quot;&gt;Default config&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/extensions&quot; id=&quot;navbar-link-admin-structure-extensions&quot; class=&quot;navbar-icon navbar-icon-extensions&quot;&gt;Extensions&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/features&quot; id=&quot;navbar-link-admin-structure-features&quot; class=&quot;navbar-icon navbar-icon-features&quot;&gt;Features&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/feeds&quot; id=&quot;navbar-link-admin-structure-feeds&quot; class=&quot;navbar-icon navbar-icon-feeds-importers&quot;&gt;Feeds importers&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/dependencies&quot; id=&quot;navbar-link-admin-structure-dependencies&quot; class=&quot;navbar-icon navbar-icon-field-dependencies&quot;&gt;Field dependencies&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/fieldable-panels-panes&quot; id=&quot;navbar-link-admin-structure-fieldable-panels-panes&quot; class=&quot;navbar-icon navbar-icon-fieldable-panels-panes&quot;&gt;Fieldable Panels Panes&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/file-types&quot; id=&quot;navbar-link-admin-structure-file-types&quot; class=&quot;navbar-icon navbar-icon-file-types&quot;&gt;File types&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/flags&quot; id=&quot;navbar-link-admin-structure-flags&quot; class=&quot;navbar-icon navbar-icon-flags&quot;&gt;Flags&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/menu&quot; id=&quot;navbar-link-admin-structure-menu&quot; class=&quot;navbar-icon navbar-icon-menus&quot;&gt;Menus&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Menus&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/menu/manage/main-menu&quot; id=&quot;navbar-link-admin-structure-menu-manage-main-menu&quot; class=&quot;navbar-icon navbar-icon-main-menu&quot;&gt;Main menu&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/menu/manage/management&quot; id=&quot;navbar-link-admin-structure-menu-manage-management&quot; class=&quot;navbar-icon navbar-icon-management&quot;&gt;Management&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/menu/manage/navigation&quot; id=&quot;navbar-link-admin-structure-menu-manage-navigation&quot; class=&quot;navbar-icon navbar-icon-navigation&quot;&gt;Navigation&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/menu/manage/user-menu&quot; id=&quot;navbar-link-admin-structure-menu-manage-user-menu&quot; class=&quot;navbar-icon navbar-icon-user-menu&quot;&gt;User menu&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/messages&quot; id=&quot;navbar-link-admin-structure-messages&quot; class=&quot;navbar-icon navbar-icon-message-types&quot;&gt;Message types&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/mini-panels&quot; id=&quot;navbar-link-admin-structure-mini-panels&quot; class=&quot;navbar-icon navbar-icon-mini-panels&quot;&gt;Mini panels&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/node_convert_templates&quot; id=&quot;navbar-link-admin-structure-node_convert_templates&quot; class=&quot;navbar-icon navbar-icon-node-convert-templates&quot;&gt;Node Convert templates&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/pages&quot; id=&quot;navbar-link-admin-structure-pages&quot; class=&quot;navbar-icon navbar-icon-pages&quot;&gt;Pages&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/panels&quot; id=&quot;navbar-link-admin-structure-panels&quot; class=&quot;navbar-icon navbar-icon-panels&quot;&gt;Panels&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/paragraphs&quot; id=&quot;navbar-link-admin-structure-paragraphs&quot; class=&quot;navbar-icon navbar-icon-paragraph-bundles&quot;&gt;Paragraph Bundles&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/sparql_registry&quot; id=&quot;navbar-link-admin-structure-sparql_registry&quot; class=&quot;navbar-icon navbar-icon-sparql-endpoints-registry&quot;&gt;SPARQL Endpoints Registry&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;http://pdms4store.twhitak.transixsys.com/atrium/?q=sitemap&quot; id=&quot;navbar-link-http:--pdms4store.twhitak.transixsys.com-atrium-?q=sitemap&quot; class=&quot;navbar-icon navbar-icon-site-map&quot;&gt;Site Map&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/tours&quot; id=&quot;navbar-link-admin-structure-tours&quot; class=&quot;navbar-icon navbar-icon-site-tours&quot;&gt;Site Tours&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/taxonomy&quot; id=&quot;navbar-link-admin-structure-taxonomy&quot; class=&quot;navbar-icon navbar-icon-taxonomy&quot;&gt;Taxonomy&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/views&quot; id=&quot;navbar-link-admin-structure-views&quot; class=&quot;navbar-icon navbar-icon-views&quot;&gt;Views&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;last expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/structure/wizards&quot; id=&quot;navbar-link-admin-structure-wizards&quot; class=&quot;navbar-icon navbar-icon-wizards&quot;&gt;Wizards&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+    &lt;li class=&quot;leaf level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/appearance&quot; id=&quot;navbar-link-admin-appearance&quot; class=&quot;navbar-icon navbar-icon-appearance&quot;&gt;Appearance&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;leaf level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/people&quot; id=&quot;navbar-link-admin-people&quot; class=&quot;navbar-icon navbar-icon-people&quot;&gt;People&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;leaf level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/modules&quot; id=&quot;navbar-link-admin-modules&quot; class=&quot;navbar-icon navbar-icon-modules&quot;&gt;Modules&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;expanded level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config&quot; id=&quot;navbar-link-admin-config&quot; class=&quot;navbar-icon navbar-icon-configuration&quot;&gt;Configuration&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Configuration&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/people&quot; id=&quot;navbar-link-admin-config-people&quot; class=&quot;navbar-icon navbar-icon-people&quot;&gt;People&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;People&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/people/accounts&quot; id=&quot;navbar-link-admin-config-people-accounts&quot; class=&quot;navbar-icon navbar-icon-account-settings&quot;&gt;Account settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/people/cas&quot; id=&quot;navbar-link-admin-config-people-cas&quot; class=&quot;navbar-icon navbar-icon-cas-settings&quot;&gt;CAS settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/people/realname&quot; id=&quot;navbar-link-admin-config-people-realname&quot; class=&quot;navbar-icon navbar-icon-real-name&quot;&gt;Real name&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/people/user_picture_field&quot; id=&quot;navbar-link-admin-config-people-user_picture_field&quot; class=&quot;navbar-icon navbar-icon-user-picture-field&quot;&gt;User picture field&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;last collapsed level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/people/ip-blocking&quot; id=&quot;navbar-link-admin-config-people-ip-blocking&quot; class=&quot;navbar-icon navbar-icon-ip-address-blocking&quot;&gt;IP address blocking&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system&quot; id=&quot;navbar-link-admin-config-system&quot; class=&quot;navbar-icon navbar-icon-system&quot;&gt;System&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;System&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/site-information&quot; id=&quot;navbar-link-admin-config-system-site-information&quot; class=&quot;navbar-icon navbar-icon-site-information&quot;&gt;Site information&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/statistics&quot; id=&quot;navbar-link-admin-config-system-statistics&quot; class=&quot;navbar-icon navbar-icon-statistics&quot;&gt;Statistics&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/actions&quot; id=&quot;navbar-link-admin-config-system-actions&quot; class=&quot;navbar-icon navbar-icon-actions&quot;&gt;Actions&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/apps&quot; id=&quot;navbar-link-admin-config-system-apps&quot; class=&quot;navbar-icon navbar-icon-apps-configuration&quot;&gt;Apps Configuration&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/backup_migrate&quot; id=&quot;navbar-link-admin-config-system-backup_migrate&quot; class=&quot;navbar-icon navbar-icon-backup-and-migrate&quot;&gt;Backup and Migrate&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/fasttoggle&quot; id=&quot;navbar-link-admin-config-system-fasttoggle&quot; class=&quot;navbar-icon navbar-icon-fasttoggle&quot;&gt;Fasttoggle&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/googleanalytics&quot; id=&quot;navbar-link-admin-config-system-googleanalytics&quot; class=&quot;navbar-icon navbar-icon-google-analytics&quot;&gt;Google Analytics&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/htmlmail&quot; id=&quot;navbar-link-admin-config-system-htmlmail&quot; class=&quot;navbar-icon navbar-icon-html-mail&quot;&gt;HTML Mail&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/mailsystem&quot; id=&quot;navbar-link-admin-config-system-mailsystem&quot; class=&quot;navbar-icon navbar-icon-mail-system&quot;&gt;Mail System&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/message&quot; id=&quot;navbar-link-admin-config-system-message&quot; class=&quot;navbar-icon navbar-icon-message-settings&quot;&gt;Message settings&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Message settings&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first last leaf level-4&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/message/text-copy&quot; id=&quot;navbar-link-admin-config-system-message-text-copy&quot; class=&quot;navbar-icon navbar-icon-copy-messages-text-fields&quot;&gt;Copy messages text fields&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/message-subscribe&quot; id=&quot;navbar-link-admin-config-system-message-subscribe&quot; class=&quot;navbar-icon navbar-icon-message-subscribe-settings&quot;&gt;Message subscribe settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/mimemail&quot; id=&quot;navbar-link-admin-config-system-mimemail&quot; class=&quot;navbar-icon navbar-icon-mime-mail&quot;&gt;Mime Mail&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/tokens&quot; id=&quot;navbar-link-admin-config-system-tokens&quot; class=&quot;navbar-icon navbar-icon-tokens&quot;&gt;Tokens&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/system/cron&quot; id=&quot;navbar-link-admin-config-system-cron&quot; class=&quot;navbar-icon navbar-icon-cron&quot;&gt;Cron&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content&quot; id=&quot;navbar-link-admin-config-content&quot; class=&quot;navbar-icon navbar-icon-content-authoring&quot;&gt;Content authoring&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Content authoring&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/diff&quot; id=&quot;navbar-link-admin-config-content-diff&quot; class=&quot;navbar-icon navbar-icon-diff&quot;&gt;Diff&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/geocoder&quot; id=&quot;navbar-link-admin-config-content-geocoder&quot; class=&quot;navbar-icon navbar-icon-geocoder-settings&quot;&gt;Geocoder settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/linkit&quot; id=&quot;navbar-link-admin-config-content-linkit&quot; class=&quot;navbar-icon navbar-icon-linkit-profiles&quot;&gt;Linkit Profiles&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/clone&quot; id=&quot;navbar-link-admin-config-content-clone&quot; class=&quot;navbar-icon navbar-icon-node-clone-module&quot;&gt;Node clone module&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/panelizer&quot; id=&quot;navbar-link-admin-config-content-panelizer&quot; class=&quot;navbar-icon navbar-icon-panelizer&quot;&gt;Panelizer&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/rrssb&quot; id=&quot;navbar-link-admin-config-content-rrssb&quot; class=&quot;navbar-icon navbar-icon-ridiculously-responsive-social-sharing-buttons&quot;&gt;Ridiculously Responsive Social Sharing Buttons&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/formats&quot; id=&quot;navbar-link-admin-config-content-formats&quot; class=&quot;navbar-icon navbar-icon-text-formats&quot;&gt;Text formats&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/wysiwyg&quot; id=&quot;navbar-link-admin-config-content-wysiwyg&quot; class=&quot;navbar-icon navbar-icon-wysiwyg-profiles&quot;&gt;Wysiwyg profiles&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/content/tablefield&quot; id=&quot;navbar-link-admin-config-content-tablefield&quot; class=&quot;navbar-icon navbar-icon-tablefield&quot;&gt;tablefield&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface&quot; id=&quot;navbar-link-admin-config-user-interface&quot; class=&quot;navbar-icon navbar-icon-user-interface&quot;&gt;User interface&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;User interface&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/chosen&quot; id=&quot;navbar-link-admin-config-user-interface-chosen&quot; class=&quot;navbar-icon navbar-icon-chosen&quot;&gt;Chosen&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/colors&quot; id=&quot;navbar-link-admin-config-user-interface-colors&quot; class=&quot;navbar-icon navbar-icon-colors&quot;&gt;Colors&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/contextual-tabs&quot; id=&quot;navbar-link-admin-config-user-interface-contextual-tabs&quot; class=&quot;navbar-icon navbar-icon-contextual-tabs&quot;&gt;Contextual Tabs&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/dhtml_menu&quot; id=&quot;navbar-link-admin-config-user-interface-dhtml_menu&quot; class=&quot;navbar-icon navbar-icon-dhtml-menu&quot;&gt;DHTML Menu&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/forward&quot; id=&quot;navbar-link-admin-config-user-interface-forward&quot; class=&quot;navbar-icon navbar-icon-forward&quot;&gt;Forward&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/fullcalendar&quot; id=&quot;navbar-link-admin-config-user-interface-fullcalendar&quot; class=&quot;navbar-icon navbar-icon-fullcalendar&quot;&gt;FullCalendar&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/menu-block&quot; id=&quot;navbar-link-admin-config-user-interface-menu-block&quot; class=&quot;navbar-icon navbar-icon-menu-block&quot;&gt;Menu block&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/modulefilter&quot; id=&quot;navbar-link-admin-config-user-interface-modulefilter&quot; class=&quot;navbar-icon navbar-icon-module-filter&quot;&gt;Module filter&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/print&quot; id=&quot;navbar-link-admin-config-user-interface-print&quot; class=&quot;navbar-icon navbar-icon-printer,-email-and-pdf-versions&quot;&gt;Printer, email and PDF versions&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/user-interface/shortcut&quot; id=&quot;navbar-link-admin-config-user-interface-shortcut&quot; class=&quot;navbar-icon navbar-icon-shortcuts&quot;&gt;Shortcuts&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/date&quot; id=&quot;navbar-link-admin-config-date&quot; class=&quot;navbar-icon navbar-icon-date-api&quot;&gt;Date API&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Date API&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/date/date_popup&quot; id=&quot;navbar-link-admin-config-date-date_popup&quot; class=&quot;navbar-icon navbar-icon-date-popup&quot;&gt;Date Popup&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development&quot; id=&quot;navbar-link-admin-config-development&quot; class=&quot;navbar-icon navbar-icon-development&quot;&gt;Development&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Development&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development/performance&quot; id=&quot;navbar-link-admin-config-development-performance&quot; class=&quot;navbar-icon navbar-icon-performance&quot;&gt;Performance&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development/logging&quot; id=&quot;navbar-link-admin-config-development-logging&quot; class=&quot;navbar-icon navbar-icon-logging-and-errors&quot;&gt;Logging and errors&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development/maintenance&quot; id=&quot;navbar-link-admin-config-development-maintenance&quot; class=&quot;navbar-icon navbar-icon-maintenance-mode&quot;&gt;Maintenance mode&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development/devel&quot; id=&quot;navbar-link-admin-config-development-devel&quot; class=&quot;navbar-icon navbar-icon-devel-settings&quot;&gt;Devel settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development/strongarm&quot; id=&quot;navbar-link-admin-config-development-strongarm&quot; class=&quot;navbar-icon navbar-icon-strongarm&quot;&gt;Strongarm&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/development/jquery_update&quot; id=&quot;navbar-link-admin-config-development-jquery_update&quot; class=&quot;navbar-icon navbar-icon-jquery-update&quot;&gt;jQuery update&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media&quot; id=&quot;navbar-link-admin-config-media&quot; class=&quot;navbar-icon navbar-icon-media&quot;&gt;Media&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Media&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/file-system&quot; id=&quot;navbar-link-admin-config-media-file-system&quot; class=&quot;navbar-icon navbar-icon-file-system&quot;&gt;File system&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/breakpoints&quot; id=&quot;navbar-link-admin-config-media-breakpoints&quot; class=&quot;navbar-icon navbar-icon-breakpoints&quot;&gt;Breakpoints&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/colorbox&quot; id=&quot;navbar-link-admin-config-media-colorbox&quot; class=&quot;navbar-icon navbar-icon-colorbox&quot;&gt;Colorbox&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/file-settings&quot; id=&quot;navbar-link-admin-config-media-file-settings&quot; class=&quot;navbar-icon navbar-icon-file-settings&quot;&gt;File settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/image-styles&quot; id=&quot;navbar-link-admin-config-media-image-styles&quot; class=&quot;navbar-icon navbar-icon-image-styles&quot;&gt;Image styles&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/manualcrop&quot; id=&quot;navbar-link-admin-config-media-manualcrop&quot; class=&quot;navbar-icon navbar-icon-manual-crop&quot;&gt;Manual Crop&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/wysiwyg-view-mode&quot; id=&quot;navbar-link-admin-config-media-wysiwyg-view-mode&quot; class=&quot;navbar-icon navbar-icon-media-wysiwyg-view-mode&quot;&gt;Media WYSIWYG View Mode&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/browser&quot; id=&quot;navbar-link-admin-config-media-browser&quot; class=&quot;navbar-icon navbar-icon-media-browser-settings&quot;&gt;Media browser settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/media/image-toolkit&quot; id=&quot;navbar-link-admin-config-media-image-toolkit&quot; class=&quot;navbar-icon navbar-icon-image-toolkit&quot;&gt;Image toolkit&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/search&quot; id=&quot;navbar-link-admin-config-search&quot; class=&quot;navbar-icon navbar-icon-search-and-metadata&quot;&gt;Search and metadata&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Search and metadata&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/search/settings&quot; id=&quot;navbar-link-admin-config-search-settings&quot; class=&quot;navbar-icon navbar-icon-search-settings&quot;&gt;Search settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/search/path&quot; id=&quot;navbar-link-admin-config-search-path&quot; class=&quot;navbar-icon navbar-icon-url-aliases&quot;&gt;URL aliases&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/search/search_api&quot; id=&quot;navbar-link-admin-config-search-search_api&quot; class=&quot;navbar-icon navbar-icon-search-api&quot;&gt;Search API&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/search/sitemap&quot; id=&quot;navbar-link-admin-config-search-sitemap&quot; class=&quot;navbar-icon navbar-icon-site-map&quot;&gt;Site map&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/search/clean-urls&quot; id=&quot;navbar-link-admin-config-search-clean-urls&quot; class=&quot;navbar-icon navbar-icon-clean-urls&quot;&gt;Clean URLs&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group&quot; id=&quot;navbar-link-admin-config-group&quot; class=&quot;navbar-icon navbar-icon-organic-groups&quot;&gt;Organic groups&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Organic groups&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/variable&quot; id=&quot;navbar-link-admin-config-group-variable&quot; class=&quot;navbar-icon navbar-icon-og-variables&quot;&gt;OG Variables&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/context&quot; id=&quot;navbar-link-admin-config-group-context&quot; class=&quot;navbar-icon navbar-icon-og-context&quot;&gt;OG context&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/fields&quot; id=&quot;navbar-link-admin-config-group-fields&quot; class=&quot;navbar-icon navbar-icon-og-field-settings&quot;&gt;OG field settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/group-membership&quot; id=&quot;navbar-link-admin-config-group-group-membership&quot; class=&quot;navbar-icon navbar-icon-og-membership-types&quot;&gt;OG membership types&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/permissions&quot; id=&quot;navbar-link-admin-config-group-permissions&quot; class=&quot;navbar-icon navbar-icon-og-permissions-overview&quot;&gt;OG permissions overview&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;OG permissions overview&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-4&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/permissions/node/oa_group&quot; id=&quot;navbar-link-admin-config-group-permissions-node-oa_group&quot; class=&quot;navbar-icon navbar-icon-&quot;&gt;OG Node - Group permissions&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+          &lt;li class=&quot;last leaf level-4&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/permissions/node/oa_space&quot; id=&quot;navbar-link-admin-config-group-permissions-node-oa_space&quot; class=&quot;navbar-icon navbar-icon-&quot;&gt;OG Node - Space permissions&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;
+        &lt;li class=&quot;expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/roles&quot; id=&quot;navbar-link-admin-config-group-roles&quot; class=&quot;navbar-icon navbar-icon-og-roles-overview&quot;&gt;OG roles overview&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;OG roles overview&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-4&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/roles/node/oa_group&quot; id=&quot;navbar-link-admin-config-group-roles-node-oa_group&quot; class=&quot;navbar-icon navbar-icon-&quot;&gt;OG Node - Group roles&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+          &lt;li class=&quot;last leaf level-4&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/roles/node/oa_space&quot; id=&quot;navbar-link-admin-config-group-roles-node-oa_space&quot; class=&quot;navbar-icon navbar-icon-&quot;&gt;OG Node - Space roles&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/settings&quot; id=&quot;navbar-link-admin-config-group-settings&quot; class=&quot;navbar-icon navbar-icon-og-settings&quot;&gt;OG settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/group/og-vocab&quot; id=&quot;navbar-link-admin-config-group-og-vocab&quot; class=&quot;navbar-icon navbar-icon-og-vocabulary-settings&quot;&gt;OG vocabulary settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/regional&quot; id=&quot;navbar-link-admin-config-regional&quot; class=&quot;navbar-icon navbar-icon-regional-and-language&quot;&gt;Regional and language&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Regional and language&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/regional/settings&quot; id=&quot;navbar-link-admin-config-regional-settings&quot; class=&quot;navbar-icon navbar-icon-regional-settings&quot;&gt;Regional settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/regional/date-time&quot; id=&quot;navbar-link-admin-config-regional-date-time&quot; class=&quot;navbar-icon navbar-icon-date-and-time&quot;&gt;Date and time&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/tableau&quot; id=&quot;navbar-link-admin-config-tableau&quot; class=&quot;navbar-icon navbar-icon-tableau&quot;&gt;Tableau&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/services&quot; id=&quot;navbar-link-admin-config-services&quot; class=&quot;navbar-icon navbar-icon-web-services&quot;&gt;Web services&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Web services&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/services/rdf&quot; id=&quot;navbar-link-admin-config-services-rdf&quot; class=&quot;navbar-icon navbar-icon-rdf-publishing-settings&quot;&gt;RDF publishing settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/services/rss-publishing&quot; id=&quot;navbar-link-admin-config-services-rss-publishing&quot; class=&quot;navbar-icon navbar-icon-rss-publishing&quot;&gt;RSS publishing&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class=&quot;last expanded level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/services/aggregator&quot; id=&quot;navbar-link-admin-config-services-aggregator&quot; class=&quot;navbar-icon navbar-icon-feed-aggregator&quot;&gt;Feed aggregator&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/workflow&quot; id=&quot;navbar-link-admin-config-workflow&quot; class=&quot;navbar-icon navbar-icon-workflow&quot;&gt;Workflow&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Workflow&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/workflow/rules&quot; id=&quot;navbar-link-admin-config-workflow-rules&quot; class=&quot;navbar-icon navbar-icon-rules&quot;&gt;Rules&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+      &lt;li class=&quot;last expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/d3&quot; id=&quot;navbar-link-admin-config-d3&quot; class=&quot;navbar-icon navbar-icon-d3&quot;&gt;D3&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;D3&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first last leaf level-3&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/config/d3/settings&quot; id=&quot;navbar-link-admin-config-d3-settings&quot; class=&quot;navbar-icon navbar-icon-d3-settings&quot;&gt;D3 Settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+    &lt;li class=&quot;expanded level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium&quot; id=&quot;navbar-link-admin-openatrium&quot; class=&quot;navbar-icon navbar-icon-open-atrium&quot;&gt;Open Atrium&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Open Atrium&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium/setting&quot; id=&quot;navbar-link-admin-openatrium-setting&quot; class=&quot;navbar-icon navbar-icon-config&quot;&gt;Config&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium/groups&quot; id=&quot;navbar-link-admin-openatrium-groups&quot; class=&quot;navbar-icon navbar-icon-groups&quot;&gt;Groups&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium/sandbox&quot; id=&quot;navbar-link-admin-openatrium-sandbox&quot; class=&quot;navbar-icon navbar-icon-sandbox-mode&quot;&gt;Sandbox Mode&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium/section-templates&quot; id=&quot;navbar-link-admin-openatrium-section-templates&quot; class=&quot;navbar-icon navbar-icon-section-templates&quot;&gt;Section Templates&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium/space-templates&quot; id=&quot;navbar-link-admin-openatrium-space-templates&quot; class=&quot;navbar-icon navbar-icon-space-templates&quot;&gt;Space Templates&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;last leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/openatrium/worktracker&quot; id=&quot;navbar-link-admin-openatrium-worktracker&quot; class=&quot;navbar-icon navbar-icon-work-tracker-settings&quot;&gt;Work Tracker settings&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+    &lt;li class=&quot;last expanded level-1&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports&quot; id=&quot;navbar-link-admin-reports&quot; class=&quot;navbar-icon navbar-icon-reports&quot;&gt;Reports&lt;/a&gt;&lt;button class=&quot;navbar-icon navbar-handle&quot;&gt;&lt;span class=&quot;action&quot;&gt;Extend&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Reports&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/status&quot; id=&quot;navbar-link-admin-reports-status&quot; class=&quot;navbar-icon navbar-icon-status-report&quot;&gt;Status report&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/updates&quot; id=&quot;navbar-link-admin-reports-updates&quot; class=&quot;navbar-icon navbar-icon-available-updates&quot;&gt;Available updates&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/feeds&quot; id=&quot;navbar-link-admin-reports-feeds&quot; class=&quot;navbar-icon navbar-icon-feeds-log&quot;&gt;Feeds log&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;expanded level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/fields&quot; id=&quot;navbar-link-admin-reports-fields&quot; class=&quot;navbar-icon navbar-icon-field-list&quot;&gt;Field list&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/forward&quot; id=&quot;navbar-link-admin-reports-forward&quot; class=&quot;navbar-icon navbar-icon-forward-tracking&quot;&gt;Forward tracking&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/hits&quot; id=&quot;navbar-link-admin-reports-hits&quot; class=&quot;navbar-icon navbar-icon-recent-hits&quot;&gt;Recent hits&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/referrers&quot; id=&quot;navbar-link-admin-reports-referrers&quot; class=&quot;navbar-icon navbar-icon-top-referrers&quot;&gt;Top referrers&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/views-plugins&quot; id=&quot;navbar-link-admin-reports-views-plugins&quot; class=&quot;navbar-icon navbar-icon-views-plugins&quot;&gt;Views plugins&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/pages&quot; id=&quot;navbar-link-admin-reports-pages&quot; class=&quot;navbar-icon navbar-icon-top-pages&quot;&gt;Top pages&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li class=&quot;last leaf level-2&quot;&gt;&lt;div class=&quot;navbar-box&quot;&gt;&lt;a href=&quot;/admin/reports/visitors&quot; id=&quot;navbar-link-admin-reports-visitors&quot; class=&quot;navbar-icon navbar-icon-top-visitors&quot;&gt;Top visitors&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;navbar-toggle-orientation&quot;&gt;&lt;div class=&quot;navbar-lining&quot;&gt;&lt;h3 class=&quot;element-invisible&quot;&gt;User-defined shortcuts&lt;/h3&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;/node/add&quot;&gt;Add content&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;/admin/content&quot;&gt;Find content&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;a href=&quot;/admin/config/user-interface/shortcut/shortcut-set-1&quot; class=&quot;edit-shortcuts&quot;&gt;Edit shortcuts&lt;/a&gt;&lt;div class=&quot;navbar-toggle-orientation&quot;&gt;&lt;div class=&quot;navbar-lining&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;navbar-icon navbar-icon-toggle-horizontal&quot; type=&quot;button&quot; value=&quot;horizontal&quot;&gt;Horizontal orientation&lt;/button&gt;&lt;button class=&quot;navbar-icon navbar-icon-toggle-horizontal&quot; type=&quot;button&quot; value=&quot;horizontal&quot;&gt;Horizontal orientation&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;navbar-tray--2&quot; data-navbar-tray=&quot;navbar-tray--2&quot; aria-owned-by=&quot;navbar-tab-navbar-tray--2&quot; class=&quot;navbar-tray overlay-displace-top navbar-tray-vertical&quot; style=&quot;top: 39px;&quot;&gt;&lt;div class=&quot;navbar-lining clearfix&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;navbar-tray--3&quot; data-navbar-tray=&quot;navbar-tray--3&quot; aria-owned-by=&quot;navbar-tab-navbar-tray--3&quot; class=&quot;navbar-tray overlay-displace-top navbar-tray-vertical&quot; style=&quot;top: 39px;&quot;&gt;&lt;div class=&quot;navbar-lining clearfix&quot;&gt;&lt;h3 class=&quot;element-invisible&quot;&gt;User account actions&lt;/h3&gt;&lt;ul class=&quot;menu&quot;&gt;&lt;li class=&quot;account first&quot;&gt;&lt;a href=&quot;/user&quot; title=&quot;User account&quot;&gt;View profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;logout last&quot;&gt;&lt;a href=&quot;/user/logout&quot;&gt;Log out&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;div class=&quot;navbar-toggle-orientation&quot;&gt;&lt;div class=&quot;navbar-lining&quot;&gt;&lt;button class=&quot;navbar-icon navbar-icon-toggle-horizontal&quot; type=&quot;button&quot; value=&quot;horizontal&quot;&gt;Horizontal orientation&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;  &lt;/div&gt;
+
+&lt;!--SITE-WIDE HEADER--&gt;
+&lt;div class=&quot;site-wide-header&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;header-wrapper&quot;&gt;
+      &lt;div class=&quot;site-wide-header--logo&quot;&gt;
+        &lt;a href=&quot;/&quot; title=&quot;Janssen&quot;&gt;&lt;img src=&quot;../../images/Janssen_Prof_RGB.png&quot; alt=&quot;Janssen&quot;&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--SITE-WIDE HEADER--&gt;
+
+&lt;div class=&quot;responsive-panels-region responsive-panels-region-top&quot;&gt;
+  &lt;div id=&quot;oa-navbar&quot; class=&quot;navbar navbar-inverse navbar-fixed-top&quot; data-offset-top=&quot;&quot;&gt;
+    &lt;div class=&quot;navbar-inner&quot;&gt;
+      &lt;div class=&quot;panel-panel clearfix&quot;&gt;
+        &lt;div class=&quot;pane-oa-mobile&quot;&gt;
+          &lt;div class=&quot;mobile-menu-icons clearfix&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle user&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#oa-navbar-user&quot;&gt;
+              &lt;img class=&quot;oa-small-thumbnail&quot; typeof=&quot;foaf:Image&quot; src=&quot;http://jj.openatrium.p2devcloud.com/sites/default/files/styles/oa_small_thumbnail/public/pictures/adam.jpg?itok=CilhVYQ8&quot; width=&quot;30&quot; height=&quot;30&quot; alt=&quot;Your profile picture&quot;&gt;&lt;/button&gt;
+
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#oa-navbar-header&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+              &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle spaces&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#oa-navbar-spaces&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+              &lt;span class=&quot;fa fa-square odd first&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;fa fa-square even second&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;fa fa-square odd third&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;fa fa-square even fourth&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle search&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#oa-navbar-search&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+              &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle admin&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#oa-navbar-admin&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+              &lt;span class=&quot;fa fa-drupal&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;oa-navbar-spaces&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;oa-navbar-admin&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;oa-navbar-search&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;oa-navbar-user&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class=&quot;panel-display moscone-flipped clearfix radix-moscone-flipped&quot; id=&quot;mini-panel-oa_toolbar_panel&quot;&gt;
+
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12 radix-layouts-header panel-panel&quot;&gt;
+              &lt;div class=&quot;panel-panel-inner&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-9 radix-layouts-content panel-panel&quot;&gt;
+              &lt;div class=&quot;panel-panel-inner&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-3 radix-layouts-sidebar panel-panel&quot;&gt;
+              &lt;div class=&quot;panel-panel-inner&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-12 radix-layouts-footer panel-panel&quot;&gt;
+              &lt;div class=&quot;panel-panel-inner&quot;&gt;
+                &lt;div class=&quot;panel-pane pane-block pane-oa-toolbar-oa-toolbar-menu-button admin-mobile-menu pull-left&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot;&gt;
+
+                    &lt;div id=&quot;toolbar-menu-button&quot; class=&quot;toggle-tray btn btn-inverse&quot;&gt;
+                      &lt;span&gt;Admin&lt;/span&gt;
+                    &lt;/div&gt;
+
+
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class=&quot;panel-pane pane-block pane-oa-toolbar-oa-breadcrumb spaces-mobile-menu pull-left&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot; menu-desktop=&quot;2&quot;&gt;
+                    &lt;ul id=&quot;oa_breadcrumb&quot; class=&quot;oa_toolbar&quot; menu-item=&quot;2&quot;&gt;
+                      &lt;li class=&quot;btn-group oa-breadcrumb dropdown radix-dropdown-processed&quot;&gt;
+                        &lt;a href=&quot;http://jj.openatrium.p2devcloud.com/&quot; class=&quot;btn btn-home btn-inverse&quot;&gt;&lt;i class=&quot;icon-home&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Home&lt;/span&gt;&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-toggle btn btn-inverse&quot; id=&quot;parent-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;home-dropdown&quot;&gt;
+                          &lt;li&gt;&lt;div class=&quot;item-list&quot;&gt;&lt;h3&gt;Recent Spaces&lt;/h3&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/knowledge-management/process-knowledge-and-understanding&quot; class=&quot;active&quot;&gt;Process Knowledge and Understanding&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/modeling/business-modeling&quot;&gt;Business Modeling&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/modeling&quot;&gt;Modeling&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/remicade-mspc&quot;&gt;Remicade MSPC&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/solids-recipe-development-gainer&quot;&gt;Solids Recipe Development for Gainer&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/strategic-operations&quot;&gt;Strategic Operations&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/stability&quot;&gt;Stability&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/risk-assessments&quot;&gt;Risk Assessments&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/lab-tomorrow&quot;&gt;Lab of Tomorrow&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/idm-rw&quot;&gt;IDM-RW&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/spaces&quot; class=&quot;more-link&quot;&gt;All Spaces...&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;dropdown-submenu&quot;&gt;&lt;a href=&quot;/node/add/oa-space&quot; class=&quot;more-link&quot;&gt;Create new Space&lt;/a&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;0 first&quot;&gt;&lt;a href=&quot;/node/add/oa-space/51&quot;&gt;Create new CMC Milestone 11 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;1&quot;&gt;&lt;a href=&quot;/node/add/oa-space/74&quot;&gt;Create new FPx Layout&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;2&quot;&gt;&lt;a href=&quot;/node/add/oa-space/52&quot;&gt;Create new CMC Milestone 12 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;3&quot;&gt;&lt;a href=&quot;/node/add/oa-space/10&quot;&gt;Create new FPx Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;4&quot;&gt;&lt;a href=&quot;/node/add/oa-space/50&quot;&gt;Create new CMC Milestone 10 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;5&quot;&gt;&lt;a href=&quot;/node/add/oa-space/65&quot;&gt;Create new Play Book&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;6&quot;&gt;&lt;a href=&quot;/node/add/oa-space/47&quot;&gt;Create new CMC Milestone 07 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;7&quot;&gt;&lt;a href=&quot;/node/add/oa-space/1&quot;&gt;Create new Default&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;8&quot;&gt;&lt;a href=&quot;/node/add/oa-space/43&quot;&gt;Create new CMC Milestone 03 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;9&quot;&gt;&lt;a href=&quot;/node/add/oa-space/40&quot;&gt;Create new Create New CMC Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;10&quot;&gt;&lt;a href=&quot;/node/add/oa-space/42&quot;&gt;Create new CMC Milestone 02 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;11&quot;&gt;&lt;a href=&quot;/node/add/oa-space/55&quot;&gt;Create new CMC Milestone 01 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;12&quot;&gt;&lt;a href=&quot;/node/add/oa-space/44&quot;&gt;Create new CMC Milestone 04 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;13&quot;&gt;&lt;a href=&quot;/node/add/oa-space/45&quot;&gt;Create new CMC Milestone 05 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;14&quot;&gt;&lt;a href=&quot;/node/add/oa-space/48&quot;&gt;Create new CMC Milestone 08 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;15&quot;&gt;&lt;a href=&quot;/node/add/oa-space/46&quot;&gt;Create new CMC Milestone 06 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;16 last&quot;&gt;&lt;a href=&quot;/node/add/oa-space/49&quot;&gt;Create new CMC Milestone 09 Space&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;&lt;/li&gt;
+                            &lt;li class=&quot;last&quot;&gt;&lt;a href=&quot;/sitemap&quot; class=&quot;more-link&quot;&gt;Site map&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;btn-group oa-breadcrumb dropdown radix-dropdown-processed&quot;&gt;
+                        &lt;a href=&quot;/knowledge-management&quot; class=&quot;btn btn-inverse&quot; id=&quot;oa-breadcrumb-parent-link&quot;&gt;Knowledge Management&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-toggle btn btn-inverse&quot; id=&quot;sibling-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;sibling-dropdown&quot;&gt;
+                          &lt;li&gt;&lt;div class=&quot;item-list&quot;&gt;&lt;h3&gt;Subspaces&lt;/h3&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/knowledge-management/dpd-knowledge-management-team&quot;&gt;DPD Knowledge Management Team&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/knowledge-management/lean-early-development&quot;&gt;Lean Early Development&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/knowledge-management/lessons-learned&quot;&gt;Lessons Learned&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/knowledge-management/material-science-knowledge-platform&quot;&gt;Material Science Knowledge Platform&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;last&quot;&gt;&lt;a href=&quot;/knowledge-management/process-knowledge-and-understanding&quot; class=&quot;active&quot;&gt;Process Knowledge and Understanding&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;btn-group oa-breadcrumb dropdown radix-dropdown-processed&quot;&gt;
+                        &lt;a href=&quot;/knowledge-management/process-knowledge-and-understanding&quot; class=&quot;btn btn-inverse&quot; id=&quot;oa-breadcrumb-space-link&quot;&gt;Process Knowledge and Understanding&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-toggle btn btn-inverse&quot; id=&quot;subspace-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;&lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;subspace-dropdown&quot;&gt;
+                          &lt;li&gt;&lt;div class=&quot;item-list&quot;&gt;&lt;h3&gt;Subspaces&lt;/h3&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/process-knowledge-and-understanding/collaborations&quot;&gt;Collaborations&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/node/2431&quot;&gt;FDA Collaboration&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/idm-rw&quot;&gt;IDM-RW&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/lab-tomorrow&quot;&gt;Lab of Tomorrow&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/modeling&quot;&gt;Modeling&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/remicade-mspc&quot;&gt;Remicade MSPC&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/risk-assessments&quot;&gt;Risk Assessments&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/solids-recipe-development-gainer&quot;&gt;Solids Recipe Development for Gainer&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/stability&quot;&gt;Stability&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/strategic-operations&quot;&gt;Strategic Operations&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;dropdown-submenu last&quot;&gt;&lt;a href=&quot;/node/add/oa-space?oa_parent_space=796&quot; class=&quot;more-link&quot;&gt;Create new subspace&lt;/a&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;0 first&quot;&gt;&lt;a href=&quot;/node/add/oa-space/51?oa_parent_space=796&quot;&gt;Create new CMC Milestone 11 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;1&quot;&gt;&lt;a href=&quot;/node/add/oa-space/74?oa_parent_space=796&quot;&gt;Create new FPx Layout&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;2&quot;&gt;&lt;a href=&quot;/node/add/oa-space/52?oa_parent_space=796&quot;&gt;Create new CMC Milestone 12 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;3&quot;&gt;&lt;a href=&quot;/node/add/oa-space/10?oa_parent_space=796&quot;&gt;Create new FPx Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;4&quot;&gt;&lt;a href=&quot;/node/add/oa-space/50?oa_parent_space=796&quot;&gt;Create new CMC Milestone 10 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;5&quot;&gt;&lt;a href=&quot;/node/add/oa-space/65?oa_parent_space=796&quot;&gt;Create new Play Book&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;6&quot;&gt;&lt;a href=&quot;/node/add/oa-space/47?oa_parent_space=796&quot;&gt;Create new CMC Milestone 07 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;7&quot;&gt;&lt;a href=&quot;/node/add/oa-space/1?oa_parent_space=796&quot;&gt;Create new Default&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;8&quot;&gt;&lt;a href=&quot;/node/add/oa-space/43?oa_parent_space=796&quot;&gt;Create new CMC Milestone 03 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;9&quot;&gt;&lt;a href=&quot;/node/add/oa-space/40?oa_parent_space=796&quot;&gt;Create new Create New CMC Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;10&quot;&gt;&lt;a href=&quot;/node/add/oa-space/42?oa_parent_space=796&quot;&gt;Create new CMC Milestone 02 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;11&quot;&gt;&lt;a href=&quot;/node/add/oa-space/55?oa_parent_space=796&quot;&gt;Create new CMC Milestone 01 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;12&quot;&gt;&lt;a href=&quot;/node/add/oa-space/44?oa_parent_space=796&quot;&gt;Create new CMC Milestone 04 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;13&quot;&gt;&lt;a href=&quot;/node/add/oa-space/45?oa_parent_space=796&quot;&gt;Create new CMC Milestone 05 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;14&quot;&gt;&lt;a href=&quot;/node/add/oa-space/48?oa_parent_space=796&quot;&gt;Create new CMC Milestone 08 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;15&quot;&gt;&lt;a href=&quot;/node/add/oa-space/46?oa_parent_space=796&quot;&gt;Create new CMC Milestone 06 Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;16 last&quot;&gt;&lt;a href=&quot;/node/add/oa-space/49?oa_parent_space=796&quot;&gt;Create new CMC Milestone 09 Space&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;&lt;/li&gt;
+                          &lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;div class=&quot;item-list&quot;&gt;&lt;h3&gt;Sections&lt;/h3&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/knowledge-management/process-knowledge-and-understanding/budgets&quot;&gt;Budgets&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/files&quot;&gt;Files&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/knowledge-management/process-knowledge-and-understanding/fpx&quot;&gt;FPx&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/calendar&quot;&gt;Calendar&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/process-knowledge-and-understanding/discussions&quot;&gt;Discussions&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/knowledge-management/process-knowledge-and-understanding/library&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;dropdown-submenu last&quot;&gt;&lt;a href=&quot;/node/add/oa-section&quot; class=&quot;more-link&quot;&gt;Create new section&lt;/a&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;0 first&quot;&gt;&lt;a href=&quot;/node/add/oa-section/16&quot;&gt;Create new Budgets&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;1&quot;&gt;&lt;a href=&quot;/node/add/oa-section/3&quot;&gt;Create new Calendar Section&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;2&quot;&gt;&lt;a href=&quot;/node/add/oa-section/2&quot;&gt;Create new Default&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;3&quot;&gt;&lt;a href=&quot;/node/add/oa-section/4&quot;&gt;Create new Discussion Section&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;4&quot;&gt;&lt;a href=&quot;/node/add/oa-section/20&quot;&gt;Create new Files Section&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;5&quot;&gt;&lt;a href=&quot;/node/add/oa-section/25&quot;&gt;Create new FPx Activities&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;6&quot;&gt;&lt;a href=&quot;/node/add/oa-section/5&quot;&gt;Create new News Section&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;7&quot;&gt;&lt;a href=&quot;/node/add/oa-section/66&quot;&gt;Create new Playbook Library Section&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;8&quot;&gt;&lt;a href=&quot;/node/add/oa-section/6&quot;&gt;Create new Tasks Section&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;9 last&quot;&gt;&lt;a href=&quot;/node/add/oa-section/18&quot;&gt;Create new Visualization Section&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;&lt;/li&gt;
+                          &lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class=&quot;panel-pane pane-block pane-oa-toolbar-oa-user-badge user-mobile-menu pull-right&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot;&gt;
+                    &lt;div id=&quot;oa-user-badge&quot;&gt;
+                      &lt;div class=&quot;dropdown oa-dropdown btn-group oa-pull-right radix-dropdown-processed&quot;&gt;
+                        &lt;div class=&quot;dropdown-toggle btn clearfix oa-pull-right user-badge btn-inverse&quot; id=&quot;user-badge-dropdown&quot; data-toggle=&quot;dropdown&quot;&gt;
+                          Adam Fermier        &lt;img class=&quot;oa-small-thumbnail&quot; typeof=&quot;foaf:Image&quot; src=&quot;http://jj.openatrium.p2devcloud.com/sites/default/files/styles/oa_small_thumbnail/public/pictures/adam.jpg?itok=CilhVYQ8&quot; width=&quot;30&quot; height=&quot;30&quot; alt=&quot;Your profile picture&quot;&gt;      &lt;/div&gt;
+                        &lt;div class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;section-dropdown&quot; menu-desktop=&quot;1&quot;&gt;
+                          &lt;ul class=&quot;links&quot; menu-item=&quot;1&quot;&gt;&lt;li class=&quot;dashboard first&quot;&gt;&lt;a href=&quot;/user/1/view&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;edit_profile&quot;&gt;&lt;a href=&quot;/user/1/edit&quot;&gt;Edit profile&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;logout last&quot;&gt;&lt;a href=&quot;/user/logout&quot;&gt;Log out&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;      &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class=&quot;panel-pane pane-oa-toolbar-search search-mobile-menu pull-right&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot;&gt;
+
+                    &lt;div class=&quot;toolbar-search&quot; menu-desktop=&quot;3&quot;&gt;
+                      &lt;form action=&quot;search/site&quot; method=&quot;post&quot; menu-item=&quot;3&quot;&gt;
+                        &lt;div class=&quot;input-append&quot;&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;search-text form-control&quot; name=&quot;search_text&quot;&gt;
+                          &lt;div class=&quot;btn-group&quot;&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn submit btn-inverse&quot;&gt;
+                              &lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Search Button&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button class=&quot;btn dropdown-toggle btn-inverse&quot; data-toggle=&quot;dropdown&quot;&gt;
+                              &lt;i class=&quot;caret&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Search Options&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;ul class=&quot;dropdown-menu options radio&quot;&gt;
+                              &lt;li&gt;
+                                &lt;label class=&quot;radio&quot;&gt;
+                                  &lt;input type=&quot;radio&quot; name=&quot;searchOptions&quot; value=&quot;all_spaces&quot; checked=&quot;&quot;&gt;
+                                  All spaces            &lt;/label&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;label class=&quot;radio&quot;&gt;
+                                  &lt;input type=&quot;radio&quot; name=&quot;searchOptions&quot; value=&quot;this_space&quot;&gt;
+                                  This space            &lt;/label&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;label class=&quot;radio&quot;&gt;
+                                  &lt;input type=&quot;radio&quot; name=&quot;searchOptions&quot; value=&quot;users&quot;&gt;
+                                  Users            &lt;/label&gt;
+                              &lt;/li&gt;
+                            &lt;/ul&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/form&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class=&quot;panel-pane pane-oa-favorites-favorites-button search-mobile-menu pull-right&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot; menu-desktop=&quot;4&quot;&gt;
+                    &lt;ul id=&quot;oa_favorites&quot; menu-item=&quot;4&quot;&gt;
+                      &lt;li class=&quot;dropdown btn-group radix-dropdown-processed&quot;&gt;
+                        &lt;a class=&quot;dropdown-toggle btn  btn-inverse&quot; id=&quot;favorites-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; title=&quot;Favorites&quot;&gt;
+                          &lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Favorites&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;space-dropdown&quot;&gt;
+                          &lt;li class=&quot;dropdown-column&quot;&gt;&lt;div class=&quot;item-list&quot;&gt;&lt;h3&gt;Favorite Spaces&lt;/h3&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/process-knowledge-and-understanding/idm-rw&quot;&gt;IDM-RW&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;last&quot;&gt;&lt;span class=&quot;flag-wrapper flag-favorite-space flag-favorite-space-796&quot;&gt;
+      &lt;a href=&quot;/flag/flag/favorite_space/796?destination=node/796&amp;amp;token=agMSGHml0LqO1NyEH6RdsnnVuEnNSC2KReg3MGsHQEI&quot; title=&quot;Mark Space as Favorite&quot; class=&quot;flag flag-action flag-link-toggle btn btn-default flag-processed&quot; rel=&quot;nofollow&quot;&gt;&lt;i class=&quot;icon-star-empty&quot;&gt;&lt;/i&gt; Favorite&lt;/a&gt;&lt;span class=&quot;flag-throbber&quot;&gt;&amp;nbsp;&lt;/span&gt;
+    &lt;/span&gt;
+                            &lt;/li&gt;
+                          &lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class=&quot;panel-pane pane-oa-tour-custom-pane search-mobile-menu pull-right&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot; menu-desktop=&quot;5&quot;&gt;
+                    &lt;ul id=&quot;oa_tours&quot; menu-item=&quot;5&quot;&gt;
+                      &lt;li class=&quot;dropdown btn-group radix-dropdown-processed&quot;&gt;
+                        &lt;a class=&quot;dropdown-toggle btn  btn-inverse&quot; id=&quot;tours-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; title=&quot;Site Tours&quot;&gt;
+                          &lt;i class=&quot;icon-question-sign&quot;&gt;&lt;/i&gt;&lt;span class=&quot;element-invisible&quot;&gt;Site Tours&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;space-dropdown&quot;&gt;
+                          &lt;li class=&quot;dropdown-column&quot;&gt;
+                            &lt;div class=&quot;item-list&quot;&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/?tour=fpx_v2&quot; class=&quot;active&quot;&gt;FPx&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/node/add/oa-space/10?tour=banners&quot;&gt;Banners&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/analytical-development/bioassay?tour=colorizing_a_space&quot;&gt;Colorizing a Space&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/analytical-development/bioassay?tour=configuring_layout&quot;&gt;Configuring Layout&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/node/add/oa-space/10?tour=content_visibility&quot;&gt;Content Visibility&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=groups&quot; class=&quot;active&quot;&gt;Groups&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=menus&quot; class=&quot;active&quot;&gt;Menus&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/node/add/oa-space/10?tour=notifications&quot;&gt;Notifications&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=sandbox_mode&quot; class=&quot;active&quot;&gt;Sandbox Mode&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/node/add/oa-section/16?tour=section_visibility&quot;&gt;Section Visibility&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/node/add/oa-section/16?tour=sections_overview&quot;&gt;Sections Overview&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=setting_your_home&quot; class=&quot;active&quot;&gt;Setting Your Home&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=site_tours&quot; class=&quot;active&quot;&gt;Site Tours&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/node/add/oa-space/10?tour=spaces&quot;&gt;Spaces Overview&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/analytical-development/bioassay?tour=subspaces&quot;&gt;Subspaces&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=teams&quot; class=&quot;active&quot;&gt;Teams&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=toolbar&quot; class=&quot;active&quot;&gt;Toolbar&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;/?tour=user_creation&quot; class=&quot;active&quot;&gt;User Creation&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;last&quot;&gt;&lt;a href=&quot;/?tour=welcome_to_oa2_&quot; class=&quot;active&quot;&gt;Welcome to OA2!&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;&lt;/div&gt;        &lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class=&quot;panel-pane pane-add-space-content search-mobile-menu pull-right&quot;&gt;
+
+
+
+                  &lt;div class=&quot;pane-content&quot; menu-desktop=&quot;6&quot;&gt;
+                    &lt;ul class=&quot;command-button-wrapper&quot; menu-item=&quot;6&quot;&gt;
+                      &lt;li class=&quot;dropdown btn-group radix-dropdown-processed&quot;&gt;
+                        &lt;a class=&quot;dropdown-toggle oa-buttons btn btn-inverse&quot; data-toggle=&quot;dropdown&quot; title=&quot;Create Content&quot; href=&quot;#&quot;&gt;Create Content      &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;command-buttons dropdown-menu&quot;&gt;
+                          &lt;li&gt;&lt;a href=&quot;/oa-files/upload?oa_section_ref=4175&quot; class=&quot;oa-button oa-files-processed&quot;&gt;&lt;i class=&quot;icon-upload&quot;&gt;&lt;/i&gt; Add File&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/add/activity?oa_section_ref=18970&quot; class=&quot;oa-button&quot;&gt;Create Activity&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/add/budget?oa_section_ref=21796&quot; class=&quot;oa-button&quot;&gt;Create Budget&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/add/oa-discussion-post?oa_section_ref=798&quot; class=&quot;oa-button&quot;&gt;Create Discussion Post&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/add/oa-wiki-page?oa_section_ref=4175&quot; class=&quot;oa-button&quot;&gt;Create Document Page in Files&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/add/oa-wiki-page?oa_section_ref=799&quot; class=&quot;oa-button&quot;&gt;Create Document Page in Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/add/oa-event?oa_section_ref=797&quot; class=&quot;oa-button&quot;&gt;Create Event&lt;/a&gt;&lt;/li&gt;      &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+
+
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;&lt;!-- /.moscone-flipped --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;main-wrapper&quot;&gt;
+  &lt;div id=&quot;main&quot; class=&quot;main container&quot;&gt;&lt;div id=&quot;panels-ipe-control-container&quot; class=&quot;clearfix&quot; style=&quot;overflow: hidden; display: block;&quot;&gt;&lt;div id=&quot;panels-ipe-control-panelizer-node-796-page-manager&quot; class=&quot;panels-ipe-control&quot;&gt;&lt;div class=&quot;panels-ipe-button-container clearfix&quot;&gt;&lt;div class=&quot;panels-ipe-pseudobutton-container&quot;&gt;&lt;a href=&quot;/panels/ajax/ipe/save_form/panelizer%3Anode%3A796%3Apage_manager?destination=node/796&quot; class=&quot;panels-ipe-startedit panels-ipe-pseudobutton ajax-processed&quot; id=&quot;panels-ipe-customize-page&quot;&gt;Customize this page&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;panels-ipe-pseudobutton-container&quot;&gt;&lt;a href=&quot;/panels/ajax/ipe/change_layout/panelizer%3Anode%3A796%3Apage_manager?destination=node/796&quot; class=&quot;panels-ipe-change-layout panels-ipe-pseudobutton ctools-modal-layout ajax-processed&quot; id=&quot;ajax-link&quot;&gt;Change layout&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panels-ipe-form-container clearfix&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div id=&quot;content&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-12 inner&quot;&gt;
+          &lt;ul id=&quot;contextual-tabs&quot;&gt;
+            &lt;li&gt;
+              &lt;a class=&quot;btn btn-small btn-sm btn-default&quot; href=&quot;/node/796/edit&quot; title=&quot;Edit&quot;&gt;
+                &lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt;&amp;nbsp;Edit    &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a class=&quot;btn btn-small btn-sm btn-default&quot; href=&quot;/node/796/members&quot; title=&quot;Members&quot;&gt;
+                &lt;i class=&quot;icon-user&quot;&gt;&lt;/i&gt;&amp;nbsp;Members    &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;ul id=&quot;oa_visibility_toolbar&quot;&gt;
+                &lt;li class=&quot;dropdown btn-group radix-dropdown-processed&quot;&gt;
+                  &lt;a class=&quot;dropdown-toggle btn btn-small btn-sm btn-default&quot; id=&quot;visibility-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; title=&quot;Public&quot;&gt;
+                    &lt;i class=&quot;icon-unlock&quot;&gt;&lt;/i&gt;&lt;span&gt;This content is Public&lt;/span&gt;
+                  &lt;/a&gt;
+                  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;visibility-dropdown&quot;&gt;
+                    &lt;li class=&quot;dropdown-column&quot;&gt;
+                      &lt;div class=&quot;oa-visibility-public&quot;&gt;Public&lt;/div&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;dropdown btn-group radix-dropdown-processed&quot;&gt;
+              &lt;a class=&quot;dropdown-toggle btn btn-small btn-sm btn-default&quot; id=&quot;contextual-dropdown&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; title=&quot;Configure&quot;&gt;
+                &lt;i class=&quot;icon-cog&quot;&gt;&lt;/i&gt;&lt;span&gt;Configure&lt;/span&gt;
+              &lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;contextual-dropdown&quot;&gt;
+                &lt;li class=&quot;dropdown-column&quot;&gt;&lt;div class=&quot;item-list&quot;&gt;&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;&lt;a href=&quot;/node/796/group&quot;&gt;Config&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/content&quot;&gt;Content&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/oa_clone_create_space_type&quot;&gt;Create Blueprint from this Space&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/map&quot;&gt;Map&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/backlinks&quot;&gt;What links here&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/track&quot;&gt;Track&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/clone/confirm&quot;&gt;Clone this space&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/convert&quot;&gt;Convert&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/panelizer&quot;&gt;Panelizer&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/log&quot;&gt;Log&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/archive&quot;&gt;Show Archive&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/archive-content&quot;&gt;Archive This&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;/node/796/devel&quot;&gt;Devel&lt;/a&gt;&lt;/li&gt;
+                  &lt;li class=&quot;last&quot;&gt;&lt;span class=&quot;flag-wrapper flag-subscribe-section-content flag-subscribe-section-content-796&quot;&gt;
+      &lt;a href=&quot;/flag/flag/subscribe_section_content/796?destination=node/796&amp;amp;token=agMSGHml0LqO1NyEH6RdsnnVuEnNSC2KReg3MGsHQEI&quot; title=&quot;Subscribe to receive messages related to this content&quot; class=&quot;flag-action flag-link-toggle btn-default flag-processed&quot; rel=&quot;nofollow&quot;&gt; Subscribe&lt;/a&gt;
+    &lt;/span&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;a id=&quot;main-content&quot;&gt;&lt;/a&gt;
+          &lt;h1 class=&quot;title&quot; id=&quot;page-title&quot;&gt;Process Knowledge and Understanding&lt;/h1&gt;                                                                        &lt;div class=&quot;region region-content&quot;&gt;
+          &lt;div id=&quot;block-forward-form&quot; class=&quot;block block-forward&quot;&gt;
+
+
+            &lt;div class=&quot;content&quot;&gt;
+              &lt;a href=&quot;/forward?path=knowledge-management/process-knowledge-and-understanding&quot; title=&quot;Forward this page to a friend&quot; class=&quot;forward-page&quot;&gt;&lt;img class=&quot;forward-icon forward-icon-margin&quot; typeof=&quot;foaf:Image&quot; src=&quot;http://jj.openatrium.p2devcloud.com/sites/all/modules/forward/forward.gif&quot; alt=&quot;Email this Space&quot;&gt;Email this Space&lt;/a&gt;  &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;block-system-main&quot; class=&quot;block block-system&quot;&gt;
+
+
+            &lt;div class=&quot;content&quot;&gt;
+              &lt;div id=&quot;panels-ipe-display-panelizer-node-796-page-manager&quot; class=&quot;panels-ipe-display-container panels-ipe-processed&quot;&gt;
+                &lt;div class=&quot;panel-display bryant-flipped clearfix radix-bryant-flipped&quot;&gt;
+
+                  &lt;div class=&quot;container-fluid&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                      &lt;div class=&quot;col-md-9 radix-layouts-content panel-panel&quot;&gt;
+                        &lt;div class=&quot;panel-panel-inner&quot;&gt;
+                          &lt;div id=&quot;panels-ipe-regionid-contentmain&quot; class=&quot;panels-ipe-region&quot;&gt;
+                            &lt;div
+                                class=&quot;panels-ipe-placeholder panels-ipe-on panels-ipe-portlet-marker panels-ipe-portlet-static&quot;&gt;
+                              &lt;div class=&quot;panels-ipe-placeholder-content&quot;&gt;&lt;h3&gt;Content&lt;/h3&gt;&lt;/div&gt;
+                              &lt;div class=&quot;panels-ipe-newblock panels-ipe-on&quot;&gt;
+                                &lt;ul class=&quot;panels-ipe-linkbar inline&quot;&gt;
+                                  &lt;li class=&quot;style first&quot;&gt;&lt;a
+                                      href=&quot;/panels/ajax/ipe/style-type/panelizer%3Anode%3A796%3Apage_manager/region/contentmain&quot;
+                                      class=&quot;ctools-use-modal panels-ipe-hide-bar style ctools-use-modal-processed panels-ipe-hide-bar-processed-processed&quot;
+                                      title=&quot;Region style&quot;&gt;&lt;span&gt;Region style&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                  &lt;li class=&quot;add-pane last&quot;&gt;&lt;a
+                                      href=&quot;/panels/ajax/ipe/select-content/panelizer%3Anode%3A796%3Apage_manager/contentmain&quot;
+                                      class=&quot;ctools-use-modal add panels-ipe-hide-bar ctools-use-modal-processed panels-ipe-hide-bar-processed-processed&quot;
+                                      title=&quot;Add new pane&quot;&gt;&lt;span&gt;Add new pane&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;panels-ipe-sort-container&quot;&gt;

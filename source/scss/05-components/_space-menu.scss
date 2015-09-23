@@ -1,0 +1,34 @@
+/* space menu */
+.spacenav-container {
+}
+.oa-space-menu {
+  //  float: none;
+  background-color: color(blue, dark);
+  width: 100%;
+  ul.navbar-nav {
+    @include display-flex();
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include align-items(center);
+    margin-top: 0;
+  }
+}
+
+.navbar-inverse {
+  .navbar-nav {
+    > li {
+      > a {
+        color: color(white);
+      }
+    }
+    > .active {
+      > a {
+        &, &:hover,
+        &:focus {
+          color: color(white);
+          background-color: color(blue);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+[class*='accordion'] {
+  //  @include debug();
+}
+
+.accordion--sets {
+}
+
+@mixin control-button-base() {
+  width: 18px;
+  height: 18px;
+  line-height: 16px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: color(white);
+  text-align: center;
+  font-weight: bold;
+}
+@mixin control-button-expand() {
+  border-color: color(blue, dark);
+  background-color: color(blue, light);
+}
+
+@mixin control-button-collapse() {
+  border-color: color(gray, dark);
+  background-color: color(gray);
+}
+
+a[class*="accordion"] {
+  text-decoration: none;
+}
+
+.accordion--control-all {
+  float: right;
+  position: relative;
+  margin-right: 0.5em;
+  &:after {
+    @include control-button-base();
+    @include control-button-expand();
+    position: relative;
+    display: block;
+    content: '\0002B';
+    float: right;
+    top: 4px;
+    margin-left: 0.25em;
+  }
+  &[data-action='close'] {
+    &:after {
+      @include control-button-collapse();
+      content: '\02013';
+    }
+  }
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background-color: color(blue, light);
+  color: color(white);
+  border-radius: 0.25em;
+  clear: left;
+  margin-bottom: 0.5em;
+}
+
+.accordion--set {
+  margin-bottom: 2em;
+}
+
+.accordion--set--title {
+  color: color(orange);
+}
+
+.accordion {
+  background-color: color(gray, x-light);
+  margin-bottom: 1em;
+}
+
+
+.accordion--header {
+  padding: 0.5em;
+  @include display-flex();
+  @include justify-content(space-between);
+  @include align-items(center);
+  .no-flexbox & {
+    @include clearfix();
+  }
+}
+
+.accordion--title {
+  flex: 1;
+  .no-flexbox & {
+    float: left;
+  }
+}
+
+a.accordion--control {
+  @include control-button-base();
+  @include control-button-collapse();
+  .no-flexbox & {
+    float: right;
+  }
+  [data-state='closed'] & {
+    @include control-button-expand();
+  }
+}
+
+.accordion--body {
+  padding: 0.5em;
+  max-height: 100%;
+  overflow: hidden;
+  @include display-flex();
+  @include flex-direction(column);
+  @include align-items(flex-start);
+  [data-state='closed'] & {
+    max-height: 0;
+    padding: 0;
+  }
+  ul, ol {
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+  }
+  ul {
+    list-style: disc;
+  }
+}
+
